@@ -5161,6 +5161,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .bannerSlider__title span span::after {
     top: 0;
   }
+
+  .slider-above-catalog__wrapSlider {
+    max-height: 251px;
+  }
 }
 
 @media screen and (max-width: 991.98px) {
