@@ -218,3 +218,114 @@ if (sliderAboveCatalog) {
       },
    });
 }
+
+let pageProductWrapProductSliders = document.querySelector('.page-product__wrapProductSliders')
+if (pageProductWrapProductSliders) {
+   var swiper = new Swiper(".page-product__sliderSmall", {
+      spaceBetween: 3,
+      slidesPerView: 6,
+      slidesPerGroup: 1,
+      //freeMode: true,
+      watchSlidesProgress: true,
+      watchOverflow: true,
+      loop: false,
+      initialSlide: 1,
+      breakpoints: {
+         0: {
+            slidesPerView: 5.25,
+            spaceBetween: 9,
+         },
+         721: {
+            slidesPerView: 4.35,
+            spaceBetween: 3,
+         },
+         801: {
+            slidesPerView: 5.35,
+            spaceBetween: 12,
+         },
+      },
+   });
+   var swiper2 = new Swiper(".page-product__sliderBig", {
+      spaceBetween: 50,
+      /*navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+      },*/
+      initialSlide: 1,
+      effect: 'fade',
+      fadeEffect: {
+         crossFade: true
+      },
+      thumbs: {
+         swiper: swiper,
+      },
+   });
+}
+
+if (window.matchMedia("(max-width: 1099.98px)").matches) {
+   let aPerfectCombinationSlider = document.querySelector('.a-perfect-combination__slider')
+   if (aPerfectCombinationSlider) {
+      new Swiper(aPerfectCombinationSlider, {
+         slidesPerView: 4.7,
+         slidesPerGroup: 1,
+         watchOverflow: true,
+         spaceBetween: 30,
+         loop: false,
+         speed: 800,
+         effect: 'slide',
+         breakpoints: {
+            0: {
+               slidesPerView: 2.53,
+               spaceBetween: 8,
+            },
+            576: {
+               slidesPerView: 3.50,
+               spaceBetween: 15,
+            },
+            /*768: {
+               slidesPerView: 2.5,
+               spaceBetween: 30,
+            },*/
+            790: {
+               slidesPerView: 4.2,
+               spaceBetween: 30,
+            },
+            /*961: {
+               slidesPerView: 3.2,
+               spaceBetween: 15,
+            },*/
+            1025: {
+               slidesPerView: 3.5,
+               spaceBetween: 15,
+            },
+         },
+      });
+   }
+}
+
+let pageProductColorsSlider = document.querySelector('.page-product__colorsSlider')
+if (pageProductColorsSlider) {
+   new Swiper(pageProductColorsSlider, {
+      slidesPerView: 4,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      spaceBetween: 8,
+      loop: false,
+      speed: 800,
+      effect: 'slide',
+      breakpoints: {
+         0: {
+            slidesPerView: 5.30,
+            spaceBetween: 8,
+         },
+         721: {
+            slidesPerView: 4.5,
+            spaceBetween: 12,
+         },
+         1025: {
+            slidesPerView: 4,
+            spaceBetween: 8,
+         },
+      },
+   });
+}
