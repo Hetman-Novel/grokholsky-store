@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 600);
         });
     }
-    
+
     closePopups.forEach(function(closePopup) {
         closePopup.addEventListener('click', togglePopupContents);
     });
@@ -60,6 +60,9 @@ document.addEventListener("DOMContentLoaded", function() {
     dPopupClose.addEventListener('click', function(even) {
         even.preventDefault();
         dPopupClose.parentNode.parentNode.parentNode.classList.remove('open')
+        setTimeout(function() {
+            document.body.classList.remove('lock')
+        }, 600)
     });
 
 })
