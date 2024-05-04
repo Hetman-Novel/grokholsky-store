@@ -6974,6 +6974,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .page-product__itemColumnBlockInfo .block__text .info {
     overflow: hidden;
     padding-bottom: 20px;
+    padding-left: 45px;
     padding-top: 10px;
   }
 
@@ -7889,7 +7890,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .page-product__itemColumnBlockInfo:nth-child(1) {
-    margin-top: 8px;
+    margin-top: 1px;
   }
 
   .page-product__itemColumnBlockInfo:nth-child(2) h5 {
@@ -7920,6 +7921,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     min-width: 24px;
     max-width: 24px;
     margin-right: 13px;
+  }
+
+  .page-product__itemColumnBlockInfo .block__text .info {
+    padding-left: 37px;
   }
 
   .page-product__itemColumnBlockInfo .block__text .info p {
@@ -8097,6 +8102,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     display: none;
   }
 
+  .page-product__additional-services-and-warranty {
+    margin-top: 4px;
+  }
+
   .page-product__additional-services-and-warranty .block__item {
     border-top: 1px solid #E5E9E9;
     margin-top: 8px;
@@ -8104,7 +8113,15 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .page-product__additional-services-and-warranty .block__item:last-child {
-    padding-bottom: 8px;
+    padding-bottom: 15px;
+  }
+
+  .page-product__additional-services-and-warranty .block__item:last-child .block__title {
+    padding-bottom: 0;
+  }
+
+  .page-product__additional-services-and-warranty .block__item:last-child .block__textContent {
+    padding-top: 6px;
   }
 
   .page-product__additional-services-and-warranty .block__title {
