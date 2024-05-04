@@ -4571,6 +4571,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .page-product__code-and-article {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .page-product__code-and-article p {
@@ -4650,6 +4651,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
   font-size: 16px;
   line-height: 24px;
   margin: 19px 0 3px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .page-product__state a {
@@ -5452,7 +5455,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding: 16px 17px 17px;
   }
 
-  .page-product__itemColumnBlockInfo .block__text .info p:nth-child(2) {
+  .page-product__itemColumnBlockInfo .block__text .info p:nth-child(3) {
     padding-right: 4%;
   }
 
@@ -7886,7 +7889,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .page-product__itemColumnBlockInfo:nth-child(1) {
-    margin-top: 16px;
+    margin-top: 8px;
   }
 
   .page-product__itemColumnBlockInfo:nth-child(2) h5 {
@@ -8057,6 +8060,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
     line-height: 20px;
     margin-bottom: 1px;
     margin-top: 13px;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
   }
 
   .page-product__state a {
@@ -8096,6 +8101,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     border-top: 1px solid #E5E9E9;
     margin-top: 8px;
     padding-top: 16px;
+  }
+
+  .page-product__additional-services-and-warranty .block__item:last-child {
+    padding-bottom: 8px;
   }
 
   .page-product__additional-services-and-warranty .block__title {
