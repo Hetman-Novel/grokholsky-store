@@ -243,6 +243,10 @@ if (pageProductWrapProductSliders) {
             slidesPerView: 5.35,
             spaceBetween: 12,
          },
+         1025: {
+            slidesPerView: 6,
+            spaceBetween: 3,
+         },
       },
    });
    var swiper2 = new Swiper(".page-product__sliderBig", {
