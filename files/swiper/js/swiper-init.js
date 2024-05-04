@@ -232,7 +232,7 @@ if (pageProductWrapProductSliders) {
       initialSlide: 1,
       breakpoints: {
          0: {
-            slidesPerView: 5.25,
+            slidesPerView: 5.32,
             spaceBetween: 9,
          },
          721: {
