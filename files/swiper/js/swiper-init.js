@@ -333,3 +333,56 @@ if (pageProductColorsSlider) {
       },
    });
 }
+
+let aPerfectCombinationSlider = document.querySelector('.a-perfect-combination-slider')
+if (aPerfectCombinationSlider) {
+   new Swiper(aPerfectCombinationSlider, {
+
+      // Стрелки
+      navigation: {
+         prevEl: '.swiper-button-prev',
+         nextEl: '.swiper-button-next',
+      },
+
+
+
+      // Скролл
+      
+      // Включить/отключить
+      // перетаскивания на ПК
+      /*simulateTouch: true, // true / false
+      // Чувствительность свайпа
+      touchRation: 1, // По умолчанию 1 / 0 отключает перетаскивание на всех устройствах
+      // Угол срабатывания свайпа/перетаскивания
+      touchAngle: 45,
+      // Курсор перетаскивания
+      grabCursor: true, // true / false
+      */
+
+      autoHeight: true,
+      slidesPerView: 3.58,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      spaceBetween: 16,
+      speed: 800,
+      effect: 'slide',
+      breakpoints: {
+         0: {
+            slidesPerView: 2.62,
+            spaceBetween: 8,
+         },
+         576: {
+            slidesPerView: 3.58,
+            spaceBetween: 16,
+         },
+         721: {
+            slidesPerView: 3.58,
+            spaceBetween: 16,
+            scrollbar: {
+               el: '.swiper-scrollbar',
+               draggable: true,
+            },
+         }
+      },
+   });
+}
