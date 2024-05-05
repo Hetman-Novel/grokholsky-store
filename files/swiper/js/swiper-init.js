@@ -251,10 +251,6 @@ if (pageProductWrapProductSliders) {
    });
    var swiper2 = new Swiper(".page-product__sliderBig", {
       spaceBetween: 50,
-      /*navigation: {
-         nextEl: ".swiper-button-next",
-         prevEl: ".swiper-button-prev",
-      },*/
       initialSlide: 1,
       effect: 'fade',
       fadeEffect: {
@@ -286,18 +282,10 @@ if (window.matchMedia("(max-width: 1099.98px)").matches) {
                slidesPerView: 3.50,
                spaceBetween: 15,
             },
-            /*768: {
-               slidesPerView: 2.5,
-               spaceBetween: 30,
-            },*/
             790: {
                slidesPerView: 4.2,
                spaceBetween: 30,
             },
-            /*961: {
-               slidesPerView: 3.2,
-               spaceBetween: 15,
-            },*/
             1025: {
                slidesPerView: 3.5,
                spaceBetween: 15,
@@ -337,28 +325,6 @@ if (pageProductColorsSlider) {
 let aPerfectCombinationSlider = document.querySelector('.a-perfect-combination-slider')
 if (aPerfectCombinationSlider) {
    new Swiper(aPerfectCombinationSlider, {
-
-      // Стрелки
-      navigation: {
-         prevEl: '.swiper-button-prev',
-         nextEl: '.swiper-button-next',
-      },
-
-
-
-      // Скролл
-      
-      // Включить/отключить
-      // перетаскивания на ПК
-      /*simulateTouch: true, // true / false
-      // Чувствительность свайпа
-      touchRation: 1, // По умолчанию 1 / 0 отключает перетаскивание на всех устройствах
-      // Угол срабатывания свайпа/перетаскивания
-      touchAngle: 45,
-      // Курсор перетаскивания
-      grabCursor: true, // true / false
-      */
-
       autoHeight: true,
       slidesPerView: 3.58,
       slidesPerGroup: 1,
