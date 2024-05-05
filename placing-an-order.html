@@ -1,0 +1,2341 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240505194413">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20240505194413">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240505194413">
+   <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
+   <title>Оформлення замовлення</title>
+</head>
+
+<body>
+   <div class="wrapper page-no-header-and-footer">
+      <header class="header hidden">
+   <div class="header__wrapper lock-padding">
+      <div id="header-container" class="n_container header-container">
+         <div class="header__menu menu">
+            <div data-da="mobile-block-contacts, 0, 800" class="header__info element-display-delay display-delay">
+               <div class="header__languagesSelect">
+                  <a href="#">ru</a>
+                  <a href="#" class="current-lang">ua</a>
+               </div>
+               <div class="header__wrapPhone">
+                  <a class="header__phone" href="tel:0732714912">(073) 271-49-12</a>
+                  <div class="header__wrapSchedule">
+                     <p>Пн-Пт: с 10 до 20</p>
+                     <p>Сб-Нд: с 12 до 18</p>
+                  </div>
+               </div>
+               <div class="mobile-block-contacts__messengers">
+                  <ul>
+                     <li>
+                        <a href="https://web.telegram.org/k/" target="_blank">
+                           <img src="images/svg/messengers-telegram-icon.svg" alt="">
+                           Telegram
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.viber.com/" target="_blank">
+                           <img src="images/svg/messengers-viber-icon.svg" alt="">
+                           Viber
+                        </a>
+                     </li>
+                  </ul>
+                  <a href="mailto:info@grokholsky.com" class="mobile-block-contacts__messengersEmail">info@grokholsky.com</a>
+               </div>
+            </div>
+            <div class="menu__body">
+               <nav class="menu-topmenu-container">
+                  <ul class="menu__list">
+                     <li class="menu-item actions-item"> <!-- current-menu-item current_page_item -->
+                        <a class="menu__link" href="#">Акції</a>
+                     </li>
+                     <li class="menu-item exchange-item">
+                        <a class="menu__link" href="#">Обмін та Trade-in</a>
+                     </li>
+                     <li class="menu-item service-item">
+                        <a class="menu__link" href="#">Сервіс #эплблять!</a>
+                     </li>
+                     <li class="menu-item">
+                        <a class="menu__link" href="#">Оплата та доставка</a>
+                     </li>
+                     <li class="menu-item">
+                        <a class="menu__link" href="#">Співробітництво</a>
+                     </li>
+                     <li class="menu-item">
+                        <a class="menu__link" href="#">Контакти</a>
+                     </li>
+                     <!--<li class="menu-item menu-item-has-children">
+                        <a class="menu__link menu__link-language" href="#">Demo</a>
+                        <span class="menu__arrow">
+                           <svg width="10" height="10" viewBox="0 0 24 24">
+                              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" fill="currentColor" />
+                           </svg>
+                        </span>
+                        <ul class="menu__sub-list">
+                           <li class="menu-item">
+                              <a class="menu__link" href="#">Demo submenu</a>
+                           </li>
+                           <li class="menu-item">
+                              <a class="menu__link" href="#">Demo submenu 2</a>
+                           </li>
+                           <li class="menu-item">
+                              <a class="menu__link" href="#">Demo submenu 3</a>
+                           </li>
+                           <li class="menu-item">
+                              <a class="menu__link" href="#">Demo submenu 4</a>
+                           </li>
+                        </ul>
+                     </li>-->
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div class="header__bottom">
+            <div id="burger" class="menu__icon">
+               <span></span>
+            </div>
+            <div class="header__wrapLogo">
+               <a href="index.html" class="header__blockLogo">
+                  <img src="images/svg/logo.svg" alt="Grokholsky - интернет магазин">
+               </a>
+               <button class="header__catalogButton" type="button" id="btn-show-catalog-menu">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M8 15L17 15" stroke="#002024" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                     <path d="M3 10H17" stroke="#002024" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                     <path d="M5 5L17 5" stroke="#002024" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                  </svg>
+                  Каталог
+               </button>
+            </div>
+            <div data-da="catalog-menu-block, 0, 800" class="header__wrapForm element-display-delay display-delay">
+               <form action="#" class="header__form">
+                  <input id="search-field" type="search" placeholder="Наприклад: iPhone 15">
+                  <div class="wrap-submit">
+                     <button type="submit">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M6.93343 12.0671C9.87895 12.0671 12.2668 9.67924 12.2668 6.73372C12.2668 3.7882 9.87895 1.40039 6.93343 1.40039C3.98791 1.40039 1.6001 3.7882 1.6001 6.73372C1.6001 9.67924 3.98791 12.0671 6.93343 12.0671Z" stroke="#002024" stroke-width="1.5" stroke-linecap="square"/>
+                           <path d="M13.2002 13L12.1502 11.95L11.2002 11" stroke="#002024" stroke-width="3" stroke-linecap="square"/>
+                        </svg>
+                     </button>
+                  </div>
+               </form>
+               <div class="header__allResultSearch">
+                  <p>Всі результати<span> 35</span></p>
+                  <div class="header__allResultSearchBlockResult">
+                     <ul class="list-names">
+                        <li>
+                           <span>Apple</span>
+                           <a href="#"><span>iPhone 15</span> Pro Max</a>
+                        </li>
+                        <li>
+                           <span>Apple</span>
+                           <a href="#"><span>iPhone 15</span> Plus</a>
+                        </li>
+                        <li>
+                           <span>Apple</span>
+                           <a href="#"><span>iPhone 15</span> Pro Max</a>
+                        </li>
+                        <li>
+                           <span>Apple</span>
+                           <a href="#"><span>iPhone 15</span> Plus</a>
+                        </li>
+                        <li>
+                           <span>Аксессуари</span>
+                           <a href="#"><span>iPhone 15</span> Pro Max</a>
+                        </li>
+                     </ul>
+                     <ul class="list-with-prices-and-photos">
+                        <li>
+                           <a href="" class="list-with-prices-and-photos__blockImage">
+                              <img src="images/slide-product-1.png" alt="" class="list-with-prices-and-photos__image">
+                           </a>
+                           <div class="list-with-prices-and-photos__blockInfo">
+                              <div class="list-with-prices-and-photos__wrap-price">
+                                 <p>
+                                    <span class="price">23 399 ₴</span>
+                                    <span class="wrap-discount">
+                                       <span>25 399 ₴</span>
+                                       <span class="list-with-prices-and-photos__discountLabel">-30%</span>
+                                    </span>
+                                 </p>
+                              </div>
+                              <a href="#" class="list-with-prices-and-photos__link">iPhone 15 128GB Midnight (MLPF3)</a>
+                              <p class="list-with-prices-and-photos__obviousness green">В наявності</p>
+                           </div>
+                        </li>
+                        <li>
+                           <a href="" class="list-with-prices-and-photos__blockImage">
+                              <img src="images/slide-product-12.png" alt="" class="list-with-prices-and-photos__image">
+                           </a>
+                           <div class="list-with-prices-and-photos__blockInfo">
+                              <div class="list-with-prices-and-photos__wrap-price">
+                                 <p>
+                                    <span class="price">23 399 ₴</span>
+                                    <span class="wrap-discount">
+                                       <span>25 399 ₴</span>
+                                       <span class="list-with-prices-and-photos__discountLabel">-30%</span>
+                                    </span>
+                                 </p>
+                              </div>
+                              <a href="#" class="list-with-prices-and-photos__link">iPhone 15 128GB Midnight (MLPF3)</a>
+                              <p class="list-with-prices-and-photos__obviousness green">В наявності</p>
+                           </div>
+                        </li>
+                        <li>
+                           <a href="" class="list-with-prices-and-photos__blockImage">
+                              <img src="images/slide-product-11.png" alt="" class="list-with-prices-and-photos__image">
+                           </a>
+                           <div class="list-with-prices-and-photos__blockInfo">
+                              <div class="list-with-prices-and-photos__wrap-price">
+                                 <p>
+                                    <span class="price">23 399 ₴</span>
+                                    <span class="wrap-discount">
+                                       <span>25 399 ₴</span>
+                                       <span class="list-with-prices-and-photos__discountLabel">-30%</span>
+                                    </span>
+                                 </p>
+                              </div>
+                              <a href="#" class="list-with-prices-and-photos__link">iPhone 15 128GB Midnight (MLPF3)</a>
+                              <p class="list-with-prices-and-photos__obviousness green">В наявності</p>
+                           </div>
+                        </li>
+                        <li>
+                           <a href="" class="list-with-prices-and-photos__blockImage">
+                              <img src="images/slide-product-10.png" alt="" class="list-with-prices-and-photos__image">
+                           </a>
+                           <div class="list-with-prices-and-photos__blockInfo">
+                              <div class="list-with-prices-and-photos__wrap-price">
+                                 <p>
+                                    <span class="price">23 399 ₴</span>
+                                    <span class="wrap-discount">
+                                       <span>25 399 ₴</span>
+                                       <span class="list-with-prices-and-photos__discountLabel">-30%</span>
+                                    </span>
+                                 </p>
+                              </div>
+                              <a href="#" class="list-with-prices-and-photos__link">iPhone 15 128GB Midnight (MLPF3)</a>
+                              <p class="list-with-prices-and-photos__obviousness green">В наявності</p>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="header__bottomIcons">
+               <a href="#">
+                  <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M18.9385 3.93103L14.2 13.3103M18.9385 3.93103L23 13.3103M18.9385 3.93103H12.3385M14.2 13.3103H23M14.2 13.3103C14.2 15.9004 16.0184 18 18.2615 18H18.9385C21.1816 18 23 15.9004 23 13.3103M5.73846 3.93103L1 13.3103M5.73846 3.93103L9.8 13.3103M5.73846 3.93103H12.3385M1 13.3103H9.8M1 13.3103C1 15.9004 2.81841 18 5.06154 18H5.73846C7.98159 18 9.8 15.9004 9.8 13.3103M12.3385 3.93103V0" stroke="#002024" stroke-width="2"/>
+                  </svg>
+               </a>
+               <a href="#">
+                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M21 6.98343C20.9659 4.66511 19.637 2.38197 17.597 1.44116C16.5006 0.934154 15.2497 0.861274 14.1007 1.23746C13.0563 1.56572 12.0089 2.23835 11 3.2964C9.99111 2.23835 8.9437 1.56718 7.89926 1.23746C6.75028 0.861274 5.49935 0.934154 4.40296 1.44116C2.36296 2.38197 1.03407 4.66511 1 6.98343V6.99516C1 10.3759 3.03259 13.3713 5.18667 15.4742C6.16471 16.4353 7.24964 17.2839 8.42074 18.0035C8.92148 18.3039 9.39407 18.5457 9.81333 18.7157C10.2148 18.8769 10.6326 19 11 19C11.3674 19 11.7852 18.8769 12.1852 18.7157C12.6059 18.5472 13.0785 18.3054 13.5778 18.0035C14.7494 17.2839 15.8348 16.4354 16.8133 15.4742C18.9674 13.3713 21 10.3759 21 6.99662V6.98343Z" stroke="#002024" stroke-width="2"/>
+                  </svg>
+               </a>
+               <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M6.66818 16.4659H17.8568M15.15 9.375C15.15 11.1147 13.7397 12.525 12 12.525C10.2603 12.525 8.85 11.1147 8.85 9.375C8.85 7.6353 10.2603 6.225 12 6.225C13.7397 6.225 15.15 7.6353 15.15 9.375ZM22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12C1.5 6.20101 6.20101 1.5 12 1.5C17.799 1.5 22.5 6.20101 22.5 12Z" stroke="#002024" stroke-width="2"/>
+                  </svg>
+               </a>
+               <div class="header__wrapBasket">
+                  <p>2</p>
+                  <a href="#show-basket-popup" class="popup-link">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1908 10.3375V5.77182C16.1908 3.35755 14.3042 1.40039 11.977 1.40039C9.64973 1.40039 7.76314 3.35755 7.76314 5.77182V10.3375M3.26852 8.22899H20.6856C21.5033 10.0099 22.2501 18.4004 20.6856 21.8004H3.26852C1.69537 16.6713 2.61304 10.949 3.26852 8.22899Z" stroke="#002024" stroke-width="2"/>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+<div id="mobile-menu-bottom" class="mobile-menu">
+   <ul class="mobile-menu__list">
+      <li>
+         <a href="#catalog-menu-block" id="show-catalog-mobile-block">
+            <div class="mobile-menu__blockIcon">
+               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3204_1552)">
+                     <path d="M1.01731 16.6666H8M0.833323 9.99998H5.5M0.725098 3.33331H16.5" stroke="#334D50" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                     <path d="M18.5 15.5L16.6378 13.6462M17.4302 10.6923C17.4302 12.7315 15.7669 14.3846 13.7151 14.3846C11.6633 14.3846 10 12.7315 10 10.6923C10 8.6531 11.6633 7 13.7151 7C15.7669 7 17.4302 8.6531 17.4302 10.6923Z" stroke="#334D50" stroke-width="2" stroke-linecap="square"/>
+                     </g>
+                  <defs>
+                  <clipPath id="clip0_3204_1552">
+                     <rect width="20" height="20" fill="white"/>
+                     </clipPath>
+                  </defs>
+               </svg>
+            </div>
+            <p>Каталог</p>
+         </a>
+      </li>
+      <li>
+         <a href="#mobile-service-block" id="show-mobile-service-block">
+            <div class="mobile-menu__blockIcon">
+               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3204_682)">
+                     <path d="M6.33333 19.1667L3 15.8333L6.33333 12.5" stroke="#334D50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M18 10.8333V12.5C18 13.384 17.6488 14.2319 17.0237 14.857C16.3986 15.4821 15.5507 15.8333 14.6667 15.8333H3" stroke="#334D50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M14.6666 0.833313L18 4.16665L14.6666 7.49998" stroke="#334D50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M3 9.16669V7.50002C3 6.61597 3.35119 5.76812 3.97631 5.143C4.60143 4.51788 5.44928 4.16669 6.33333 4.16669H18" stroke="#334D50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                     <clipPath id="clip0_3204_682">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)"/>
+                     </clipPath>
+                  </defs>
+               </svg>
+            </div>
+            <p>Послуги</p>
+         </a>
+      </li>
+      <li>
+         <a href="#" class="not-authorized"><!-- not-authorized, authorized -->
+            <div class="mobile-menu__blockIcon">
+               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3204_689)">
+                     <path d="M6.05682 13.7216H15.3807M13.125 7.8125C13.125 9.26225 11.9497 10.4375 10.5 10.4375C9.05025 10.4375 7.875 9.26225 7.875 7.8125C7.875 6.36275 9.05025 5.1875 10.5 5.1875C11.9497 5.1875 13.125 6.36275 13.125 7.8125ZM19.25 10C19.25 14.8325 15.3325 18.75 10.5 18.75C5.66751 18.75 1.75 14.8325 1.75 10C1.75 5.16751 5.66751 1.25 10.5 1.25C15.3325 1.25 19.25 5.16751 19.25 10Z" stroke="#334D50" stroke-width="2"/>
+                  </g>
+                  <defs>
+                     <clipPath id="clip0_3204_689">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)"/>
+                     </clipPath>
+                  </defs>
+               </svg>
+               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3204_3588)">
+                     <circle cx="10" cy="10" r="9.5" stroke="#002024"/>
+                     <path d="M10.1419 9.57143V11.5824H13.6801C13.2629 12.9505 12.0612 13.7747 10.2754 13.7747C9.07371 13.7747 8.1057 13.4286 7.37135 12.7198C6.65368 12.011 6.28651 11.1044 6.28651 10.0165C6.28651 8.91209 6.637 8.00549 7.35466 7.2967C8.07232 6.57143 8.99026 6.20879 10.1085 6.20879C11.4937 6.20879 12.6954 6.86813 13.2462 7.80769L15.2156 6.68681C14.2142 5.05495 12.3115 4 10.1252 4C8.38943 4 6.93741 4.57692 5.75243 5.74725C4.58414 6.91758 4 8.33516 4 10.0165C4 11.6813 4.58414 13.0989 5.76912 14.2692C6.9541 15.4231 8.45619 16 10.2587 16C11.9444 16 13.3296 15.489 14.3978 14.467C15.4659 13.4451 16 12.1099 16 10.4615V9.57143H10.1419Z" fill="url(#paint0_linear_3204_3588)"/>
+                     <g filter="url(#filter0_d_3204_3588)">
+                        <path d="M3 19C4.10457 19 5 18.1046 5 17C5 15.8954 4.10457 15 3 15C1.89543 15 1 15.8954 1 17C1 18.1046 1.89543 19 3 19Z" fill="url(#paint1_radial_3204_3588)"/>
+                     </g>
+                  </g>
+                  <defs>
+                     <filter id="filter0_d_3204_3588" x="-9" y="1" width="64" height="64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="20" dy="16"/>
+                        <feGaussianBlur stdDeviation="15"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3204_3588"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3204_3588" result="shape"/>
+                     </filter>
+                     <linearGradient id="paint0_linear_3204_3588" x1="3.70088" y1="3.13874" x2="16.3095" y2="15.9261" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.0260417" stop-color="#3A3A3A"/>
+                        <stop offset="1"/>
+                     </linearGradient>
+                     <radialGradient id="paint1_radial_3204_3588" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.6 15.6134) rotate(45) scale(4.43581)">
+                        <stop offset="0.0833333" stop-color="#00E0FF"/>
+                        <stop offset="0.796875" stop-color="#FF00F5"/>
+                     </radialGradient>
+                     <clipPath id="clip0_3204_3588">
+                        <rect width="20" height="20" fill="white"/>
+                     </clipPath>
+                  </defs>
+               </svg>
+            </div>
+            <p>
+               <span>Увійти</span>
+               <span>Кабінет</span>
+            </p>
+         </a>
+      </li>
+      <li>
+         <a href="#">
+            <div class="mobile-menu__blockIcon">
+               <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.7821 3.94255L11.8334 11.7586M15.7821 3.94255L19.1667 11.7586M15.7821 3.94255H10.2821M11.8334 11.7586H19.1667M11.8334 11.7586C11.8334 13.917 13.3487 15.6667 15.218 15.6667H15.7821C17.6514 15.6667 19.1667 13.917 19.1667 11.7586M4.78209 3.94255L0.833374 11.7586M4.78209 3.94255L8.16671 11.7586M4.78209 3.94255H10.2821M0.833374 11.7586H8.16671M0.833374 11.7586C0.833374 13.917 2.34872 15.6667 4.21799 15.6667H4.78209C6.65136 15.6667 8.16671 13.917 8.16671 11.7586M10.2821 3.94255V0.666687" stroke="#334D50" stroke-width="2"/>
+               </svg>
+            </div>
+            <p>Порівняння</p>
+         </a>
+      </li>
+      <li>
+         <a href="#mobile-service-contacts" id="show-mobile-block-contacts">
+            <div class="mobile-menu__blockIcon">
+               <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.5734 13.4334V15.9334C17.5744 16.1655 17.5268 16.3952 17.4339 16.6079C17.3409 16.8205 17.2045 17.0114 17.0335 17.1683C16.8625 17.3252 16.6606 17.4447 16.4407 17.519C16.2209 17.5934 15.9879 17.621 15.7568 17.6001C13.1925 17.3214 10.7293 16.4452 8.5651 15.0417C6.55162 13.7623 4.84454 12.0552 3.5651 10.0417C2.15675 7.86775 1.2803 5.39258 1.00676 2.81675C0.985939 2.5863 1.01333 2.35405 1.08718 2.13477C1.16104 1.91549 1.27974 1.71399 1.43574 1.5431C1.59173 1.37221 1.7816 1.23567 1.99326 1.14218C2.20491 1.04869 2.43371 1.0003 2.6651 1.00008H5.1651C5.56952 0.9961 5.96159 1.13931 6.26823 1.40302C6.57487 1.66674 6.77516 2.03295 6.83176 2.43341C6.93728 3.23347 7.13297 4.01902 7.4151 4.77508C7.52722 5.07335 7.55148 5.39751 7.48502 5.70915C7.41856 6.02079 7.26415 6.30684 7.0401 6.53341L5.98176 7.59175C7.16806 9.67804 8.89548 11.4055 10.9818 12.5917L12.0401 11.5334C12.2667 11.3094 12.5527 11.155 12.8644 11.0885C13.176 11.022 13.5002 11.0463 13.7984 11.1584C14.5545 11.4405 15.34 11.6362 16.1401 11.7417C16.5449 11.7989 16.9146 12.0028 17.1789 12.3147C17.4432 12.6266 17.5836 13.0247 17.5734 13.4334Z" stroke="#334D50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>
+            </div>
+            <p>Контакти</p>
+         </a>
+      </li>
+   </ul>
+</div>
+<div id="catalog-menu-block" class="catalog-menu-block">
+   <div class="large-catalog-menu">
+      <div class="n_container">
+         <div class="large-catalog-menu__items">
+            <div class="large-catalog-menu__item sidebar-catalog-menu">
+               <nav class="catalog-menu-in-sidebar highlight-active-item"> <!-- highlight-active-item -->
+                  <ul>
+                     <li class="sub-menu-item active"> <!-- active -->
+                        <a href="#block-navs-apple">Apple</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/apple-icon.svg" alt="">
+                           <img src="images/svg/apple-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                     <li class="sub-menu-item">
+                        <a href="#block-navs-boo-apple">б/у Apple</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/boo-apple-icon.svg" alt="">
+                           <img src="images/svg/boo-apple-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                     <li class="sub-menu-item">
+                        <a href="#block-Accessories">Аксесуари</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/accessories-icon.svg" alt="">
+                           <img src="images/svg/accessories-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                     <li class="sub-menu-item">
+                        <a href="#block-phoenix-plochki-styleri">Фени, плойки, стайлери</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/phoenix-curlers-styler-icon.svg" alt="">
+                           <img src="images/svg/phoenix-curlers-styler-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                     <li class="sub-menu-item">
+                        <a href="#block-vacuum-cleaners">Пилососи</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/vacuum-cleaners-icon.svg" alt="">
+                           <img src="images/svg/vacuum-cleaners-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                     <li class="sub-menu-item">
+                        <a href="#block-acoustic-systems">Акустичні системи</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/acoustic-systems-icon.svg" alt="">
+                           <img src="images/svg/acoustic-systems-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                     <li class="sub-menu-item">
+                        <a href="#block-charging-stations">Зарядні станції</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/charging-stations-icon.svg" alt="">
+                           <img src="images/svg/charging-stations-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                     <li class="sub-menu-item">
+                        <a href="#block-drones">Квадрокоптери (дрони)</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/drones-icon.svg" alt="">
+                           <img src="images/svg/drones-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                     <li>
+                        <a href="catalog.html">Starlink</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/starlink-icon.svg" alt="">
+                           <img src="images/svg/starlink-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                     <li>
+                        <a href="catalog.html">VR окуляри</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/vr-glasses-icon.svg" alt="">
+                           <img src="images/svg/vr-glasses-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                     <li>
+                        <a href="catalog.html">Ігрові приставки</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/game-consoles-icon.svg" alt="">
+                           <img src="images/svg/game-consoles-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                     <li>
+                        <a href="catalog.html">Геймпади, джостики</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/gamepad-joysticks-icon.svg" alt="">
+                           <img src="images/svg/gamepad-joysticks-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                     <li>
+                        <a href="catalog.html">Ігри для приставок і ПК</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/games-for-consoles-and-pc-icon.svg" alt="">
+                           <img src="images/svg/games-for-consoles-and-pc-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                     <li>
+                        <a href="catalog.html">USB-хаби</a>
+                        <div class="large-catalog-menu__wrap-icon">
+                           <img src="images/svg/usb-hubs-icon.svg" alt="">
+                           <img src="images/svg/usb-hubs-icon-active.svg" alt="">
+                        </div>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="large-catalog-menu__item item-navs">
+               <div id="block-navs-apple" class="large-catalog-menu__blockNavs show-menu">
+                  <div class="head">
+                     <img src="images/svg/large-catalog-menu-head-back-arrow.svg" alt="">
+                     <img src="images/svg/apple-icon.svg" alt="">
+                     <h4>Apple</h4>
+                  </div>
+                  <nav>
+                     <h3>iPhone</h3>
+                     <ul>
+                        <li>
+                           <a href="#">iPhone 15 Pro Max</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 15 Pro</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 15 Plus</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 15</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 14 Pro Max</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 14 Pro</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 14 Plus</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 14</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 13 Pro Max</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 13 Pro</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 13</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 13 mini</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 12</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 12 mini</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone 11</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone SE 2022</a>
+                        </li>
+                        <li>
+                           <a href="#">iPhone SE 2020</a>
+                        </li>
+                        <li>
+                           <a href="#">Продаж та обмін </a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>iPad</h3>
+                     <ul>
+                        <li>
+                           <a href="#">iPad Pro 12,9″ 2022</a>
+                        </li>
+                        <li>
+                           <a href="#">iPad Pro 11″ 2022</a>
+                        </li>
+                        <li>
+                           <a href="#">iPad Pro 12,9″ 2021</a>
+                        </li>
+                        <li>
+                           <a href="#">iPad Pro 11″ 2021</a>
+                        </li>
+                        <li>
+                           <a href="#">iPad Air 2022</a>
+                        </li>
+                        <li>
+                           <a href="#">iPad Air 2020</a>
+                        </li>
+                        <li>
+                           <a href="#">iPad 2022</a>
+                        </li>
+                        <li>
+                           <a href="#">iPad 2021</a>
+                        </li>
+                        <li>
+                           <a href="#">iPad mini 6</a>
+                        </li>
+                        <li>
+                           <a href="#">Продаж та обмін</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Mac</h3>
+                     <ul>
+                        <li>
+                           <a href="#">MacBook Pro</a>
+                        </li>
+                        <li>
+                           <a href="#">MacBook Air</a>
+                        </li>
+                        <li>
+                           <a href="#">iMac</a>
+                        </li>
+                        <li>
+                           <a href="#">Mac Studio</a>
+                        </li>
+                        <li>
+                           <a href="#">Mac mini</a>
+                        </li>
+                        <li>
+                           <a href="#">Mac Pro</a>
+                        </li>
+                        <li>
+                           <a href="#">MacBook Custom</a>
+                        </li>
+                        <li>
+                           <a href="#">Монітори</a>
+                        </li>
+                        <li>
+                           <a href="#">Продаж та обмін</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Apple Watch</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Apple Watch Ultra 2</a>
+                        </li>
+                        <li>
+                           <a href="#">Apple Watch Ultra</a>
+                        </li>
+                        <li>
+                           <a href="#">Apple Watch Series 9</a>
+                        </li>
+                        <li>
+                           <a href="#">Apple Watch Series 8</a>
+                        </li>
+                        <li>
+                           <a href="#" class="active">Apple Watch Series 7</a>
+                        </li>
+                        <li>
+                           <a href="#">Apple Watch Series 6</a>
+                        </li>
+                        <li>
+                           <a href="#">Apple Watch SE 2</a>
+                        </li>
+                        <li>
+                           <a href="#">Apple Watch SE</a>
+                        </li>
+                        <li>
+                           <a href="#">Продаж та обмін</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Apple Airpods</h3>
+                     <ul>
+                        <li>
+                           <a href="#">AirPods Pro 2</a>
+                        </li>
+                        <li>
+                           <a href="#">AirPods Pro</a>
+                        </li>
+                        <li>
+                           <a href="#">AirPods 3</a>
+                        </li>
+                        <li>
+                           <a href="#">AirPods 2</a>
+                        </li>
+                        <li>
+                           <a href="#">AirPods Max</a>
+                        </li>
+                        <li>
+                           <a href="#">Продаж та обмін</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Apple гаджети</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Apple Pencil</a>
+                        </li>
+                        <li>
+                           <a href="#">AirTag</a>
+                        </li>
+                        <li>
+                           <a href="#">HomePod</a>
+                        </li>
+                        <li>
+                           <a href="#">Apple TV</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div id="block-navs-boo-apple" class="large-catalog-menu__blockNavs">
+                  <div class="head">
+                     <img src="images/svg/large-catalog-menu-head-back-arrow.svg" alt="">
+                     <img src="images/svg/boo-apple-icon.svg" alt="">
+                     <h4>б/у Apple</h4>
+                  </div>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div id="block-Accessories" class="large-catalog-menu__blockNavs">
+                  <div class="head">
+                     <img src="images/svg/large-catalog-menu-head-back-arrow.svg" alt="">
+                     <img src="images/svg/accessories-icon.svg" alt="">
+                     <h4>Аксесуари</h4>
+                  </div>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div id="block-phoenix-plochki-styleri" class="large-catalog-menu__blockNavs">
+                  <div class="head">
+                     <img src="images/svg/large-catalog-menu-head-back-arrow.svg" alt="">
+                     <img src="images/svg/phoenix-curlers-styler-icon.svg" alt="">
+                     <h4>Фени, плойки, стайлери</h4>
+                  </div>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div id="block-vacuum-cleaners" class="large-catalog-menu__blockNavs">
+                  <div class="head">
+                     <img src="images/svg/large-catalog-menu-head-back-arrow.svg" alt="">
+                     <img src="images/svg/vacuum-cleaners-icon.svg" alt="">
+                     <h4>Пилососи</h4>
+                  </div>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div id="block-acoustic-systems" class="large-catalog-menu__blockNavs">
+                  <div class="head">
+                     <img src="images/svg/large-catalog-menu-head-back-arrow.svg" alt="">
+                     <img src="images/svg/acoustic-systems-icon.svg" alt="">
+                     <h4>Акустичні системи</h4>
+                  </div>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div id="block-charging-stations" class="large-catalog-menu__blockNavs">
+                  <div class="head">
+                     <img src="images/svg/large-catalog-menu-head-back-arrow.svg" alt="">
+                     <img src="images/svg/charging-stations-icon.svg" alt="">
+                     <h4>Зарядні станції</h4>
+                  </div>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div id="block-drones" class="large-catalog-menu__blockNavs">
+                  <div class="head">
+                     <img src="images/svg/large-catalog-menu-head-back-arrow.svg" alt="">
+                     <img src="images/svg/drones-icon.svg" alt="">
+                     <h4>Квадрокоптери (дрони)</h4>
+                  </div>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>Title</h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div id="mobile-service-block" class="mobile-service-block">
+   <div class="mobile-service-block__items">
+      <a href="#" class="mobile-service-block__item very-soft-cyan">
+         <div class="mobile-service-block__itemContent">
+            <div class="mobile-service-block__itemBlockIcon">
+               <img src="images/svg/mobile-service-block-icon-1.svg" alt="">
+            </div>
+            <h4>Обмін та Trade-in</h4>
+         </div>
+      </a>
+      <a href="#" class="mobile-service-block__item light-grayish-orange">
+         <div class="mobile-service-block__itemContent">
+            <div class="mobile-service-block__itemBlockIcon">
+               <img src="images/svg/mobile-service-block-icon-2.svg" alt="">
+            </div>
+            <h4>Сервіс #эплблять!</h4>
+         </div>
+      </a>
+      <a href="#" class="mobile-service-block__item very-pale-blue">
+         <div class="mobile-service-block__itemContent">
+            <div class="mobile-service-block__itemBlockIcon">
+               <img src="images/svg/mobile-service-block-icon-3.svg" alt="">
+            </div>
+            <h4>Гравіювання</h4>
+         </div>
+      </a>
+   </div>
+</div>
+<div id="mobile-service-contacts" class="mobile-block-contacts">
+   <div class="mobile-block-contacts__ourStores">
+      <h5>Наші магазини</h5>
+      <ul class="mobile-block-contacts__ourStoresList">
+         <li>
+            <img src="images/svg/our-stores-location-icon.svg" alt="">
+            4517 Washington Ave. Manchester, Kentucky 39495
+         </li>
+         <li>
+            <img src="images/svg/our-stores-location-icon.svg" alt="">
+            2118 Thornridge Cir. Syracuse, Connecticut 35624
+         </li>
+         <li>
+            <img src="images/svg/our-stores-location-icon.svg" alt="">
+            3891 Ranchview Dr. Richardson, California 62639
+         </li>
+      </ul>
+   </div>
+   <div class="mobile-block-contacts__ourStores">
+      <h5>Наші магазини</h5>
+      <ul class="social-networks">
+         <li>
+            <a href="https://web.telegram.org/k/" target="_blank">
+               <img src="images/svg/our-stores-telegram.svg" alt="">
+            </a>
+         </li>
+         <li>
+            <a href="https://www.instagram.com/" target="_blank">
+               <img src="images/svg/our-stores-instagram.svg" alt="">
+            </a>
+         </li>
+         <li>
+            <a href="https://www.facebook.com/" target="_blank">
+               <img src="images/svg/our-stores-facebook.svg" alt="">
+            </a>
+         </li>
+         <li>
+            <a href="https://www.youtube.com/" target="_blank">
+               <img src="images/svg/our-stores-youtube.svg" alt="">
+            </a>
+         </li>
+      </ul>
+   </div>
+</div>
+      <main class="main page-placing-an-order">
+         <div class="n_container">
+            <div class="page-placing-an-order__head">
+               <div class="page-placing-an-order__wrapTitle">
+                  <a href="index.html" class="header__blockLogo">
+                     <img src="images/svg/logo.svg" alt="Grokholsky - интернет магазин">
+                  </a>
+                  <h1>Оформлення замовлення</h1>
+               </div>
+               <div class="page-placing-an-order__phone-and-schedule">
+                  <a href="tel:0732714912">(073) 271-49-12</a>
+                  <p>Будні: з 10 до 20</p>
+               </div>
+            </div>
+            <form action="#" class="order-form">
+               <div class="order-form__items">
+                  <div class="order-form__item">
+                     <div class="order-form__your-order">
+                        <div class="order-form__your-orderHead">
+                           <h3>Ваше замовлення</h3>
+                           <div class="block-edit">
+                              <p>Редагувати замовлення</p>
+                              <button type="button" class="no-cursor">
+                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.85714 12.8286L13 4.6L9.4 1L1.25714 9.14286L1 13L4.85714 12.8286Z" stroke="#66797C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="order-form__your-orderBlockProduct">
+                           <div class="block-image">
+                              <img src="images/slide-product-5.png" alt="">
+                           </div>
+                           <div class="wrap-info">
+                              <h5>Watch SE GPS + Cellular 44mm Space Gray...</h5>
+                              <p>Гарантія Size M <span>(12 міс.) — 1 299 ₴</span></p>
+                           </div>
+                           <div class="wrap-quantity-and-price">
+                              <p>14 199 ₴</p>
+                              <div class="basket-popup__number">
+                                 <span class="basket-popup__numberMinus">
+                                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M1.1665 1H12.8332" stroke="#99A6A7" stroke-width="1.5" stroke-linecap="square"/>
+                                    </svg>
+                                 </span>
+                                 <input class="basket-popup__numberInput" type="text" value="1" size="5">
+                                 <span class="basket-popup__numberPlus">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M6.99984 1.16699V12.8337M1.1665 7.00033H12.8332" stroke="#002024" stroke-width="1.5" stroke-linecap="square"/>
+                                    </svg>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="order-form__your-orderBlockProduct">
+                           <div class="block-image">
+                              <img src="images/category-image-1.png" alt="">
+                           </div>
+                           <div class="wrap-info">
+                              <h5>Watch SE GPS + Cellular 44mm Space Gray...</h5>
+                              <p>Гарантія Size M <span>(12 міс.) — 1 299 ₴</span></p>
+                           </div>
+                           <div class="wrap-quantity-and-price">
+                              <p>14 199 ₴</p>
+                              <div class="basket-popup__number">
+                                 <span class="basket-popup__numberMinus">
+                                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M1.1665 1H12.8332" stroke="#99A6A7" stroke-width="1.5" stroke-linecap="square"/>
+                                    </svg>
+                                 </span>
+                                 <input class="basket-popup__numberInput" type="text" value="1" size="5">
+                                 <span class="basket-popup__numberPlus">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M6.99984 1.16699V12.8337M1.1665 7.00033H12.8332" stroke="#002024" stroke-width="1.5" stroke-linecap="square"/>
+                                    </svg>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                        <div data-da="order-form-item-second, 2, 960" class="order-form__your-orderInfo">
+                           <ul>
+                              <li>
+                                 <p>Комісія 2,25%</p>
+                                 <p>1 199 ₴</p>
+                              </li>
+                              <li>
+                                 <p>Доставка</p>
+                                 <p>За тарифом «Нова пошта»</p>
+                              </li>
+                              <li>
+                                 <p>До сплати</p>
+                                 <p>58 199 <span class="currency icon">₴</span><span class="currency letters">грн.</span> <img src="images/svg/price-arrow-mobile.svg" alt=""></p>
+                              </li>
+                           </ul>
+                        </div>
+                        <button data-da="order-form-item-second, 3, 960" type="submit" class="popup-form__submit checkout-button">Підтвердити замовлення</button>
+                        <div data-da="order-form-item-second, 1, 960" class="order-form__blockPromoCode">
+                           <div class="section-not-all-information-is-shown">
+                              <div class="not-all-information-is-shown">
+                                 <button type="button" class="not-all-information-is-shown__button">
+                                    <span>Промокод</span>
+                                    <span>Промокод</span>
+                                    <img src="images/svg/store-description-arrow-black.svg" alt="">
+                                 </button>
+                                 <div class="wrap-field-and-button">
+                                    <input type="text" placeholder="Введить промокод">
+                                    <button type="button">Застосувати</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="order-form__item order-form-item-second">
+                     <div class="order-form__itemBlock">
+                        <h2>Ваші дані</h2>
+                        <div id="radio-i-am-a-new-and-regular-customer" class="order-form__wrap-radio-buttons custom-radio">
+                           <label class="custom-checkbox">
+                              <input id="i-am-a-new-customer" type="radio" name="customer" class="custom-checkbox__input" checked>
+                              <span class="custom-checkbox__box"></span>
+                              <span class="custom-checkbox__text">Я новий клієнт</span>
+                           </label>
+                           <label class="custom-checkbox">
+                              <input id="i-am-a-regular-customer" type="radio" name="customer" class="custom-checkbox__input">
+                              <span class="custom-checkbox__box"></span>
+                              <span class="custom-checkbox__text">Я постійний клієнт</span>
+                           </label>
+                        </div>
+                        <div class="order-form__i-am-a-new-customer active">
+                           <div class="order-form__wrap-field">
+                              <label for="first-name">Ім'я <span>*</span></label>
+                              <input id="first-name" class="order-form__field" name="first-name" type="text" placeholder="Степан">
+                           </div>
+                           <div class="order-form__wrap-field">
+                              <label for="first-last">Прізвище <span>*</span></label>
+                              <input id="first-last" class="order-form__field" name="first-last" type="text" placeholder="Бандера">
+                           </div>
+                           <div class="order-form__wrap-field">
+                              <label for="phone">Телефон <span>*</span></label>
+                              <input id="phone" class="order-form__field" name="phone" type="text" placeholder="+38 066 348 77 88">
+                           </div>
+                           <div class="order-form__wrap-field">
+                              <label for="email">Email (необов'язково)</label>
+                              <input id="email" class="order-form__field" name="email" type="text" placeholder="example@gmail.com">
+                           </div>
+                           <div class="order-form__authorization-through-social-networks">
+                              <p>Або авторизуйтеся через соціальні мережі</p>
+                              <div class="order-form__wrap-social-buttons">
+                                 <a href="#">
+                                    <img src="images/svg/social-button-icon-facebook.svg" alt="">
+                                    Facebook
+                                 </a>
+                                 <a href="#">
+                                    <img src="images/svg/social-button-icon-google.svg" alt="">
+                                    Google
+                                 </a>
+                                 <a href="#">
+                                    <img src="images/svg/social-button-icon-apple.svg" alt="">
+                                    Apple
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="order-form__i-am-a-regular-customer">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <th scope="row"><strong>Ім'я:</strong></th>
+                                    <td>Степан</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row"><strong>Прізвище:</strong></th>
+                                    <td>Бандера</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row"><strong>Телефон:</strong></th>
+                                    <td>+38 066 348 77 88</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row"><strong>Email:</strong></th>
+                                    <td>example@gmail.com</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <div class="order-form__itemBlock block-delivery custom-radio">
+                           <h2>Доставка</h2>
+                           <ul>
+                              <li>
+                                 <label class="custom-checkbox">
+                                    <input type="radio" name="delivery-choice" class="custom-checkbox__input" value="Самовивіз">
+                                    <span class="custom-checkbox__box"></span>
+                                    <span class="custom-checkbox__text">Самовивіз</span>
+                                 </label>
+                                 <span>Безкоштовно</span>
+                              </li>
+                              <li>
+                                 <label class="custom-checkbox">
+                                    <input type="radio" name="delivery-choice" class="custom-checkbox__input" value="Кур'єром по Києву">
+                                    <span class="custom-checkbox__box"></span>
+                                    <span class="custom-checkbox__text">Кур'єром по Києву</span>
+                                 </label>
+                                 <span>2 000 ₴</span>
+                              </li>
+                              <li>
+                                 <label class="custom-checkbox">
+                                    <input type="radio" name="delivery-choice" class="custom-checkbox__input" value="Відділення «Нова пошта»" checked>
+                                    <span class="custom-checkbox__box"></span>
+                                    <span class="custom-checkbox__text">Відділення <span>«Нова пошта»</span></span>
+                                 </label>
+                                 <span>За тарифом</span>
+                              </li>
+                           </ul>
+                           <div class="order-form__wrapSelects">
+                              <div class="order-form__wrap-field">
+                                 <label>Місто</label>
+                                 <select class="select2 select-sity" tabindex="-1" style="width: 100%;">
+                                    <option value=""></option>
+                                    <option value="Вільнянськ">Вільнянськ</option>
+                                    <option value="Ворожба">Ворожба</option>
+                                    <option value="Житомир">Житомир</option>
+                                    <option value="Золотоноша">Золотоноша</option>
+                                    <option value="Ізмаїл">Ізмаїл</option>
+                                    <option value="Кадіївка">Кадіївка</option>
+                                    <option value="Кам'янське">Кам'янське</option>
+                                    <option value="Радехів">Радехів</option>
+                                 </select>
+                              </div>
+                              <div class="order-form__wrap-field">
+                                 <label>Відділення</label>
+                                 <select class="select2 form__field select-novaya-poshota select-nova-poshta-branch" tabindex="-1" style="width: 100%;">
+                                    <option value=""></option>
+                                    <option value="Одеса, вул. Дальницька, 23/4">Одеса, вул. Дальницька, 23/4</option>
+                                    <option value="Вінниця, вул. Гладкова, 3">Вінниця, вул. Гладкова, 3</option>
+                                    <option value="Відд 6, Полтава, вул. Івана Мазепи, 12/8">Відд 6, Полтава, вул. Івана Мазепи, 12/8</option>
+                                    <option value="Відд 7, Миколаїв, вул. Космонавтів, 60/4">Відд 7, Миколаїв, вул. Космонавтів, 60/4</option>
+                                    <option value="Відд 8, Кривий Ріг, просп. 200-річчя Кривого Рогу, 24">Відд 8, Кривий Ріг, просп. 200-річчя Кривого Рогу, 24</option>
+                                    <option value="Відд 9, Запоріжжя, просп. Металургів, 19">Відд 9, Запоріжжя, просп. Металургів, 19</option>
+                                    <option value="Відд 12, Харків, вул. Бучми, 1">Відд 12, Харків, вул. Бучми, 1</option>
+                                    <option value="Відд 18, Київ, просп. Повітрофлотський, 66">Відд 18, Київ, просп. Повітрофлотський, 66</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <ul>
+                              <li>
+                                 <label class="custom-checkbox">
+                                    <input type="radio" name="delivery-choice" class="custom-checkbox__input" value="Адресна доставка «Нова Пошта»">
+                                    <span class="custom-checkbox__box"></span>
+                                    <span class="custom-checkbox__text">Адресна доставка <span>«Нова пошта»</span></span>
+                                 </label>
+                                 <span>За тарифом</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="order-form__itemBlock block-payment custom-radio">
+                           <h2>Оплата</h2>
+                           <ul>
+                              <li>
+                                 <div>
+                                    <label class="custom-checkbox">
+                                       <input type="radio" name="payment-choice" class="custom-checkbox__input" value="Переказ на картку">
+                                       <span class="custom-checkbox__box"></span>
+                                       <span class="custom-checkbox__text">Переказ на картку</span>
+                                    </label>
+                                    <span>+1%</span>
+                                 </div>
+                                 <p>Щоб отримати номер картки або будь-яку іншу інформацію, зв’яжіться з нами в будь-якому з месенджерів</p>
+                              </li>
+                              <li>
+                                 <div>
+                                    <label class="custom-checkbox">
+                                       <input type="radio" name="payment-choice" class="custom-checkbox__input" value="Карткою онлайн" checked>
+                                       <span class="custom-checkbox__box"></span>
+                                       <span class="custom-checkbox__text">Карткою онлайн</span>
+                                    </label>
+                                    <span>
+                                       <img src="images/svg/logo-way-for-pay.svg" alt="">
+                                       +2.25%
+                                    </span>
+                                 </div>
+                                 <p>Перед оплатой обязательно уточните наличие выбранного товара и актуальность цены у оператора 098 016-55-55</p>
+                              </li>
+                              <li>
+                                 <div>
+                                    <label class="custom-checkbox">
+                                       <input type="radio" name="payment-choice" class="custom-checkbox__input" value="Криптовалютою в USDT">
+                                       <span class="custom-checkbox__box"></span>
+                                       <span class="custom-checkbox__text">Криптовалютою в USDT</span>
+                                    </label>
+                                 </div>
+                                 <p>Для отримання номера USDT гаманця або будь-якої іншої інформації, зв’яжіться з нами в будь-якому з месенджерів</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="order-form__itemBlock block-textared">
+                           <p>Примітка до замовлення (необов'язково)</p>
+                           <div class="wrap-textarea">
+                              <textarea name="order-note" class="order-form__field"></textarea>
+                           </div>
+                           <label class="custom-checkbox">
+                              <input type="checkbox" name="delivery-choice" class="custom-checkbox__input">
+                              <span class="custom-checkbox__box"></span>
+                              <span class="custom-checkbox__text">Мені можна не дзвонити для підтвердження замовлення</span>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </main>
+      <footer class="footer">
+   <div class="n_container">
+      <div data-spollers="481, max" data-one-spoller class="block footer__items">
+         <div class="block__item footer__item hidden-mobile">
+            <button tabindex="-1" type="button" data-spoller class="block__title"></button>
+            <div class="block__text">
+               <div data-da="footer-last-item, 0, 480" class="footer__itemBlock">
+                  <a href="/" class="footer__logo">
+                     <img src="images/svg/logo.svg" alt="">
+                  </a>
+                  <address>вул. Володимирська, 81а</address>
+                  <a class="footer__phone" href="tel:0732714912">(073) 271-49-12</a>
+                  <p class="footer__schedule">Пн-Пт: с 10 до 20</p>
+                  <p class="footer__schedule">Сб-Нд: с 12 до 18</p>
+               </div>
+            </div>
+         </div>
+         <div class="block__item footer__item">
+            <div class="footer__itemBlock">
+               <button tabindex="-1" type="button" data-spoller class="block__title">Популярне</button>
+               <div class="block__text">
+                  <nav>
+                     <ul>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">б/у iPhone</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">Apple Watch</a></li>
+                        <li><a href="#">Аксесуари</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+         <div class="block__item footer__item">
+            <div class="footer__itemBlock">
+               <button tabindex="-1" type="button" data-spoller class="block__title">Інформація</button>
+               <div class="block__text">
+                  <nav>
+                     <ul>
+                        <li><a href="#">Доставка та оплата</a></li>
+                        <li><a href="#">Повернення та гарантія</a></li>
+                        <li><a href="#">Публічна оферта</a></li>
+                        <li><a href="#">Співробітництво</a></li>
+                        <li><a href="#">Контакти</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+         <div class="block__item footer__item">
+            <div class="footer__itemBlock">
+               <button tabindex="-1" type="button" data-spoller class="block__title">Послуги</button>
+               <div class="block__text">
+                  <nav>
+                     <ul>
+                        <li><a href="#">Сервіс #эплблять!</a></li>
+                        <li><a href="#">Обмін та Trade-in</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+         <div class="block__item footer__item footer-last-item">
+            <div class="footer__itemBlock">
+               <button tabindex="-1" type="button" data-spoller class="block__title">Будьте в курсі наших акцій і новин</button>
+               <div class="block__text">
+                  <form action="#" class="footer__form">
+                     <input type="text" placeholder="Введіть електронну пошту">
+                     <div class="footer__formWrapSubmit">
+                        <label class="custom-checkbox">
+                           <input type="checkbox" class="custom-checkbox__input" checked>
+                           <span class="custom-checkbox__box"></span>
+                           <span class="custom-checkbox__text">Я згоден на збір та обробку моїх персональних даних.</span>
+                        </label>
+                        <button type="submit">Підписатися</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="footer__wrapLanguageSelect">
+               <p>Оберіть мову</p>
+               <div class="footer__languagesSelect">
+                  <a href="#">ru</a>
+                  <a href="#" class="current-lang">ua</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer__bottom">
+         <a href="#">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M3.97828 7.87101C5.32228 10.5123 7.48761 12.6683 10.1289 14.0217L12.1823 11.9683C12.4343 11.7163 12.8076 11.6323 13.1343 11.7443C14.1796 12.0897 15.3089 12.2763 16.4663 12.2763C16.9796 12.2763 17.3996 12.6963 17.3996 13.2097V16.467C17.3996 16.9803 16.9796 17.4003 16.4663 17.4003C7.70228 17.4003 0.599609 10.2977 0.599609 1.53368C0.599609 1.02034 1.01961 0.600342 1.53294 0.600342H4.79961C5.31294 0.600342 5.73294 1.02034 5.73294 1.53368C5.73294 2.70034 5.91961 3.82034 6.26494 4.86567C6.36761 5.19234 6.29294 5.55634 6.03161 5.81768L3.97828 7.87101Z" fill="white"/>
+            </svg>
+         </a>
+         <a href="#">
+            <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M16.3997 8.73292C16.4029 9.9648 16.1151 11.18 15.5597 12.2796C14.9012 13.5972 13.8888 14.7055 12.636 15.4802C11.3832 16.255 9.93942 16.6657 8.4664 16.6663C7.3736 16.6691 6.29391 16.4429 5.29643 16.0041C5.05237 15.8967 4.77745 15.8737 4.52451 15.958L1.4971 16.9671C0.71534 17.2277 -0.0283991 16.484 0.232187 15.7022L1.24132 12.6748C1.32564 12.4219 1.30259 12.1469 1.19522 11.9029C0.75639 10.9054 0.530216 9.82572 0.533065 8.73292C0.533635 7.25989 0.944302 5.81611 1.71907 4.5633C2.49384 3.31049 3.6021 2.29812 4.91973 1.63959C6.01931 1.08419 7.23452 0.796375 8.4664 0.799587H8.93306C10.8785 0.906913 12.7159 1.72803 14.0936 3.10572C15.4713 4.48341 16.2924 6.32086 16.3997 8.26625V8.73292Z" fill="white"/>
+            </svg>
+         </a>
+      </div>
+   </div>
+   <div class="floating-product-price lock-padding">
+      <div class="n_container">
+         <div class="floating-product-price__items">
+            <div class="floating-product-price__item">
+               <div class="floating-product-price__blockImage">
+                  <img src="images/product-big-image-1.png" alt="">
+               </div>
+               <div class="floating-product-price__blockInfo">
+                  <h4>iPhone 15 Pro Max 256GB Blue Titanium</h4>
+                  <div class="floating-product-price__blockInfoBottom">
+                     <div class="wrap-stars">
+                        <img src="images/svg/star-orange.svg" alt="">
+                        <img src="images/svg/star-orange.svg" alt="">
+                        <img src="images/svg/star-orange.svg" alt="">
+                        <img src="images/svg/star-orange.svg" alt="">
+                        <img src="images/svg/star-orange.svg" alt="">
+                     </div>
+                     <div class="page-product__headLinks floating-product-price__links">
+                        <a href="#product-reviews-section">Відгуки 63</a>
+                        <a href="#accessories-section">Аксесуари</a>
+                        <a href="#description-section">Опис</a>
+                        <a href="#characteristics-section">Характеристики</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="floating-product-price__item">
+               <div class="wrap-price">
+                  <p><span class="price">140 399 <span class="currency icon">₴</span><span class="currency letters">грн.</span></span> <span class="wrap-discount"><span>175 399 ₴</span><span class="discountLabel">-30%</span></span></p>
+               </div>
+               <div class="wrap-buttons">
+                  <a href="#" class="add-to-cart">Додати в кошик</a>
+                  <a href="#show-form-buy-in-one-click-popup" class="buy-in-one-click popup-link">Купити в 1 клік</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+
+<div id="show-basket-popup" class="popup erformance-test-popup basket-popup cancel-reboot">
+   <div class="popup__body">
+      <div class="popup__content">
+         <a href="" class="popup__close">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M14 2L2 14M2 2L14 14" stroke="#66797C" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="round"/>
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M14 2L2 14M2 2L14 14" stroke="#002024" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+            </svg>
+         </a>
+         <h3 class="larger">Тест на працездатність</h3>
+         <div class="basket-popup__blockProduct">
+            <div class="basket-popup__blockProductInfo">
+               <div class="basket-popup__blockImage">
+                  <img src="images/basket-popup-product-image.png" alt="">
+               </div>
+               <div class="basket-popup__wrapName">
+                  <h2>iPhone 15 Pro Max 256GB Natural Titanium</h2>
+                  <p class="pure-orange">Скоро закінчиться</p>
+               </div>
+               <div class="basket-popup__price-and-quantity">
+                  <div class="wrap-price">
+                     <p><span class="price">50 199 <span class="currency icon">₴</span><span class="currency letters">грн.</span></span> <span class="wrap-discount"><span>25 399 ₴</span><span class="discountLabel">-30%</span></span></p>
+                  </div>
+                  <div class="basket-popup__number">
+                     <span class="basket-popup__numberMinus">
+                        <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M1.1665 1H12.8332" stroke="#99A6A7" stroke-width="1.5" stroke-linecap="square"/>
+                        </svg>
+                     </span>
+                     <input class="basket-popup__numberInput" type="text" value="1" size="5">
+                     <span class="basket-popup__numberPlus">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M6.99984 1.16699V12.8337M1.1665 7.00033H12.8332" stroke="#002024" stroke-width="1.5" stroke-linecap="square"/>
+                        </svg>
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div class="page-product__additional-services-and-warranty">
+               <button class="basket-popup__blockRemove" type="button">
+                  Видалити
+                  <img src="images/svg/basket-popup-block-remove-icon.svg" alt="">
+               </button>
+               <div data-spollers="" class="block">
+                  <div class="block__item">
+                     <button data-spoller="" class="block__title _active" type="button">Гарантія</button>
+                     <div class="block__text">
+                        <div class="block__textContent">
+                           <label class="custom-checkbox">
+                              <input type="checkbox" class="custom-checkbox__input" value="Size M (12 міс.) — 1 299 ₴">
+                              <span class="custom-checkbox__box"></span>
+                              <span class="custom-checkbox__text">Size M (12 міс.) — 1 299 ₴</span>
+                           </label>
+                           <p><strong>Безкоштовно</strong> відправка до Європи підмінний пристрій при потребі</p>
+                           <label class="custom-checkbox">
+                              <input type="checkbox" class="custom-checkbox__input" value="Size L (12 міс.) — 2 499 ₴">
+                              <span class="custom-checkbox__box"></span>
+                              <span class="custom-checkbox__text">Size L (12 міс.) — 2 499 ₴</span>
+                           </label>
+                           <p><strong>Безкоштовно</strong> відправка до Європи підмінний пристрій при потребі діагностика при поломці чистка роз'ємів протягом гарантійного строку налаштування пристрою</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="basket-popup__blockProduct">
+            <div class="basket-popup__blockProductInfo">
+               <div class="basket-popup__blockImage">
+                  <img src="images/basket-popup-product-image.png" alt="">
+               </div>
+               <div class="basket-popup__wrapName">
+                  <h2>iPhone 15 Pro Max 256GB Natural Titanium</h2>
+                  <p class="pure-orange">Скоро закінчиться</p>
+               </div>
+               <div class="basket-popup__price-and-quantity">
+                  <div class="wrap-price">
+                     <p><span class="price">50 199 <span class="currency icon">₴</span><span class="currency letters">грн.</span></span> <span class="wrap-discount"><span>25 399 ₴</span><span class="discountLabel">-30%</span></span></p>
+                  </div>
+                  <div class="basket-popup__number">
+                     <span class="basket-popup__numberMinus">
+                        <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M1.1665 1H12.8332" stroke="#99A6A7" stroke-width="1.5" stroke-linecap="square"/>
+                        </svg>
+                     </span>
+                     <input class="basket-popup__numberInput" type="text" value="1" size="5">
+                     <span class="basket-popup__numberPlus">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M6.99984 1.16699V12.8337M1.1665 7.00033H12.8332" stroke="#002024" stroke-width="1.5" stroke-linecap="square"/>
+                        </svg>
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div class="page-product__additional-services-and-warranty">
+               <button class="basket-popup__blockRemove" type="button">
+                  Видалити
+                  <img src="images/svg/basket-popup-block-remove-icon.svg" alt="">
+               </button>
+               <div data-spollers="" class="block">
+                  <div class="block__item">
+                     <button data-spoller="" class="block__title" type="button">Гарантія</button>
+                     <div class="block__text">
+                        <div class="block__textContent">
+                           <label class="custom-checkbox">
+                              <input type="checkbox" class="custom-checkbox__input" value="Size M (12 міс.) — 1 299 ₴">
+                              <span class="custom-checkbox__box"></span>
+                              <span class="custom-checkbox__text">Size M (12 міс.) — 1 299 ₴</span>
+                           </label>
+                           <p><strong>Безкоштовно</strong> відправка до Європи підмінний пристрій при потребі</p>
+                           <label class="custom-checkbox">
+                              <input type="checkbox" class="custom-checkbox__input" value="Size L (12 міс.) — 2 499 ₴">
+                              <span class="custom-checkbox__box"></span>
+                              <span class="custom-checkbox__text">Size L (12 міс.) — 2 499 ₴</span>
+                           </label>
+                           <p><strong>Безкоштовно</strong> відправка до Європи підмінний пристрій при потребі діагностика при поломці чистка роз'ємів протягом гарантійного строку налаштування пристрою</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="basket-popup__wrapBottomAndButton">
+            <div class="basket-popup__bottom">
+               <ul>
+                  <li class="delivery">
+                     <span>Доставка</span>
+                     <span>Безкоштовно</span>
+                  </li>
+                  <li class="discount">
+                     <span>Знижка</span>
+                     <span>-569 ₴</span>
+                  </li>
+                  <li class="shipping-and-price">
+                     <span>Всього</span>
+                     <span>100 238 ₴</span>
+                  </li>
+               </ul>
+            </div>
+            <a href="placing-an-order.html" class="popup-form__submit">Оформити покупку</a>
+         </div>
+         <section class="a-perfect-combination">
+            <h2>Ідеальне поєднання</h2>
+            <div class="a-perfect-combination-slider">
+               <div class="a-perfect-combination__items swiper-wrapper">
+                  <div class="a-perfect-combination__item swiper-slide">
+                     <div class="a-perfect-combination__blockImage">
+                        <img class="a-perfect-combination__image" alt="" src="images/a-perfect-combination-image-1.png"><span class="sk-spinner-pulse"></span>
+                        <a href="#">
+                           <img alt="" src="images/svg/a-perfect-combination-add-icon.svg">
+                           <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
+                        </a>
+                     </div>
+                     <p>6 619 ₴</p>
+                     <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
+                  </div>
+                  <div class="a-perfect-combination__item swiper-slide">
+                     <div class="a-perfect-combination__blockImage">
+                        <img class="a-perfect-combination__image" alt="" src="images/a-perfect-combination-image-2.png"><span class="sk-spinner-pulse"></span>
+                        <a href="#" class="added">
+                           <img alt="" src="images/svg/a-perfect-combination-add-icon.svg">
+                           <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
+                        </a>
+                     </div>
+                     <p>1 290 ₴</p>
+                     <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
+                  </div>
+                  <div class="a-perfect-combination__item swiper-slide">
+                     <div class="a-perfect-combination__blockImage">
+                        <img class="a-perfect-combination__image" alt="" src="images/a-perfect-combination-image-3.png"><span class="sk-spinner-pulse"></span>
+                        <a href="#">
+                           <img alt="" src="images/svg/a-perfect-combination-add-icon.svg">
+                           <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
+                        </a>
+                     </div>
+                     <p>6 619 ₴</p>
+                     <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
+                  </div>
+                  <div class="a-perfect-combination__item swiper-slide">
+                     <div class="a-perfect-combination__blockImage">
+                        <img class="a-perfect-combination__image" alt="" src="images/a-perfect-combination-image-4.png"><span class="sk-spinner-pulse"></span>
+                        <a href="#">
+                           <img alt="" src="images/svg/a-perfect-combination-add-icon.svg">
+                           <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
+                        </a>
+                     </div>
+                     <p>6 619 ₴</p>
+                     <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
+                  </div>
+                  <div class="a-perfect-combination__item swiper-slide">
+                     <div class="a-perfect-combination__blockImage">
+                        <img class="a-perfect-combination__image" alt="" src="images/a-perfect-combination-image-5.png"><span class="sk-spinner-pulse"></span>
+                        <a href="#">
+                           <img alt="" src="images/svg/a-perfect-combination-add-icon.svg">
+                           <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
+                        </a>
+                     </div>
+                     <p>6 619 ₴</p>
+                     <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
+                  </div>
+                  <div class="a-perfect-combination__item swiper-slide">
+                     <div class="a-perfect-combination__blockImage">
+                        <img class="a-perfect-combination__image" alt="" src="images/a-perfect-combination-image-6.png"><span class="sk-spinner-pulse"></span>
+                        <a href="#">
+                           <img alt="" src="images/svg/a-perfect-combination-add-icon.svg">
+                           <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
+                        </a>
+                     </div>
+                     <p>1 290 ₴</p>
+                     <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
+                  </div>
+                  <div class="a-perfect-combination__item swiper-slide">
+                     <div class="a-perfect-combination__blockImage">
+                        <img class="a-perfect-combination__image" alt="" src="images/a-perfect-combination-image-7.png"><span class="sk-spinner-pulse"></span>
+                        <a href="#">
+                           <img alt="" src="images/svg/a-perfect-combination-add-icon.svg">
+                           <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
+                        </a>
+                     </div>
+                     <p>6 619 ₴</p>
+                     <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
+                  </div>
+               </div>
+               <div class="swiper-scrollbar"></div>
+            </div>
+         </section>
+      </div>
+   </div>
+</div>
+   </div>
+
+   <script src="js/script.min.js?_v=20240505194413"></script>
+
+   <script src="files/js/jquery-3.7.1.min.js?_v=20240505194413"></script>
+   <script src="files/js/plus-minus.js?_v=20240505194413"></script>
+
+   <script src="files/js/demo-script.js?_v=20240505194413"></script>
+
+   <script src="files/select2/js/select2.full.min.js?_v=20240505194413"></script>
+   <script src="files/select2/js/select2.min.js?_v=20240505194413"></script>
+   <script src="files/select2/js/select2-init.js?_v=20240505194413"></script>
+   
+   <script src="files/swiper/js/swiper-bundle.min.js?_v=20240505194413"></script>
+   <script src="files/swiper/js/swiper-init.js?_v=20240505194413"></script>
+
+</body>
+</html>
