@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20240506183039">
    <link rel="stylesheet" href="css/style.min.css?_v=20240506183039">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
-   <title>Обмін та Trade-in</title>
+   <title>Продаж та обмін iPhone</title>
 </head>
 
 <body>
@@ -1642,9 +1642,9 @@
    </div>
 </div>
       <main class="main">
-         <div class="page__head">
-            <div class="page__headWrapTitle">
-               <div class="n_container wrap-title">
+         <div class="n_container">
+            <div class="page__head">
+               <div class="wrap-title">
                   <ul class="breadcrumbs">
                      <li class="breadcrumbs__item">
                         <a class="breadcrumbs__link" href="index.html">Головна</a>
@@ -1667,82 +1667,289 @@
                   </ul>
                </div>
             </div>
-         </div>
-         <div class="n_container">
-            <h1 class="exchange-trade-in__title">Обмін та Trade-in</h1>
-            <div class="exchange-trade-in__blockText">
-               <p>Отримай гроші за свою стару Apple</p>
-               <p>техніку. Перетворюй девайс, який у тебе</p>
-               <p>є, на той, про який мрієш.</p>
-            </div>
-            <div class="exchange-trade-in__gadgetsItems">
-               <a href="choose-your-device.html" class="exchange-trade-in__gadgetsItem wrap-lazy-load-image">
-                  <img src="images/exchange-trade-in-gadgets-item-1.png" alt="">
-                  <p>iPhone</p>
-               </a>
-               <a href="#" class="exchange-trade-in__gadgetsItem wrap-lazy-load-image">
-                  <img src="images/exchange-trade-in-gadgets-item-2.png" alt="">
-                  <p>MacBook</p>
-               </a>
-               <a href="#" class="exchange-trade-in__gadgetsItem wrap-lazy-load-image">
-                  <img src="images/exchange-trade-in-gadgets-item-3.png" alt="">
-                  <p>Apple Watch</p>
-               </a>
-               <a href="#" class="exchange-trade-in__gadgetsItem wrap-lazy-load-image">
-                  <img src="images/exchange-trade-in-gadgets-item-4.png" alt="">
-                  <p>iPad</p>
-               </a>
-               <a href="#" class="exchange-trade-in__gadgetsItem wrap-lazy-load-image">
-                  <img src="images/exchange-trade-in-gadgets-item-5.png" alt="">
-                  <p>AirPods</p>
-               </a>
-            </div>
-            <div class="exchange-trade-in__items">
-               <div class="exchange-trade-in__item">
-                  <div class="exchange-trade-in__itemBlockForm">
-                     <h2>Хочу продати техніку Apple</h2>
-                     <form action="#" class="sell-equipment-form">
-                        <div class="sell-equipment-form__wrap-field">
-                           <label for="sell-equipment-form-name">Ім'я</label>
-                           <input type="text" id="sell-equipment-form-name" placeholder="Степан">
-                        </div>
-                        <div class="sell-equipment-form__wrap-field">
-                           <label for="sell-equipment-form-phone">Телефон</label>
-                           <input type="text" id="sell-equipment-form-phone" placeholder="+38">
-                        </div>
-                        <button type="submit">Чекаю дзвінка!</button>
-                     </form>
-                  </div>
-                  <div class="exchange-trade-in__itemBlockAddress">
-                     <address>ул. Володимирська, 81</address>
-                     <a class="look-at-map" href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B0,+81,+%D0%A0%D1%83%D0%B1%D1%96%D0%B6%D0%BD%D0%B5,+%D0%9B%D1%83%D0%B3%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+93000/@49.0390908,38.3679413,18z/data=!4m5!3m4!1s0x412014a0d3defb11:0xc45b54eb983a0d9e!8m2!3d49.038943!4d38.3681471?entry=ttu" target="_blank">Дивитись на мапі</a>
-                     <a href="tel:0730411831">(073) 041-18-31</a>
-                     <p>Пн-Пт с 10 до 20 / Сб-Вс с 12 до 18</p>
+            <h1 class="choose-your-device__title">Продаж та обмін iPhone</h1>
+            <h2 class="choose-your-device__subTitle">Вибери свій пристрій</h2>
+            <div id="tabs" class="tabs">
+               <div class="tabs__wrap-tab-buttons">
+                  <div class="tabs__wrap-tab">
+                     <div data-tab="tab1" class="tab">iPhone 15</div>
+                     <div data-tab="tab2" class="tab">iPhone 14</div>
+                     <div data-tab="tab3" class="tab">iPhone 13</div>
+                     <div data-tab="tab4" class="tab tab-active">iPhone 12</div>
+                     <div data-tab="tab5" class="tab">iPhone 11</div>
+                     <div data-tab="tab6" class="tab">iPhone Xs/Xr</div>
+                     <div data-tab="tab7" class="tab">iPhone X/8</div>
+                     <div data-tab="tab8" class="tab">iPhone 7</div>
+                     <div data-tab="tab9" class="tab">iPhone SE</div>
                   </div>
                </div>
-               <div class="exchange-trade-in__item">
-                  <section class="exchange-trade-in__itemBlock">
-                     <h2>Що ми купимо у тебе?</h2>
-                     <p>Можна сказати, що абсолютно все, але, будемо чесні, є нюанс – пристрої, яким більше 8 років, ми купимо за досить низькою ціною. Ось, щоправда, може краще нехай буде вдома як резервне? Чи подарувати комусь?</p>
-                  </section>
-                  <section class="exchange-trade-in__itemBlock">
-                     <h2>Скільки це займе часу?</h2>
-                     <p>Оцінку твого пристрою ми зробимо трохи довше, ніж миттєво. Купівля нового – по клацанню пальців. Далі ми запропонуємо тобі одразу ж перенести дані зі старого пристрою на новий: залежно від обсягів твого сховища, це може тривати від 30 до 300 хвилин.</p>
-                  </section>
-                  <section class="exchange-trade-in__itemBlock">
-                     <h2>А комплектація важлива?</h2>
-                     <p>Ні. Особливо якщо йдеться про навушники – ми їх точно не заберемо. А ось все інше – коробку, кабелі та перехідники – приноси.</p>
-                  </section>
-                  <section class="exchange-trade-in__itemBlock">
-                     <h2>Що можна взяти натомість?</h2>
-                     <p>Як кажуть, завжди можна взяти грошима у чистому вигляді. Але якщо що – можна відразу докупити новий або БУ пристрій замість того, що ти щойно благополучно продав.</p>
-                  </section>
-                  <section class="exchange-trade-in__itemBlock">
-                     <h2>Відповідальність за особисті дані</h2>
-                     <p>Так, ми зітремо з пристрою всю інформацію про тебе. Але якщо є хоч шанс, що ти дуже непокоїшся за непристойні фото свого кота в душі чи секретні документи ФБР, краще видали все самостійно. Ми допомагаємо, але відповідальність тобі. До речі, не забудь зробити копію важливих даних собі, щоби нічого не втратити!</p>
-                  </section>
+               <div data-tabcontent="tab1" class="tabContent">
+                  <div class="tabs__items">
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-4.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-2.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-1.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-3.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                  </div>
+               </div>
+               <div data-tabcontent="tab2" class="tabContent">
+                  <div class="tabs__items">
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-1.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-4.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-2.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-3.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                  </div>
+               </div>
+               <div data-tabcontent="tab3" class="tabContent">
+                  <div class="tabs__items">
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-1.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-2.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-4.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-3.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                  </div>
+               </div>
+               <div data-tabcontent="tab4" class="tabContent content-active">
+                  <div class="tabs__items">
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-1.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-2.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-3.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-4.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                  </div>
+               </div>
+               <div data-tabcontent="tab5" class="tabContent">
+                  <div class="tabs__items">
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-1.png" alt="">
+                        </a>
+                        <p>iPhone 11 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-2.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-3.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-4.png" alt="">
+                        </a>
+                        <p>iPhone 12 Pro Max</p>
+                     </div>
+                  </div>
+               </div>
+               <div data-tabcontent="tab6" class="tabContent">
+                  <div class="tabs__items">
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-4.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-2.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-1.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-3.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                  </div>
+               </div>
+               <div data-tabcontent="tab7" class="tabContent">
+                  <div class="tabs__items">
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-3.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-2.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-1.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-4.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                  </div>
+               </div>
+               <div data-tabcontent="tab8" class="tabContent">
+                  <div class="tabs__items">
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-1.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-3.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-4.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-2.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro</p>
+                     </div>
+                  </div>
+               </div>
+               <div data-tabcontent="tab9" class="tabContent">
+                  <div class="tabs__items">
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-3.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-1.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-4.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro Max</p>
+                     </div>
+                     <div class="tabs__item">
+                        <a href="manager.html" class="tabs__blockImage wrap-lazy-load-image">
+                           <img src="images/choose-your-device-2.png" alt="">
+                        </a>
+                        <p>iPhone 14 Pro</p>
+                     </div>
+                  </div>
                </div>
             </div>
+            <section class="store-description">
+               <h2>Grokholsky: магазин техніки Apple і не тільки!</h2>
+               <div class="store-description__blockText">
+                  <p>Ласкаво просимо в Grokholsky – ваш ідеальний партнер у світі техніки Apple. Ми пропонуємо широкий асортимент продукції Apple, включно з останніми моделями iPhone, iPad, MacBook, iMac та інші інноваційні пристрої. Ласкаво просимо в Grokholsky – ваш ідеальний партнер у світі техніки Apple. Ми пропонуємо широкий асортимент продукції Apple, включно з останніми моделями iPhone, iPad, MacBook, iMac та інші інноваційні пристрої. Ласкаво просимо в Grokholsky – ваш ідеальний партнер у світі техніки Apple. Ми пропонуємо широкий асортимент продукції Apple, включно з останніми моделями iPhone, iPad, MacBook, iMac та інші інноваційні пристрої. Ласкаво просимо в Grokholsky – ваш ідеальний партнер у світі техніки Apple. Ми пропонуємо широкий асортимент продукції Apple, включно з останніми моделями iPhone, iPad, MacBook, iMac та інші інноваційні пристрої.</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia praesentium ratione consequuntur libero assumenda saepe fugit explicabo inventore incidunt esse magnam labore eveniet optio voluptatem repudiandae quo cumque, dolores, autem rem quaerat unde vitae ut totam possimus? Dolorum officia optio amet odio deserunt, nesciunt doloremque veniam in atque alias, libero at unde eum quisquam accusantium aliquam distinctio, earum rerum.</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore corporis fugit, velit voluptates quidem expedita rerum, incidunt voluptate debitis delectus doloremque exercitationem ut aliquam explicabo harum non? Inventore repellendus, odio itaque corrupti laborum incidunt dolore veniam sed minus aperiam molestias recusandae maxime ratione tempore, sapiente eaque voluptatem ipsam iusto officiis, dolores omnis quas. Enim illum sunt delectus totam qui cupiditate repellendus odit maiores, quae, praesentium veniam, cum fugit saepe corporis quam itaque nemo non earum ut quidem beatae debitis architecto numquam! Sequi totam deserunt non labore odit nobis vitae, velit nam cupiditate provident porro in delectus dolor. Incidunt maiores itaque ducimus quia, atque animi rem dolorum, possimus ratione placeat recusandae ad repellendus dolorem saepe quasi nesciunt assumenda? Officia consequatur, iusto, saepe aut tempora expedita architecto rerum perspiciatis, earum qui molestiae. Praesentium perferendis eum quia?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi adipisci esse sequi dolores, rerum facere iste quas quae veniam non?</p>
+               </div>
+               <button class="store-description__button" type="button">
+                  <span>Показати більше</span>
+                  <span>Показати меньше</span>
+                  <img src="images/svg/store-description-arrow.svg" alt="">
+               </button>
+            </section>
          </div>
       </main>
 		<footer class="footer">
@@ -2129,5 +2336,8 @@
 	<script src="files/js/jquery-3.7.1.min.js?_v=20240506183039"></script>
 	<script src="files/js/plus-minus.js?_v=20240506183039"></script>
 
+   <script src="files/tabs/script.js?_v=20240506183039"></script>
+
 </body>
 </html>
+
