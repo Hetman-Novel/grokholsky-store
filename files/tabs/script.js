@@ -28,6 +28,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			var subTabId = this.getAttribute('data-tab');
 			var correspondingSubTabContent = document.querySelector('#subTabs .subTabContent[data-tabcontent="' + subTabId + '"]');
+			var tabsWrapTab = document.querySelector('#subTabs .tabs__wrap-tab');
+
+			// Удаляем предыдущий класс у блока tabs__wrap-tab
+			tabsWrapTab.classList.forEach(function(className) {
+				if(className.startsWith('step-')) {
+					tabsWrapTab.classList.remove(className);
+				}
+			});
+
+			// Добавляем класс в зависимости от выбранной суб-вкладки
+			tabsWrapTab.classList.add('step-' + subTabId);
 
 			// Убираем активные классы у всех суб-вкладок и контентов
 			document.querySelectorAll('#subTabs .subTab').forEach(function (subTab) {
@@ -42,4 +53,5 @@ document.addEventListener("DOMContentLoaded", function () {
 			correspondingSubTabContent.classList.add('subContent-active');
 		});
 	});
+
 });
