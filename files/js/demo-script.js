@@ -73,4 +73,23 @@ document.addEventListener("DOMContentLoaded", function() {
             window.location.href = 'thank-you-for-your-order.html';
         });
     }
+
+    // Redirect to another page after placing an order
+    let reportSentButtons = document.querySelectorAll('.report-sent-button');
+    if (reportSentButtons) {
+        reportSentButtons.forEach(function(reportSentButton) {
+            reportSentButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                document.querySelector('#tabs').classList.remove('active')
+                document.querySelector('.after-report-sent').classList.add('active')
+
+                let tabsWrapTabButtons = document.querySelector('.tabs__wrap-tab-buttons');
+                if (tabsWrapTabButtons) {
+                    let headerHeight = document.querySelector('.header__wrapper').offsetHeight;
+                    let scrollPosition = tabsWrapTabButtons.getBoundingClientRect().top + window.pageYOffset;
+                    window.scrollTo({ top: scrollPosition - headerHeight, behavior: 'smooth' });
+                }
+            });
+        });
+    }
 })
