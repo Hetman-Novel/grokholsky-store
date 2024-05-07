@@ -80,13 +80,24 @@ document.addEventListener("DOMContentLoaded", function() {
         reportSentButtons.forEach(function(reportSentButton) {
             reportSentButton.addEventListener('click', function(event) {
                 event.preventDefault();
-                document.querySelector('#tabs').classList.remove('active')
-                document.querySelector('.after-report-sent').classList.add('active')
 
-                let tabsWrapTabButtons = document.querySelector('.tabs__wrap-tab-buttons');
-                if (tabsWrapTabButtons) {
+                let tabsBlock = document.querySelector('.tabs__block')
+                let tabsManager = document.querySelector('.tabs-manager')
+                let afterReportSent = document.querySelector('.after-report-sent')
+                tabsBlock.classList.remove('active')
+                tabsManager.classList.remove('active')
+                afterReportSent.classList.add('active')
+                
+                setTimeout(function() {
+                    afterReportSent.classList.remove('active')
+                    tabsManager.classList.add('active')
+                    tabsBlock.classList.add('active')
+                }, 8000);
+
+                let chooseYourDeviceSubTitle = document.querySelector('.choose-your-device__subTitle');
+                if (chooseYourDeviceSubTitle) {
                     let headerHeight = document.querySelector('.header__wrapper').offsetHeight;
-                    let scrollPosition = tabsWrapTabButtons.getBoundingClientRect().top + window.pageYOffset;
+                    let scrollPosition = chooseYourDeviceSubTitle.getBoundingClientRect().top + window.pageYOffset;
                     window.scrollTo({ top: scrollPosition - headerHeight, behavior: 'smooth' });
                 }
             });
