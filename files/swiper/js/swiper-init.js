@@ -392,3 +392,37 @@ if (productComparisonSlider) {
       },*/
    });
 }
+
+let reviewsSlider = document.querySelector('.reviews__slider')
+if (reviewsSlider) {
+   new Swiper(reviewsSlider, {
+      autoHeight: false,
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      spaceBetween: 16,
+      speed: 800,
+      effect: 'slide',
+      pagination: {
+         el: '#reviews-slider-swiper-pagination',
+         clickable: true,
+      },
+      breakpoints: {
+         0: {
+            slidesPerView: 1.255,
+         },
+         576: {
+            slidesPerView: 2,
+         },
+         861: {
+            slidesPerView: 1,
+         },
+         1025: {
+            slidesPerView: 2,
+         },
+         1201: {
+            slidesPerView: 3,
+         }
+      },
+   });
+}
