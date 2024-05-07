@@ -7684,6 +7684,180 @@ body._touch .header .menu__list > li._active .menu__arrow {
   pointer-events: none;
 }
 
+/* Page - Repair of apple equipment */
+
+.repair-of-apple-equipment .exchange-trade-in__title {
+  background-color: #FFC200;
+  margin: 7px auto 0;
+  padding: 1px 15px 4px;
+  text-align: center;
+}
+
+.repair-of-apple-equipment .exchange-trade-in__title span {
+  margin-left: 5px;
+  padding-left: 6px;
+}
+
+.repair-of-apple-equipment__subTitle {
+  font-size: 20px;
+  line-height: 28px;
+  margin: 29px 0 0;
+  text-align: center;
+}
+
+.repair-of-apple-equipment__wrap-form {
+  max-width: 316px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-field-submit {
+  border: 1px solid #CCD2D3;
+  border-radius: 12px;
+  height: 54px;
+  margin-top: 10px;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-field-submit form {
+  display: flex;
+  height: inherit;
+  padding: 4px;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-field-submit form input,
+.repair-of-apple-equipment__wrap-form-wrap-field-submit form button {
+  height: 44px;
+  outline: none;
+  border-radius: 12px;
+  font-size: 20px;
+  line-height: 44px;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-field-submit form input {
+  border: none;
+  padding-left: 11px;
+  padding-right: 11px;
+  width: calc(100% - 126px);
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-field-submit form input::-moz-placeholder {
+  color: #CCD2D3;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-field-submit form input::placeholder {
+  color: #CCD2D3;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-field-submit form button {
+  background-color: #FFC200;
+  font-weight: 700;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 126px;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-info {
+  align-items: center;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding: 2px 2px 2px 12px;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-info.on-diagnosis {
+  background-color: #FEE2F3;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-info.on-diagnosis p:nth-child(2) {
+  background-color: #F744B0;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-info.in-work-of-master {
+  background-color: #E6FCFF;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-info.in-work-of-master p:nth-child(2) {
+  background-color: #1CDAF4;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-info.going-to-europe {
+  background-color: #FFF6DF;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-info.going-to-europe p:nth-child(2) {
+  background-color: #FBBE21;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-info.ready-to-issue {
+  background-color: #E7FCF5;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-info.ready-to-issue p:nth-child(2) {
+  background-color: #12E69A;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-info p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-info p:nth-child(1) {
+  padding-right: 8px;
+}
+
+.repair-of-apple-equipment__wrap-form-wrap-info p:nth-child(2) {
+  border-radius: inherit;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.repair-of-apple-equipment__title-above-items {
+  font-size: 28px;
+  line-height: 34.66px;
+  margin: 48px 0 0;
+  text-align: center;
+}
+
+.repair-of-apple-equipment__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 28px auto 55px;
+  max-width: 1041px;
+}
+
+.repair-of-apple-equipment__item {
+  background: #F2F4F4;
+  border-radius: 16px;
+  display: block;
+  padding-bottom: 39.4%;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  width: calc(33.3333% - 20px);
+}
+
+.repair-of-apple-equipment__item h4 {
+  color: #002024;
+  font-size: 28px;
+  line-height: 34.66px;
+  margin: 0 auto;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 14%;
+  text-align: center;
+}
+
+.repair-of-apple-equipment__item img {
+  bottom: 0;
+  max-height: 75%;
+  max-width: 90%;
+  position: absolute;
+  right: 0;
+}
+
 /* Footer */
 
 .footer {
@@ -8130,6 +8304,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .tab-form__wrap-fields .tab-form__wrap-field:nth-child(even) {
     padding-left: 6px;
+  }
+
+  .repair-of-apple-equipment__item:nth-child(3) img:nth-child(3) {
+    display: none;
   }
 
   .footer__items {
@@ -9677,6 +9855,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
     line-height: 24px;
     padding: 11px 18px;
   }
+
+  .repair-of-apple-equipment__title-above-items {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .repair-of-apple-equipment__item h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 @media screen and (max-width: 991.98px) {
@@ -10074,6 +10262,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .manager #tabs .tabs__block {
     padding-bottom: 120px;
+  }
+
+  .repair-of-apple-equipment__item h4 {
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .footer.block-with-a-price-is-displayed {
@@ -11219,6 +11412,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .breadcrumbs {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .breadcrumbs__name {
+    padding-right: 5px;
   }
 
   .n_sec-title {
@@ -13067,6 +13264,101 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-bottom: 56px;
   }
 
+  .repair-of-apple-equipment .exchange-trade-in__title {
+    margin-top: 9px;
+  }
+
+  .repair-of-apple-equipment .exchange-trade-in__title {
+    background: none;
+    display: table;
+    padding: 0;
+  }
+
+  .repair-of-apple-equipment .exchange-trade-in__title span {
+    background-color: #FFC200;
+    display: inline-block;
+  }
+
+  .repair-of-apple-equipment .exchange-trade-in__title span:nth-child(1) {
+    border-radius: 8px;
+    padding: 2px 9px 4px;
+  }
+
+  .repair-of-apple-equipment .exchange-trade-in__title span:nth-child(2) {
+    border-radius: 0 0 8px 8px;
+    top: -9px;
+    position: relative;
+    padding: 0 9px 4px;
+  }
+
+  .repair-of-apple-equipment__subTitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 5px;
+  }
+
+  .repair-of-apple-equipment__wrap-form-wrap-field-submit {
+    height: 48px;
+    margin-top: 9px;
+  }
+
+  .repair-of-apple-equipment__wrap-form-wrap-field-submit form {
+    padding: 3px;
+  }
+
+  .repair-of-apple-equipment__wrap-form-wrap-field-submit form input,
+  .repair-of-apple-equipment__wrap-form-wrap-field-submit form button {
+    font-size: 16px;
+    line-height: 24px;
+    height: 40px;
+  }
+
+  .repair-of-apple-equipment__wrap-form-wrap-field-submit form input {
+    width: calc(100% - 102px);
+  }
+
+  .repair-of-apple-equipment__wrap-form-wrap-field-submit form button {
+    border-radius: 10px;
+    width: 102px;
+  }
+
+  .repair-of-apple-equipment__wrap-form-wrap-info {
+    padding-left: 10px;
+  }
+
+  .repair-of-apple-equipment__wrap-form-wrap-info p:nth-child(1) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .repair-of-apple-equipment__wrap-form-wrap-info p:nth-child(2) {
+    font-family: Gilroy;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 1px 9px;
+  }
+
+  .repair-of-apple-equipment__title-above-items {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 19px;
+  }
+
+  .repair-of-apple-equipment__items {
+    margin: 14px auto -3px;
+  }
+
+  .repair-of-apple-equipment__item h4 {
+    font-size: 14px;
+    line-height: 20px;
+    top: 13%;
+  }
+
+  .repair-of-apple-equipment__item img {
+    max-height: 76%;
+    max-width: 95%;
+  }
+
   .footer__item.hidden-mobile {
     display: none;
   }
@@ -13181,6 +13473,38 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .sell-equipment-form__wrap-field:nth-child(even) {
     padding-left: 0;
+  }
+
+  .repair-of-apple-equipment__item {
+    border-radius: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .repair-of-apple-equipment__item:nth-child(1),
+  .repair-of-apple-equipment__item:nth-child(2) {
+    padding-bottom: 60.2%;
+    width: calc(50% - 10px);
+  }
+
+  .repair-of-apple-equipment__item:nth-child(3) {
+    padding-bottom: 55%;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .repair-of-apple-equipment__item:nth-child(3) img:nth-child(2) {
+    display: none;
+  }
+
+  .repair-of-apple-equipment__item:nth-child(3) img:nth-child(3) {
+    display: block;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .repair-of-apple-equipment__item:nth-child(3) img {
+    width: 77%;
   }
 
   .footer {
@@ -13737,6 +14061,22 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .tab-form button:hover {
     background-color: #0ed5ff;
+  }
+
+  .repair-of-apple-equipment__wrap-form-wrap-field-submit form button {
+    transition: 0.2s ease 0s;
+  }
+
+  .repair-of-apple-equipment__wrap-form-wrap-field-submit form button:hover {
+    background-color: #0ed5ff;
+  }
+
+  .repair-of-apple-equipment__item {
+    transition: 0.3s ease 0s;
+  }
+
+  .repair-of-apple-equipment__item:hover {
+    background-color: #FFC200;
   }
 
   .footer__itemBlock ul a:hover,
