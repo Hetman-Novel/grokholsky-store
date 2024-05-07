@@ -7488,10 +7488,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
   width: 100%;
 }
 
+.tabs__block.active,
 .tabs-manager.active {
   display: block !important;
 }
 
+.tabs__block,
 .tabs-manager {
   display: none !important;
 }
