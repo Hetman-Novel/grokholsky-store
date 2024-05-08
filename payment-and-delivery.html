@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20240508185546">
    <link rel="stylesheet" href="css/style.min.css?_v=20240508185546">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
-   <title>Ремонт техніки Apple</title>
+   <title>Оплата та доставка</title>
 </head>
 
 <body>
@@ -1641,7 +1641,7 @@
       </ul>
    </div>
 </div>
-      <main class="main repair-of-apple-equipment">
+      <main class="main payment-and-delivery">
          <div class="page__head">
             <div class="page__headWrapTitle">
                <div class="n_container wrap-title">
@@ -1650,71 +1650,103 @@
                         <a class="breadcrumbs__link" href="index.html">Головна</a>
                      </li>
                      <li class="breadcrumbs__item">
-                        <span class="breadcrumbs__name">Сервіс #эплблять!</span>
+                        <span class="breadcrumbs__name">Оплата та доставка</span>
                      </li>
                   </ul>
                </div>
             </div>
          </div>
          <div class="n_container">
-            <h1 class="exchange-trade-in__title">
-               <span>Ремонт техніки</span> 
-               <span>Apple</span>
-            </h1>
-            <h2 class="repair-of-apple-equipment__subTitle">Отримати статус ремонту</h2>
-            <div class="repair-of-apple-equipment__wrap-form">
-               <div class="repair-of-apple-equipment__wrap-form-wrap-field-submit">
-                  <form action="#">
-                     <input type="tel" placeholder="+380(__)__-__-__">
-                     <button type="submit">Отримати</button>
-                  </form>
+            <h1>Оплата та доставка</h1>
+            <div id="tabs" class="tabs">
+               <div class="tabs__wrap-tab-buttons">
+                  <div class="tabs__wrap-tab">
+                     <div data-tab="tab1" class="tab tab-active">Оплата</div>
+                     <div data-tab="tab2" class="tab">Доставка</div>
+                  </div>
                </div>
-               <!--
-                  
-                  * На діагностиці: on-diagnosis
-                  * В роботі у майстра: in-work-of-master
-                  * Їде в Європу: going-to-europe
-                  * Готове до видачі: ready-to-issue
-
-               -->
-               <div class="repair-of-apple-equipment__wrap-form-wrap-info on-diagnosis">
-                  <p><strong>iPhone 14 Pro Max</strong></p>
-                  <p><strong>На діагностиці</strong></p>
+               <div data-tabcontent="tab1" class="tabContent content-active">
+                  <div class="payment-and-delivery__content">
+                     <div class="payment-and-delivery__block">
+                        <span class="payment-and-delivery__blockIcon wrap-lazy-load-image">
+                           <img src="images/svg/payment-and-delivery-list-icon-1.svg" alt="">
+                           <img src="images/svg/payment-and-delivery-list-icon1-1-mobile.svg" alt="">
+                        </span>
+                        <p>Готівка</p>
+                     </div>
+                     <div class="payment-and-delivery__block">
+                        <span class="payment-and-delivery__blockIcon wrap-lazy-load-image">
+                           <img src="images/svg/payment-and-delivery-list-icon-2.svg" alt="">
+                           <img src="images/svg/payment-and-delivery-list-icon1-2-mobile.svg" alt="">
+                        </span>
+                        <p>Переказ на картку <span>(+1% банківська комісія)</span></p>
+                     </div>
+                     <div class="payment-and-delivery__block">
+                        <span class="payment-and-delivery__blockIcon wrap-lazy-load-image">
+                           <img src="images/svg/payment-and-delivery-list-icon-3.svg" alt="">
+                           <img src="images/svg/payment-and-delivery-list-icon1-3-mobile.svg" alt="">
+                        </span>
+                        <p>Рахунок для підприємств виставляє ФОП без ПДВ <span>(+2% комісія)</span></p>
+                     </div>
+                     <div class="payment-and-delivery__block">
+                        <span class="payment-and-delivery__blockIcon wrap-lazy-load-image">
+                           <img src="images/svg/payment-and-delivery-list-icon-4.svg" alt="">
+                           <img src="images/svg/payment-and-delivery-list-icon1-4-mobile.svg" alt="">
+                        </span>
+                        <p>Термінал <span>(+1% комісія банку)</span></p>
+                     </div>
+                     <div class="payment-and-delivery__block">
+                        <span class="payment-and-delivery__blockIcon wrap-lazy-load-image">
+                           <img src="images/svg/payment-and-delivery-list-icon-5.svg" alt="">
+                           <img src="images/svg/payment-and-delivery-list-icon1-5-mobile.svg" alt="">
+                        </span>
+                        <div>
+                           <img src="images/svg/payment-and-delivery-list-logo-wayforpay.svg" alt="">
+                           <p>Оплата онлайн на сайті через WayForPay <span>(+2.25% комісія сервісу)</span></p>
+                        </div>
+                     </div>
+                     <div class="payment-and-delivery__blockInfo">
+                        <p>Якщо залишилися питання – ми на зв’язку</p>
+                        <a href="mailto:info@grokholsky.com">info@grokholsky.com</a>
+                        <a href="tel:0732329114">(073) 232-91-14</a>
+                     </div>
+                  </div>
                </div>
-            </div>
-            <h3 class="repair-of-apple-equipment__title-above-items">Що хочеш відремонтувати?</h3>
-            <div class="repair-of-apple-equipment__items">
-               <a href="repair-iphone.html" class="repair-of-apple-equipment__item">
-                  <h4>iPhone</h4>
-                  <img src="images/repair-of-apple-equipment-1.png" alt="">
-               </a>
-               <a href="#" class="repair-of-apple-equipment__item">
-                  <h4>iPad</h4>
-                  <img src="images/repair-of-apple-equipment-2.png" alt="">
-               </a>
-               <a href="#" class="repair-of-apple-equipment__item">
-                  <h4>MacBook</h4>
-                  <img src="images/repair-of-apple-equipment-3.png" alt="">
-                  <img src="images/repair-of-apple-equipment-3-mobile.png" alt="">
-               </a>
+               <div data-tabcontent="tab2" class="tabContent">
+                  <div class="payment-and-delivery__content">
+                     <div class="payment-and-delivery__block more-info">
+                        <span class="payment-and-delivery__blockIcon wrap-lazy-load-image">
+                           <img src="images/svg/payment-and-delivery-list-icon-location-1.svg" alt="">
+                           <img src="images/svg/payment-and-delivery-list-icon1-location-1-mobile.svg" alt="">
+                        </span>
+                        <div>
+                           <h3>Самовивіз з магазину у Києві</h3>
+                           <p>Замовлення можна забрати у <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D1%81%D0%BA%D0%B0%D1%8F,+81,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4369403,30.5075605,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4cefb733b8ee1:0xbdb2bbc5db6a576c!8m2!3d50.4369403!4d30.5101354!16s%2Fg%2F1v2pnqxg?entry=ttu">Києві вул. Володимирська, 81</a></p>
+                           <p>При оформленні замовлення менеджер GROKHOLSKY уточнить зручний час приїзду за покупкою</p>
+                           <p>Щоб отримати замовлення – достатньо знати номер замовлення</p>
+                        </div>
+                     </div>
+                     <div class="payment-and-delivery__block more-info">
+                        <span class="payment-and-delivery__blockIcon wrap-lazy-load-image">
+                           <img src="images/svg/payment-and-delivery-list-icon-novaposhta.svg" alt="">
+                           <img src="images/svg/payment-and-delivery-list-icon1-novaposhta-mobile.svg" alt="">
+                        </span>
+                        <div>
+                           <h3>По Україні: 100% оплата та відправимо Новою Поштою</h3>
+                           <p>В інші міста ми найчастіше доставляємо за допомогою Нової Пошти, але якщо вам більше подобається інша компанія – зв’яжіться з нами</p>
+                           <p><a class="phone" href="tel:0732329114">(073) 232-91-14</a> <a href="#">info@grokholsky.com</a></p>
+                           <p>Терміни доставки до відділення «Нова пошта» 1 – 3 дні</p>
+                           <p>Після надсилання замовлення ми надішлемо повідомлення з номером експрес-накладної</p>
+                           <p>Уточнити конкретну дату отримання вашого замовлення ви можете на сайті компанії «Нова пошта»</p>
+                           <p>В обов’язковому порядку перевіряйте ваше замовлення на відповідність до товарного чека перед оплатою у відділенні «Нова пошта».</p>
+                           <h4>Важливо!</h4>
+                           <p>Перед відправкою весь товар перевіряється та страхується на повну вартість. При отриманні відправлення необхідно перевірити товар безпосередньо у відділенні компанії “Нова пошта” у присутності співробітника. У разі неповного комплекту, нестачі товару або відсутності документів (чек, гарантійний талон тощо) необхідно скласти акт невідповідності. Якщо упаковка пошкоджена, або на товарі виявлено механічні пошкодження, вам необхідно відмовитися від відправлення або пред’явити претензії компанії “Нова пошта”. Компанія “Нова пошта” відшкодовує завдані збитки, якщо вони були заподіяні з її вини.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
-         <section class="store-description">
-            <div class="n_container">
-               <h2>Grokholsky: магазин техніки Apple і не тільки!</h2>
-               <div class="store-description__blockText">
-                  <p>Ласкаво просимо в Grokholsky – ваш ідеальний партнер у світі техніки Apple. Ми пропонуємо широкий асортимент продукції Apple, включно з останніми моделями iPhone, iPad, MacBook, iMac та інші інноваційні пристрої. Ласкаво просимо в Grokholsky – ваш ідеальний партнер у світі техніки Apple. Ми пропонуємо широкий асортимент продукції Apple, включно з останніми моделями iPhone, iPad, MacBook, iMac та інші інноваційні пристрої. Ласкаво просимо в Grokholsky – ваш ідеальний партнер у світі техніки Apple. Ми пропонуємо широкий асортимент продукції Apple, включно з останніми моделями iPhone, iPad, MacBook, iMac та інші інноваційні пристрої. Ласкаво просимо в Grokholsky – ваш ідеальний партнер у світі техніки Apple. Ми пропонуємо широкий асортимент продукції Apple, включно з останніми моделями iPhone, iPad, MacBook, iMac та інші інноваційні пристрої.</p>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia praesentium ratione consequuntur libero assumenda saepe fugit explicabo inventore incidunt esse magnam labore eveniet optio voluptatem repudiandae quo cumque, dolores, autem rem quaerat unde vitae ut totam possimus? Dolorum officia optio amet odio deserunt, nesciunt doloremque veniam in atque alias, libero at unde eum quisquam accusantium aliquam distinctio, earum rerum.</p>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore corporis fugit, velit voluptates quidem expedita rerum, incidunt voluptate debitis delectus doloremque exercitationem ut aliquam explicabo harum non? Inventore repellendus, odio itaque corrupti laborum incidunt dolore veniam sed minus aperiam molestias recusandae maxime ratione tempore, sapiente eaque voluptatem ipsam iusto officiis, dolores omnis quas. Enim illum sunt delectus totam qui cupiditate repellendus odit maiores, quae, praesentium veniam, cum fugit saepe corporis quam itaque nemo non earum ut quidem beatae debitis architecto numquam! Sequi totam deserunt non labore odit nobis vitae, velit nam cupiditate provident porro in delectus dolor. Incidunt maiores itaque ducimus quia, atque animi rem dolorum, possimus ratione placeat recusandae ad repellendus dolorem saepe quasi nesciunt assumenda? Officia consequatur, iusto, saepe aut tempora expedita architecto rerum perspiciatis, earum qui molestiae. Praesentium perferendis eum quia?</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi adipisci esse sequi dolores, rerum facere iste quas quae veniam non?</p>
-               </div>
-               <button class="store-description__button" type="button">
-                  <span>Показати більше</span>
-                  <span>Показати меньше</span>
-                  <img src="images/svg/store-description-arrow.svg" alt="">
-               </button>
-            </div>
-         </section>
       </main>
 		<footer class="footer">
    <div class="n_container">
@@ -2088,6 +2120,7 @@
       </div>
    </div>
 </div>
+
 	</div>
 
 	<script src="files/swiper/js/swiper-bundle.min.js?_v=20240508185546"></script>
@@ -2100,7 +2133,7 @@
 	<script src="files/js/jquery-3.7.1.min.js?_v=20240508185546"></script>
 	<script src="files/js/plus-minus.js?_v=20240508185546"></script>
 
-   <script src="files/js/masked-for-input-phone.js?_v=20240508185546"></script>
+   <script src="files/tabs/script.js?_v=20240508185546"></script>
 
 </body>
 </html>
