@@ -103,4 +103,13 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     }
+
+    // Redirect to profile (demo)
+    let entranceButton = document.querySelector('.entrance-button-demo');
+    if (entranceButton) {
+        entranceButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'profile.html';
+        });
+    }
 })
