@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20240510142850">
    <link rel="stylesheet" href="css/style.min.css?_v=20240510142850">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
-   <title>Ремонт техніки Apple</title>
+   <title>Особистий кабінет</title>
 </head>
 
 <body>
@@ -239,7 +239,7 @@
                      <path fill-rule="evenodd" clip-rule="evenodd" d="M21 6.98343C20.9659 4.66511 19.637 2.38197 17.597 1.44116C16.5006 0.934154 15.2497 0.861274 14.1007 1.23746C13.0563 1.56572 12.0089 2.23835 11 3.2964C9.99111 2.23835 8.9437 1.56718 7.89926 1.23746C6.75028 0.861274 5.49935 0.934154 4.40296 1.44116C2.36296 2.38197 1.03407 4.66511 1 6.98343V6.99516C1 10.3759 3.03259 13.3713 5.18667 15.4742C6.16471 16.4353 7.24964 17.2839 8.42074 18.0035C8.92148 18.3039 9.39407 18.5457 9.81333 18.7157C10.2148 18.8769 10.6326 19 11 19C11.3674 19 11.7852 18.8769 12.1852 18.7157C12.6059 18.5472 13.0785 18.3054 13.5778 18.0035C14.7494 17.2839 15.8348 16.4354 16.8133 15.4742C18.9674 13.3713 21 10.3759 21 6.99662V6.98343Z" stroke="#002024" stroke-width="2"/>
                   </svg>
                </a>
-               <a href="#show-form-entrance-popup" class="popup-link">
+               <a href="profile.html">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path d="M6.66818 16.4659H17.8568M15.15 9.375C15.15 11.1147 13.7397 12.525 12 12.525C10.2603 12.525 8.85 11.1147 8.85 9.375C8.85 7.6353 10.2603 6.225 12 6.225C13.7397 6.225 15.15 7.6353 15.15 9.375ZM22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12C1.5 6.20101 6.20101 1.5 12 1.5C17.799 1.5 22.5 6.20101 22.5 12Z" stroke="#002024" stroke-width="2"/>
                   </svg>
@@ -297,8 +297,8 @@
             <p>Послуги</p>
          </a>
       </li>
-      <li id="mobile-link-to-profole">
-         <a href="#show-form-entrance-popup" class="not-authorized"><!-- popup-link not-authorized, authorized -->
+      <li id="mobile-link-to-profole"><!-- if not authorized id="mobile-link-to-profole" -->
+         <a href="profile.html" class="authorized"><!-- not-authorized, authorized -->
             <div class="mobile-menu__blockIcon">
                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_3204_689)">
@@ -1641,7 +1641,7 @@
       </ul>
    </div>
 </div>
-      <main class="main repair-of-apple-equipment">
+      <main class="main profile">
          <div class="page__head">
             <div class="page__headWrapTitle">
                <div class="n_container wrap-title">
@@ -1650,71 +1650,623 @@
                         <a class="breadcrumbs__link" href="index.html">Головна</a>
                      </li>
                      <li class="breadcrumbs__item">
-                        <span class="breadcrumbs__name">Сервіс #эплблять!</span>
+                        <span class="breadcrumbs__name">Особистий кабінет</span>
                      </li>
                   </ul>
                </div>
             </div>
          </div>
          <div class="n_container">
-            <h1 class="exchange-trade-in__title">
-               <span>Ремонт техніки</span> 
-               <span>Apple</span>
-            </h1>
-            <h2 class="repair-of-apple-equipment__subTitle">Отримати статус ремонту</h2>
-            <div class="repair-of-apple-equipment__wrap-form">
-               <div class="repair-of-apple-equipment__wrap-form-wrap-field-submit">
-                  <form action="#">
-                     <input type="tel" placeholder="+380(__)__-__-__">
-                     <button type="submit">Отримати</button>
-                  </form>
+            <div class="profile__wrap-content">
+               <h1 class="profile__title">Особистий кабінет</h1>
+               <div class="profile__items">
+                  <div class="profile__item profile-first-item">
+                     <aside>
+                        <ul class="profile__menu">
+                           <li data-id-menu="personal-data" class="profile__menuItem active">
+                              <span>Персональні дані</span>
+                           </li>
+                           <li data-id-menu="my-orders" class="profile__menuItem">
+                              <span>Мої замовлення</span>
+                           </li>
+                           <li data-id-menu="wish-list" class="profile__menuItem" id="menu-wish-list">
+                              <span>Список бажань</span>
+                           </li>
+                           <li><a href="/">Вихід</a></li>
+                        </ul>
+                        <p>Зв'язуйте обліковий запис Grokholsky з обліковими записами соцмереж</p>
+                        <div class="profile__social">
+                           <a href="#">
+                              <span class="wraap-icon">
+                                 <img src="images/svg/profile-social-icon-facebook.svg" alt="">
+                              </span>
+                              <p>Facebook <span>Зв'язати</span></p>
+                           </a>
+                           <a href="#">
+                              <span class="wraap-icon">
+                                 <img src="images/svg/profile-social-icon-google.svg" alt="">
+                              </span>
+                              <p>Google <span>Скасувати зв'язок</span></p>
+                           </a>
+                           <a href="#">
+                              <span class="wraap-icon">
+                                 <img src="images/svg/profile-social-icon-apple.svg" alt="">
+                              </span>
+                              <p>Apple <span>Зв'язати</span></p>
+                           </a>
+                        </div>
+                     </aside>
+                  </div>
+                  <div class="profile__item">
+                     <div id="personal-data" class="profile__itemBlock item-block-active">
+                        <div class="profile__itemBlockHead">
+                           <img src="images/svg/profile-item-block-back-icon.svg" alt="">
+                           <button type="button" class="profile__itemBlockHeadBack">Назад</button>
+                        </div>
+                        <form action="#" class="profile__form">
+                           <div class="profile__formBlock">
+                              <h2>Персональні данні</h2>
+                              <div class="profile__formWrapFields">
+                                 <div class="profile__formWrapField">
+                                    <label for="profile-name">Ім'я</label>
+                                    <input type="text" id="profile-name" placeholder="Степан" value="Степан">
+                                 </div>
+                                 <div class="profile__formWrapField">
+                                    <label for="profile-last-name">Прізвище</label>
+                                    <input type="text" id="profile-last-name" placeholder="Бандера" value="Бандера">
+                                 </div>
+                              </div>
+                              <div class="profile__formWrapField">
+                                 <label for="profile-phone">Телефон</label>
+                                 <input type="text" id="profile-phone" placeholder="+38 999 999 99 99" value="+38 066 348 77 88">
+                              </div>
+                              <div class="profile__formWrapField">
+                                 <label for="profile-email">Email</label>
+                                 <input type="text" id="profile-email" placeholder="example@gmail.com" value="stepan.bandera@gmail.com">
+                              </div>
+                           </div>
+                           <div class="profile__formBlock">
+                              <h2>Доставка</h2>
+                              <h3>На відділення Нова Пошта</h3>
+                              <div class="order-form__wrapSelects">
+                                 <div class="order-form__wrap-field">
+                                    <label>Місто</label>
+                                    <select class="select2 profile-select-city" tabindex="-1" style="width: 100%;">
+                                       <option value=""></option>
+                                       <option value="Вільнянськ">Вільнянськ</option>
+                                       <option value="Ворожба">Ворожба</option>
+                                       <option value="Житомир">Житомир</option>
+                                       <option value="Золотоноша">Золотоноша</option>
+                                       <option value="Ізмаїл">Ізмаїл</option>
+                                       <option value="Кадіївка">Кадіївка</option>
+                                       <option value="Кам'янське">Кам'янське</option>
+                                       <option value="Радехів">Радехів</option>
+                                    </select>
+                                 </div>
+                                 <div class="order-form__wrap-field">
+                                    <label>Відділення</label>
+                                    <select class="select2 form__field select-novaya-poshota select-nova-poshta-branch" tabindex="-1" style="width: 100%;">
+                                       <option value=""></option>
+                                       <option value="Одеса, вул. Дальницька, 23/4">Одеса, вул. Дальницька, 23/4</option>
+                                       <option value="Вінниця, вул. Гладкова, 3">Вінниця, вул. Гладкова, 3</option>
+                                       <option value="Відд 6, Полтава, вул. Івана Мазепи, 12/8">Відд 6, Полтава, вул. Івана Мазепи, 12/8</option>
+                                       <option value="Відд 7, Миколаїв, вул. Космонавтів, 60/4">Відд 7, Миколаїв, вул. Космонавтів, 60/4</option>
+                                       <option value="Відд 8, Кривий Ріг, просп. 200-річчя Кривого Рогу, 24">Відд 8, Кривий Ріг, просп. 200-річчя Кривого Рогу, 24</option>
+                                       <option value="Відд 9, Запоріжжя, просп. Металургів, 19">Відд 9, Запоріжжя, просп. Металургів, 19</option>
+                                       <option value="Відд 12, Харків, вул. Бучми, 1">Відд 12, Харків, вул. Бучми, 1</option>
+                                       <option value="Відд 18, Київ, просп. Повітрофлотський, 66">Відд 18, Київ, просп. Повітрофлотський, 66</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <h3>Адресна доставка Нова Пошта</h3>
+                              <div class="order-form__wrapSelects">
+                                 <div class="order-form__wrap-field">
+                                    <label>Місто</label>
+                                    <select class="select2 profile-select-city" tabindex="-1" style="width: 100%;">
+                                       <option value=""></option>
+                                       <option value="Вільнянськ">Вільнянськ</option>
+                                       <option value="Ворожба">Ворожба</option>
+                                       <option value="Житомир">Житомир</option>
+                                       <option value="Золотоноша">Золотоноша</option>
+                                       <option value="Ізмаїл">Ізмаїл</option>
+                                       <option value="Кадіївка">Кадіївка</option>
+                                       <option value="Кам'янське">Кам'янське</option>
+                                       <option value="Радехів">Радехів</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="profile__formWrapFields address">
+                                 <div class="profile__formWrapField">
+                                    <label for="profile-street">Вулиця</label>
+                                    <input type="text" id="profile-street" placeholder="Вулиця">
+                                 </div>
+                                 <div class="profile__formWrapField">
+                                    <label for="profile-last-it-was">Буд.</label>
+                                    <input type="text" id="profile-last-it-was">
+                                 </div>
+                                 <div class="profile__formWrapField">
+                                    <label for="profile-last-sq">Кв.</label>
+                                    <input type="text" id="profile-last-sq">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="profile__formBlock">
+                              <h2>Змінити пароль</h2>
+                              <div class="profile__formWrapField">
+                                 <label for="profile-password">Поточний пароль</label>
+                                 <input type="text" id="profile-password">
+                              </div>
+                              <div class="profile__formWrapField">
+                                 <label for="profile-new-password">Новий пароль</label>
+                                 <input type="text" id="profile-new-password">
+                              </div>
+                              <div class="profile__formWrapField">
+                                 <label for="profile-repeat-new-password">Повторіть новий пароль</label>
+                                 <input type="text" id="profile-repeat-new-password">
+                              </div>
+                           </div>
+                           <button type="submit">Змінити</button>
+                        </form>
+                     </div>
+                     <div id="my-orders" class="profile__itemBlock">
+                        <div class="profile__itemBlockHead">
+                           <img src="images/svg/profile-item-block-back-icon.svg" alt="">
+                           <button type="button" class="profile__itemBlockHeadBack">Назад</button>
+                        </div>
+                        <div class="profile__itemBlockWrapTitle">
+                           <h2>Мої замовлення</h2>
+                           <button type="button" id="expand-all">Розгорнути все</button>
+                        </div>
+                        <div class="profile__my-orders">
+                           <div data-spollers data-one-spoller class="block">
+                              <div class="block__item">
+                                 <div data-spoller class="block__title">
+                                    <div class="block__titleInfo">
+                                       <div class="column">
+                                          <p>№ 69473<span class="done">Виконано</span></p>
+                                       </div>
+                                       <div class="column">
+                                          <p><span>Дата <span>замовлення</span></span>від 9 грудня 2023</p>
+                                       </div>
+                                       <div class="column">
+                                          <p><span>Сумма</span>140 399 ₴</p>
+                                       </div>
+                                    </div>
+                                    <div class="block__titlePhotos">
+                                       <div class="photo">
+                                          <img src="images/a-perfect-combination-image-1.png" alt="">
+                                       </div>
+                                       <div class="photo">
+                                          <img src="images/choose-your-device-4.png" alt="">
+                                       </div>
+                                       <div class="photo">
+                                          <img src="images/order-form-your-order-block-product-1.png" alt="">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="block__text">
+                                    <div class="block__content">
+                                       <div class="block__subItems">
+                                          <div class="block__subItem">
+                                             <div class="block__subItemProducts">
+                                                <div class="block__subItemProduct">
+                                                   <div class="wrap-image-title">
+                                                      <div class="block-image">
+                                                         <img src="images/choose-your-device-4.png" alt="">
+                                                      </div>
+                                                      <h3>
+                                                         <a href="#">iPhone 15 Pro Max 1TB Natural Titanium (MU7J3)</a>
+                                                      </h3>
+                                                   </div>
+                                                   <div class="wrap-quantity-price">
+                                                      <p>14 199 ₴ х 1 од.</p>
+                                                      <p>14 199
+                                                         <span class="currency">
+                                                            <span class="icon">₴</span>
+                                                            <span class="letters">грн.</span>
+                                                         </span>
+                                                      </p>
+                                                   </div>
+                                                </div>
+                                                <div class="block__subItemProduct">
+                                                   <div class="wrap-image-title">
+                                                      <div class="block-image">
+                                                         <img src="images/order-form-your-order-block-product-1.png" alt="">
+                                                      </div>
+                                                      <h3>
+                                                         <a href="#">iPhone 15 Pro Max 1TB Natural Titanium (MU7J3)</a>
+                                                      </h3>
+                                                   </div>
+                                                   <div class="wrap-quantity-price">
+                                                      <p>14 199 ₴ х 1 од.</p>
+                                                      <p>14 199
+                                                         <span class="currency">
+                                                            <span class="icon">₴</span>
+                                                            <span class="letters">грн.</span>
+                                                         </span>
+                                                      </p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <ul class="list">
+                                                <li class="delivery-two">
+                                                   <span>Доставка</span>
+                                                   <span>За тарифом «Нова пошта»</span>
+                                                </li>
+                                                <li data-da="list-two, last, 640" class="to-be-paid">
+                                                   <span>До сплати</span>
+                                                   <span>58 199
+                                                      <span class="currency">
+                                                         <span class="icon">₴</span>
+                                                         <span class="letters">грн.</span>
+                                                      </span>
+                                                   </span>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="block__subItem">
+                                             <ul class="list-two">
+                                                <li class="delivery">
+                                                   <span><strong>Доставка</strong></span>
+                                                   <span>Відділення «Нова пошта»</span>
+                                                   <span>За тарифом «Нова пошта»</span>
+                                                </li>
+                                                <li class="address">
+                                                   <span>м. Київ, Отделение №3 (до 30 кг на одне місце): ул. Калачевская, 13 (Старая Дарница)</span>
+                                                </li>
+                                                <li class="payment">
+                                                   <span><strong>Оплата</strong></span>
+                                                   <div>
+                                                      <span>Карткою онлайн</span>
+                                                      <a href="#">Чек та гарантія</a>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                             <div class="wrap-buttons">
+                                                <a href="#" class="button-repeat-order">Повторити замовлення</a>
+                                                <a href="#" class="button-leave-a-review">Залишити відгук</a>
+                                                <a href="#" class="button-leave-for-tea">Залишити на чай</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="block__item">
+                                 <div data-spoller class="block__title _active">
+                                    <div class="block__titleInfo">
+                                       <div class="column">
+                                          <p>№ 69473<span class="done">Виконано</span></p>
+                                       </div>
+                                       <div class="column">
+                                          <p><span>Дата <span>замовлення</span></span>від 9 грудня 2023</p>
+                                       </div>
+                                       <div class="column">
+                                          <p><span>Сумма</span>140 399 ₴</p>
+                                       </div>
+                                    </div>
+                                    <div class="block__titlePhotos">
+                                       <div class="photo">
+                                          <img src="images/a-perfect-combination-image-1.png" alt="">
+                                       </div>
+                                       <div class="photo">
+                                          <img src="images/choose-your-device-4.png" alt="">
+                                       </div>
+                                       <div class="photo">
+                                          <img src="images/order-form-your-order-block-product-1.png" alt="">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="block__text">
+                                    <div class="block__content">
+                                       <div class="block__subItems">
+                                          <div class="block__subItem">
+                                             <div class="block__subItemProducts">
+                                                <div class="block__subItemProduct">
+                                                   <div class="wrap-image-title">
+                                                      <div class="block-image">
+                                                         <img src="images/choose-your-device-4.png" alt="">
+                                                      </div>
+                                                      <h3>
+                                                         <a href="#">iPhone 15 Pro Max 1TB Natural Titanium (MU7J3)</a>
+                                                      </h3>
+                                                   </div>
+                                                   <div class="wrap-quantity-price">
+                                                      <p>14 199 ₴ х 1 од.</p>
+                                                      <p>14 199
+                                                         <span class="currency">
+                                                            <span class="icon">₴</span>
+                                                            <span class="letters">грн.</span>
+                                                         </span>
+                                                      </p>
+                                                   </div>
+                                                </div>
+                                                <div class="block__subItemProduct">
+                                                   <div class="wrap-image-title">
+                                                      <div class="block-image">
+                                                         <img src="images/order-form-your-order-block-product-1.png" alt="">
+                                                      </div>
+                                                      <h3>
+                                                         <a href="#">iPhone 15 Pro Max 1TB Natural Titanium (MU7J3)</a>
+                                                      </h3>
+                                                   </div>
+                                                   <div class="wrap-quantity-price">
+                                                      <p>14 199 ₴ х 1 од.</p>
+                                                      <p>14 199
+                                                         <span class="currency">
+                                                            <span class="icon">₴</span>
+                                                            <span class="letters">грн.</span>
+                                                         </span>
+                                                      </p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <ul class="list">
+                                                <li class="delivery-two">
+                                                   <span>Доставка</span>
+                                                   <span>За тарифом «Нова пошта»</span>
+                                                </li>
+                                                <li data-da="list-two, last, 640" class="to-be-paid">
+                                                   <span>До сплати</span>
+                                                   <span>58 199
+                                                      <span class="currency">
+                                                         <span class="icon">₴</span>
+                                                         <span class="letters">грн.</span>
+                                                      </span>
+                                                   </span>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="block__subItem">
+                                             <ul class="list-two">
+                                                <li class="delivery">
+                                                   <span><strong>Доставка</strong></span>
+                                                   <span>Відділення «Нова пошта»</span>
+                                                   <span>За тарифом «Нова пошта»</span>
+                                                </li>
+                                                <li class="address">
+                                                   <span>м. Київ, Отделение №3 (до 30 кг на одне місце): ул. Калачевская, 13 (Старая Дарница)</span>
+                                                </li>
+                                                <li class="payment">
+                                                   <span><strong>Оплата</strong></span>
+                                                   <div>
+                                                      <span>Карткою онлайн</span>
+                                                      <a href="#">Чек та гарантія</a>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                             <div class="wrap-buttons">
+                                                <a href="#" class="button-repeat-order">Повторити замовлення</a>
+                                                <a href="#" class="button-leave-a-review">Залишити відгук</a>
+                                                <a href="#" class="button-leave-for-tea">Залишити на чай</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="wish-list" class="profile__itemBlock">
+                        <div class="profile__itemBlockHead">
+                           <img src="images/svg/profile-item-block-back-icon.svg" alt="">
+                           <button type="button" class="profile__itemBlockHeadBack">Назад</button>
+                        </div>
+                        <h2>Список бажань</h2>
+                        <div class="profile__wish-list">
+                           <div class="slider-for-phones__slide">
+                              <div class="slider-for-phones__blockImage">
+                                 <a href="product.html">
+                                    <img class="slider-for-phones__image" src="images/slide-product-2.png" alt="">
+                                 </a>
+                                 <div class="slider-for-phones__blockImageIcons">
+                                    <div class="wrap-icon link-icon">
+                                       <a href="#" class="in-favorites">
+                                          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3334 6.48619C18.305 4.55426 17.1976 2.65164 15.4976 1.86763C14.584 1.44513 13.5415 1.3844 12.584 1.69788C11.7137 1.97143 10.8408 2.53196 10.0001 3.41366C9.15934 2.53196 8.2865 1.97265 7.41613 1.69788C6.45865 1.3844 5.4162 1.44513 4.50255 1.86763C2.80255 2.65164 1.69514 4.55426 1.66675 6.48619V6.49596C1.66675 9.31326 3.36057 11.8094 5.15564 13.5618C5.97067 14.3628 6.87478 15.0699 7.8507 15.6696C8.26798 15.9199 8.66181 16.1214 9.01119 16.2631C9.34576 16.3974 9.69391 16.5 10.0001 16.5C10.3063 16.5 10.6544 16.3974 10.9877 16.2631C11.3384 16.1227 11.7322 15.9212 12.1482 15.6696C13.1246 15.0699 14.0291 14.3628 14.8445 13.5618C16.6396 11.8094 18.3334 9.31326 18.3334 6.49718V6.48619Z" stroke="white" stroke-width="2"/>
+                                          </svg>
+                                       </a>
+                                    </div>
+                                    <div class="wrap-icon link-icon">
+                                       <a href="#">
+                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M15.6769 5.27586L11.8 13.092M15.6769 5.27586L19 13.092M15.6769 5.27586H10.2769M11.8 13.092H19M11.8 13.092C11.8 15.2503 13.2878 17 15.1231 17H15.6769C17.5122 17 19 15.2503 19 13.092M4.87692 5.27586L1 13.092M4.87692 5.27586L8.2 13.092M4.87692 5.27586H10.2769M1 13.092H8.2M1 13.092C1 15.2503 2.48779 17 4.32308 17H4.87692C6.71221 17 8.2 15.2503 8.2 13.092M10.2769 5.27586V2" stroke="white" stroke-width="2"/>
+                                          </svg>                                       
+                                       </a>
+                                    </div>
+                                    <div class="wrap-icon no-link-icon">
+                                       <img src="images/svg/product-icon-3.svg" alt="">
+                                    </div>
+                                    <div class="wrap-icon no-link-icon">
+                                       <img src="images/svg/product-icon-4.svg" alt="">
+                                    </div>
+                                    <div class="wrap-icon no-link-icon">
+                                       <img src="images/svg/product-icon-5.svg" alt="">
+                                    </div>
+                                 </div>
+                                 <a href="#" class="plus">
+                                    <img src="images/svg/plus-for-product-mobile.svg" alt="">
+                                 </a>
+                              </div>
+                              <div class="slider-for-phones__content">
+                                 <div class="slider-for-phones__wrap-price">
+                                    <p>
+                                       6 619
+                                       <span class="currency">
+                                          <span class="icon">₴</span>
+                                          <span class="letters">грн.</span>
+                                       </span>
+                                    </p>
+                                 </div>
+                                 <h3><a href="#">AirPods 3rd generation with Lightning Charging Case</a></h3>
+                                 <p class="slider-for-phones__obviousness in-stock">В наявності</p>
+                              </div>
+                           </div>
+                           <div class="slider-for-phones__slide">
+                              <div class="slider-for-phones__blockImage">
+                                 <a href="product.html">
+                                    <img class="slider-for-phones__image" src="images/slide-product-3.png" alt="">
+                                 </a>
+                                 <div class="slider-for-phones__blockImageIcons">
+                                    <div class="wrap-icon link-icon">
+                                       <a href="#" class="in-favorites">
+                                          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3334 6.48619C18.305 4.55426 17.1976 2.65164 15.4976 1.86763C14.584 1.44513 13.5415 1.3844 12.584 1.69788C11.7137 1.97143 10.8408 2.53196 10.0001 3.41366C9.15934 2.53196 8.2865 1.97265 7.41613 1.69788C6.45865 1.3844 5.4162 1.44513 4.50255 1.86763C2.80255 2.65164 1.69514 4.55426 1.66675 6.48619V6.49596C1.66675 9.31326 3.36057 11.8094 5.15564 13.5618C5.97067 14.3628 6.87478 15.0699 7.8507 15.6696C8.26798 15.9199 8.66181 16.1214 9.01119 16.2631C9.34576 16.3974 9.69391 16.5 10.0001 16.5C10.3063 16.5 10.6544 16.3974 10.9877 16.2631C11.3384 16.1227 11.7322 15.9212 12.1482 15.6696C13.1246 15.0699 14.0291 14.3628 14.8445 13.5618C16.6396 11.8094 18.3334 9.31326 18.3334 6.49718V6.48619Z" stroke="white" stroke-width="2"/>
+                                          </svg>
+                                       </a>
+                                    </div>
+                                    <div class="wrap-icon link-icon">
+                                       <a href="#">
+                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M15.6769 5.27586L11.8 13.092M15.6769 5.27586L19 13.092M15.6769 5.27586H10.2769M11.8 13.092H19M11.8 13.092C11.8 15.2503 13.2878 17 15.1231 17H15.6769C17.5122 17 19 15.2503 19 13.092M4.87692 5.27586L1 13.092M4.87692 5.27586L8.2 13.092M4.87692 5.27586H10.2769M1 13.092H8.2M1 13.092C1 15.2503 2.48779 17 4.32308 17H4.87692C6.71221 17 8.2 15.2503 8.2 13.092M10.2769 5.27586V2" stroke="white" stroke-width="2"/>
+                                          </svg>                                       
+                                       </a>
+                                    </div>
+                                    <div class="wrap-icon no-link-icon">
+                                       <img src="images/svg/product-icon-3.svg" alt="">
+                                    </div>
+                                    <div class="wrap-icon no-link-icon">
+                                       <img src="images/svg/product-icon-4.svg" alt="">
+                                    </div>
+                                    <div class="wrap-icon no-link-icon">
+                                       <img src="images/svg/product-icon-5.svg" alt="">
+                                    </div>
+                                 </div>
+                                 <a href="#" class="plus">
+                                    <img src="images/svg/plus-for-product-mobile.svg" alt="">
+                                 </a>
+                              </div>
+                              <div class="slider-for-phones__content">
+                                 <div class="slider-for-phones__wrap-price">
+                                    <p>
+                                       <span class="price">
+                                          50 199
+                                          <span class="currency">
+                                             <span class="icon">₴</span>
+                                             <span class="letters">грн.</span>
+                                          </span>
+                                       </span>
+                                       <span class="wrap-discount">
+                                          <span>
+                                             25 399 <span class="no-mobile">₴</span>
+                                          </span>
+                                          <span class="slider-for-phones__discountLabel">-30%</span>
+                                       </span>
+                                    </p>
+                                 </div>
+                                 <h3><a href="#">iPhone 13 128GB Midnight (MLPF3)</a></h3>
+                                 <p class="slider-for-phones__obviousness in-stock">В наявності</p>
+                              </div>
+                           </div>
+                           <div class="slider-for-phones__slide">
+                              <div class="slider-for-phones__blockImage">
+                                 <p class="slider-for-phones__blockImageLabel boo">Б/У</p>
+                                 <a href="product.html">
+                                    <img class="slider-for-phones__image" src="images/slide-product-4.png" alt="">
+                                 </a>
+                                 <div class="slider-for-phones__blockImageIcons">
+                                    <div class="wrap-icon link-icon">
+                                       <a href="#" class="in-favorites">
+                                          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3334 6.48619C18.305 4.55426 17.1976 2.65164 15.4976 1.86763C14.584 1.44513 13.5415 1.3844 12.584 1.69788C11.7137 1.97143 10.8408 2.53196 10.0001 3.41366C9.15934 2.53196 8.2865 1.97265 7.41613 1.69788C6.45865 1.3844 5.4162 1.44513 4.50255 1.86763C2.80255 2.65164 1.69514 4.55426 1.66675 6.48619V6.49596C1.66675 9.31326 3.36057 11.8094 5.15564 13.5618C5.97067 14.3628 6.87478 15.0699 7.8507 15.6696C8.26798 15.9199 8.66181 16.1214 9.01119 16.2631C9.34576 16.3974 9.69391 16.5 10.0001 16.5C10.3063 16.5 10.6544 16.3974 10.9877 16.2631C11.3384 16.1227 11.7322 15.9212 12.1482 15.6696C13.1246 15.0699 14.0291 14.3628 14.8445 13.5618C16.6396 11.8094 18.3334 9.31326 18.3334 6.49718V6.48619Z" stroke="white" stroke-width="2"/>
+                                          </svg>
+                                       </a>
+                                    </div>
+                                    <div class="wrap-icon link-icon">
+                                       <a href="#">
+                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M15.6769 5.27586L11.8 13.092M15.6769 5.27586L19 13.092M15.6769 5.27586H10.2769M11.8 13.092H19M11.8 13.092C11.8 15.2503 13.2878 17 15.1231 17H15.6769C17.5122 17 19 15.2503 19 13.092M4.87692 5.27586L1 13.092M4.87692 5.27586L8.2 13.092M4.87692 5.27586H10.2769M1 13.092H8.2M1 13.092C1 15.2503 2.48779 17 4.32308 17H4.87692C6.71221 17 8.2 15.2503 8.2 13.092M10.2769 5.27586V2" stroke="white" stroke-width="2"/>
+                                          </svg>                                       
+                                       </a>
+                                    </div>
+                                    <div class="wrap-icon no-link-icon">
+                                       <img src="images/svg/product-icon-3.svg" alt="">
+                                    </div>
+                                    <div class="wrap-icon no-link-icon">
+                                       <img src="images/svg/product-icon-4.svg" alt="">
+                                    </div>
+                                    <div class="wrap-icon no-link-icon">
+                                       <img src="images/svg/product-icon-5.svg" alt="">
+                                    </div>
+                                 </div>
+                                 <a href="#" class="plus">
+                                    <img src="images/svg/plus-for-product-mobile.svg" alt="">
+                                 </a>
+                              </div>
+                              <div class="slider-for-phones__content">
+                                 <div class="slider-for-phones__wrap-price">
+                                    <p>
+                                       49 999
+                                       <span class="currency">
+                                          <span class="icon">₴</span>
+                                          <span class="letters">грн.</span>
+                                       </span>
+                                    </div>
+                                 <h3><a href="#">iPhone 15 Pro Max 256GB Natural Titanium (MU793)</a></h3>
+                                 <p class="slider-for-phones__obviousness in-stock">В наявності</p>
+                              </div>
+                           </div>
+                           <div class="slider-for-phones__slide">
+                              <div class="slider-for-phones__blockImage">
+                                 <a href="product.html">
+                                    <img class="slider-for-phones__image" src="images/slide-product-5.png" alt="">
+                                 </a>
+                                 <div class="slider-for-phones__blockImageIcons">
+                                    <div class="wrap-icon link-icon">
+                                       <a href="#" class="in-favorites">
+                                          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3334 6.48619C18.305 4.55426 17.1976 2.65164 15.4976 1.86763C14.584 1.44513 13.5415 1.3844 12.584 1.69788C11.7137 1.97143 10.8408 2.53196 10.0001 3.41366C9.15934 2.53196 8.2865 1.97265 7.41613 1.69788C6.45865 1.3844 5.4162 1.44513 4.50255 1.86763C2.80255 2.65164 1.69514 4.55426 1.66675 6.48619V6.49596C1.66675 9.31326 3.36057 11.8094 5.15564 13.5618C5.97067 14.3628 6.87478 15.0699 7.8507 15.6696C8.26798 15.9199 8.66181 16.1214 9.01119 16.2631C9.34576 16.3974 9.69391 16.5 10.0001 16.5C10.3063 16.5 10.6544 16.3974 10.9877 16.2631C11.3384 16.1227 11.7322 15.9212 12.1482 15.6696C13.1246 15.0699 14.0291 14.3628 14.8445 13.5618C16.6396 11.8094 18.3334 9.31326 18.3334 6.49718V6.48619Z" stroke="white" stroke-width="2"/>
+                                          </svg>
+                                       </a>
+                                    </div>
+                                    <div class="wrap-icon link-icon">
+                                       <a href="#">
+                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M15.6769 5.27586L11.8 13.092M15.6769 5.27586L19 13.092M15.6769 5.27586H10.2769M11.8 13.092H19M11.8 13.092C11.8 15.2503 13.2878 17 15.1231 17H15.6769C17.5122 17 19 15.2503 19 13.092M4.87692 5.27586L1 13.092M4.87692 5.27586L8.2 13.092M4.87692 5.27586H10.2769M1 13.092H8.2M1 13.092C1 15.2503 2.48779 17 4.32308 17H4.87692C6.71221 17 8.2 15.2503 8.2 13.092M10.2769 5.27586V2" stroke="white" stroke-width="2"/>
+                                          </svg>                                       
+                                       </a>
+                                    </div>
+                                    <div class="wrap-icon no-link-icon">
+                                       <img src="images/svg/product-icon-3.svg" alt="">
+                                    </div>
+                                    <div class="wrap-icon no-link-icon">
+                                       <img src="images/svg/product-icon-4.svg" alt="">
+                                    </div>
+                                    <div class="wrap-icon no-link-icon">
+                                       <img src="images/svg/product-icon-5.svg" alt="">
+                                    </div>
+                                 </div>
+                                 <a href="#" class="plus">
+                                    <img src="images/svg/plus-for-product-mobile.svg" alt="">
+                                 </a>
+                              </div>
+                              <div class="slider-for-phones__content">
+                                 <div class="slider-for-phones__wrap-price">
+                                    <p>
+                                       <span class="price">
+                                          14 199 
+                                          <span class="currency">
+                                             <span class="icon">₴</span>
+                                             <span class="letters">грн.</span>
+                                          </span>
+                                       </span>
+                                       <span class="wrap-discount">
+                                          <span>25 399 <span class="no-mobile">₴</span></span>
+                                          <span class="slider-for-phones__discountLabel">-30%</span>
+                                       </span>
+                                    </p>
+                                 </div>
+                                 <h3><a href="#">Watch SE GPS + Cellular 44mm Space Gray...</a></h3>
+                                 <p class="slider-for-phones__obviousness in-stock">В наявності</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
-               <!--
-                  
-                  * На діагностиці: on-diagnosis
-                  * В роботі у майстра: in-work-of-master
-                  * Їде в Європу: going-to-europe
-                  * Готове до видачі: ready-to-issue
-
-               -->
-               <div class="repair-of-apple-equipment__wrap-form-wrap-info on-diagnosis">
-                  <p><strong>iPhone 14 Pro Max</strong></p>
-                  <p><strong>На діагностиці</strong></p>
-               </div>
-            </div>
-            <h3 class="repair-of-apple-equipment__title-above-items">Що хочеш відремонтувати?</h3>
-            <div class="repair-of-apple-equipment__items">
-               <a href="repair-iphone.html" class="repair-of-apple-equipment__item">
-                  <h4>iPhone</h4>
-                  <img src="images/repair-of-apple-equipment-1.png" alt="">
-               </a>
-               <a href="#" class="repair-of-apple-equipment__item">
-                  <h4>iPad</h4>
-                  <img src="images/repair-of-apple-equipment-2.png" alt="">
-               </a>
-               <a href="#" class="repair-of-apple-equipment__item">
-                  <h4>MacBook</h4>
-                  <img src="images/repair-of-apple-equipment-3.png" alt="">
-                  <img src="images/repair-of-apple-equipment-3-mobile.png" alt="">
-               </a>
             </div>
          </div>
-         <section class="store-description">
-            <div class="n_container">
-               <h2>Grokholsky: магазин техніки Apple і не тільки!</h2>
-               <div class="store-description__blockText">
-                  <p>Ласкаво просимо в Grokholsky – ваш ідеальний партнер у світі техніки Apple. Ми пропонуємо широкий асортимент продукції Apple, включно з останніми моделями iPhone, iPad, MacBook, iMac та інші інноваційні пристрої. Ласкаво просимо в Grokholsky – ваш ідеальний партнер у світі техніки Apple. Ми пропонуємо широкий асортимент продукції Apple, включно з останніми моделями iPhone, iPad, MacBook, iMac та інші інноваційні пристрої. Ласкаво просимо в Grokholsky – ваш ідеальний партнер у світі техніки Apple. Ми пропонуємо широкий асортимент продукції Apple, включно з останніми моделями iPhone, iPad, MacBook, iMac та інші інноваційні пристрої. Ласкаво просимо в Grokholsky – ваш ідеальний партнер у світі техніки Apple. Ми пропонуємо широкий асортимент продукції Apple, включно з останніми моделями iPhone, iPad, MacBook, iMac та інші інноваційні пристрої.</p>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia praesentium ratione consequuntur libero assumenda saepe fugit explicabo inventore incidunt esse magnam labore eveniet optio voluptatem repudiandae quo cumque, dolores, autem rem quaerat unde vitae ut totam possimus? Dolorum officia optio amet odio deserunt, nesciunt doloremque veniam in atque alias, libero at unde eum quisquam accusantium aliquam distinctio, earum rerum.</p>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore corporis fugit, velit voluptates quidem expedita rerum, incidunt voluptate debitis delectus doloremque exercitationem ut aliquam explicabo harum non? Inventore repellendus, odio itaque corrupti laborum incidunt dolore veniam sed minus aperiam molestias recusandae maxime ratione tempore, sapiente eaque voluptatem ipsam iusto officiis, dolores omnis quas. Enim illum sunt delectus totam qui cupiditate repellendus odit maiores, quae, praesentium veniam, cum fugit saepe corporis quam itaque nemo non earum ut quidem beatae debitis architecto numquam! Sequi totam deserunt non labore odit nobis vitae, velit nam cupiditate provident porro in delectus dolor. Incidunt maiores itaque ducimus quia, atque animi rem dolorum, possimus ratione placeat recusandae ad repellendus dolorem saepe quasi nesciunt assumenda? Officia consequatur, iusto, saepe aut tempora expedita architecto rerum perspiciatis, earum qui molestiae. Praesentium perferendis eum quia?</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi adipisci esse sequi dolores, rerum facere iste quas quae veniam non?</p>
-               </div>
-               <button class="store-description__button" type="button">
-                  <span>Показати більше</span>
-                  <span>Показати меньше</span>
-                  <img src="images/svg/store-description-arrow.svg" alt="">
-               </button>
-            </div>
-         </section>
       </main>
 		<footer class="footer">
    <div class="n_container">
@@ -2186,6 +2738,7 @@
       </div>
    </div>
 </div>
+
 	</div>
 
 	<script src="files/swiper/js/swiper-bundle.min.js?_v=20240510142850"></script>
@@ -2198,7 +2751,9 @@
 	<script src="files/js/jquery-3.7.1.min.js?_v=20240510142850"></script>
 	<script src="files/js/plus-minus.js?_v=20240510142850"></script>
 
-   <script src="files/js/masked-for-input-phone.js?_v=20240510142850"></script>
+   <script src="files/select2/js/select2.full.min.js?_v=20240510142850"></script>
+   <script src="files/select2/js/select2.min.js?_v=20240510142850"></script>
+   <script src="files/select2/js/select2-init.js?_v=20240510142850"></script>
 
 </body>
 </html>
