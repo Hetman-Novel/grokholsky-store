@@ -7158,33 +7158,25 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 /* Page - Product comparison */
 
-.product-comparison__items {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -8px;
-  margin-right: -8px;
+.product-comparison {
+  padding-bottom: 172px;
 }
 
-.product-comparison__item {
-  margin-left: 8px;
-  margin-right: 8px;
+.product-comparison__items {
   position: relative;
 }
 
 .product-comparison__item:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-  width: 256px;
+  width: 100%;
 }
 
 .product-comparison__item:nth-child(1) .product-comparison__list {
-  margin-top: auto;
+  margin-top: 38px;
 }
 
 .product-comparison__item:nth-child(1) .product-comparison__list li {
   list-style: none;
-  margin-bottom: -1px;
-  padding: 11px 0;
+  padding: 14px 0 9px;
 }
 
 .product-comparison__item:nth-child(2) {
@@ -7198,7 +7190,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .product-comparison__wrap-selected {
-  padding-top: 10px;
+  margin-bottom: 25px;
+  margin-top: auto;
 }
 
 .product-comparison__wrap-selected p {
@@ -7207,6 +7200,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   font-weight: 700;
   line-height: 28px;
   margin: 0;
+}
+
+.product-comparison__checkboxs {
+  padding-bottom: 13px;
 }
 
 .product-comparison__checkboxs .custom-checkbox {
@@ -7227,7 +7224,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   font-size: 16px;
   font-weight: 500;
   line-height: 14px;
-  margin-top: 25px;
+  margin-top: 0;
   padding: 0 8px;
   width: 153px;
 }
@@ -7238,12 +7235,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
   padding-right: 15px;
 }
 
+.product-comparison__wrap-arrows-buttons {
+  height: 12px;
+}
+
 .product-comparison__btn-swiper-prev,
 .product-comparison__btn-swiper-next {
   font-size: 0;
   height: 32px;
   margin-left: auto;
-  position: relative;
+  position: absolute;
   right: 0;
   top: 20px;
   width: 32px;
@@ -7311,6 +7312,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .product-comparison__btn-swiper-prev svg:nth-child(2),
 .product-comparison__btn-swiper-prev img:nth-child(2) {
   opacity: 0;
+}
+
+.product-comparison__btn-swiper-next {
+  top: 26px;
 }
 
 .product-comparison__btn-swiper-next.swiper-button-disabled svg:nth-child(2),
@@ -7423,6 +7428,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   z-index: 2;
 }
 
+.product-comparison__slide {
+  height: auto !important;
+}
+
 .product-comparison__slide ul {
   list-style: none;
   margin: 31px 0 0;
@@ -7449,11 +7458,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
   content: "";
   display: block;
   height: 1px;
-  left: -16px;
+  left: 0;
   position: absolute;
   right: 0;
   top: 0;
-  width: calc(100% + 16px);
+  width: calc(100% + 20px);
 }
 
 .product-comparison__slideName {
@@ -11706,6 +11715,25 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-top: -11px;
   }
 
+  .product-comparison__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .product-comparison__item {
+    margin-left: 8px;
+    margin-right: 8px;
+    position: relative;
+  }
+
+  .product-comparison__item:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+  }
+
   .model-repair #tabs .tabs__wrap-tab {
     flex-wrap: wrap;
   }
@@ -12359,6 +12387,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .order-form__item:nth-child(1) {
     width: calc(48% - 34px);
   }
+
+  .product-comparison__item h1 {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (min-width: 1281px) {
@@ -12639,6 +12671,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .two-blocks__illustration {
     max-height: 74%;
+  }
+
+  .product-comparison__item h1 {
+    font-size: 42px;
+    line-height: 50px;
   }
 
   .types-of-repair__servicesHead {
@@ -13051,6 +13088,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .thank-you-page {
     padding-bottom: 80px;
     padding-top: 27px;
+  }
+
+  .product-comparison__item h1 {
+    font-size: 36px;
+    line-height: 44px;
   }
 
   .product-comparison__sliderBlockImage .plus {
@@ -13809,6 +13851,98 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .test-and-guarantee__item .number {
     font-size: 80px;
     top: 12px;
+  }
+
+  .product-comparison {
+    padding-bottom: 60px;
+    overflow: hidden;
+  }
+
+  .product-comparison__item:nth-child(1) .product-comparison__list {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .product-comparison__item:nth-child(1) .product-comparison__list::before {
+    display: none;
+  }
+
+  .product-comparison__item:nth-child(1) .product-comparison__list::after {
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    right: -25px;
+    position: absolute;
+    width: 25px;
+    z-index: 5;
+  }
+
+  .product-comparison__item:nth-child(1) .product-comparison__list::after {
+    right: -15px;
+    width: 15px;
+  }
+
+  .product-comparison__item:nth-child(2) {
+    width: 100%;
+  }
+
+  .product-comparison__wrap-selected {
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+    padding-top: 10px;
+  }
+
+  .product-comparison__wrap-selected p {
+    margin-right: auto;
+    padding-right: 15px;
+  }
+
+  .product-comparison__wrap-arrows-buttons {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+  }
+
+  .product-comparison__btn-swiper-prev,
+  .product-comparison__btn-swiper-next {
+    position: absolute;
+    width: 35px;
+  }
+
+  .product-comparison__btn-swiper-prev svg,
+  .product-comparison__btn-swiper-prev img,
+  .product-comparison__btn-swiper-next svg,
+  .product-comparison__btn-swiper-next img {
+    height: auto !important;
+    max-width: 100%;
+  }
+
+  .product-comparison__btn-swiper-prev {
+    left: 0;
+    right: auto;
+  }
+
+  .product-comparison__slide ul li {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px 0 15px;
+  }
+
+  .product-comparison__list li:first-child::before {
+    display: none;
+  }
+
+  .product-comparison__list li:before {
+    width: calc(100% + 15px);
   }
 
   .exchange-trade-in__title {
@@ -17258,6 +17392,109 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .thank-you-page__blockIcons p {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .product-comparison {
+    padding-bottom: 14px;
+    padding-top: 9px;
+  }
+
+  .product-comparison__item h1 {
+    font-size: 28px;
+    line-height: 34.66px;
+  }
+
+  .product-comparison__wrap-selected {
+    margin-bottom: 7px;
+    padding-top: 4px;
+  }
+
+  .product-comparison__wrap-selected p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .product-comparison__checkboxs {
+    padding-bottom: 1px;
+  }
+
+  .product-comparison__checkboxs .custom-checkbox {
+    margin-bottom: 8px;
+  }
+
+  .product-comparison__clear-list {
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    width: 137px;
+  }
+
+  .product-comparison__wrap-arrows-buttons {
+    margin-top: 5px;
+  }
+
+  .product-comparison__btn-swiper-prev,
+  .product-comparison__btn-swiper-next {
+    width: 23px;
+  }
+
+  .product-comparison__slider {
+    margin-top: 9px;
+  }
+
+  .product-comparison__sliderBlockImage {
+    padding-bottom: 101%;
+  }
+
+  .product-comparison__sliderBlockInfo p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+
+  .product-comparison__sliderBlockInfo p .currency {
+    font-size: 12px;
+  }
+
+  .product-comparison__sliderBlockInfo h4 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .product-comparison__sliderBlockInfo .wrap-in-stock p {
+    font-size: 12px;
+    line-height: 14.56px;
+  }
+
+  .product-comparison__sliderBlockInfo .wrap-in-stock p:nth-child(1) {
+    background: none;
+    margin-top: 1px;
+  }
+
+  .product-comparison__sliderBlockInfo .wrap-in-stock p:nth-child(2) {
+    display: none;
+  }
+
+  .product-comparison__buttonRemove {
+    height: 20px;
+    transform: translate(40%, -40%);
+    width: 20px;
+  }
+
+  .product-comparison__slide ul {
+    margin-top: 8px;
+  }
+
+  .product-comparison__slide ul li {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 34px 0 8px;
+  }
+
+  .product-comparison__slideName {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: -6px;
   }
 
   .exchange-trade-in__title {
