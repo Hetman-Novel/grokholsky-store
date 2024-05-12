@@ -185,6 +185,44 @@ if (fourthSlider) {
     });
 }
 
+let youCanPickItUpTodaySlider = document.querySelector('.you-can-pick-it-up-today-slider')
+if (youCanPickItUpTodaySlider) {
+    new Swiper(youCanPickItUpTodaySlider, {
+        navigation: {
+            prevEl: '#you-can-pick-it-up-today-slider-btn-prev',
+            nextEl: '#you-can-pick-it-up-today-slider-btn-next',
+        },
+        slidesPerView: 5,
+        slidesPerGroup: 1,
+        watchOverflow: true,
+        spaceBetween: 16,
+        loop: false,
+        speed: 800,
+        effect: 'slide',
+        breakpoints: {
+            0: {
+               slidesPerView: 2.38,
+               spaceBetween: 10,
+            },
+            480: {
+               slidesPerView: 3.3,
+               spaceBetween: 10,
+            },
+            576: {
+               slidesPerView: 3,
+               spaceBetween: 10,
+            },
+            840: {
+               slidesPerView: 4,
+            },
+            1025: {
+               slidesPerView: 5,
+               spaceBetween: 16,
+            }
+         },
+    });
+}
+
 let sliderAboveCatalog = document.getElementById('slider-above-catalog')
 if (sliderAboveCatalog) {
    new Swiper(sliderAboveCatalog, {
