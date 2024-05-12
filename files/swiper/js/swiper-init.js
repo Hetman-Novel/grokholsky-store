@@ -417,17 +417,28 @@ if (productComparisonSlider) {
       spaceBetween: 16,
       speed: 800,
       effect: 'slide',
-      /*breakpoints: {
-         320: {
-            slidesPerView: 1,
-         },
-         480: {
+      breakpoints: {
+         0: {
             slidesPerView: 2,
+            spaceBetween: 15,
          },
-         992: {
+         661: {
             slidesPerView: 3,
+            spaceBetween: 16,
+         },
+         801: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+         },
+         900: {
+            slidesPerView: 3,
+            spaceBetween: 16,
+         },
+         1100: {
+            slidesPerView: 4,
+            spaceBetween: 16,
          }
-      },*/
+      },
    });
 }
 
