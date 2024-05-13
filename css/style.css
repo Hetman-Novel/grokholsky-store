@@ -2444,6 +2444,29 @@ body.lock {
   margin-top: -1px;
 }
 
+.order-engraving-popup h3.larger {
+  margin: 3px 0 8px;
+  padding-right: 10px;
+}
+
+.order-engraving-popup .popup-form__label {
+  background: none;
+  display: table;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 7px 0 1px;
+  padding: 0;
+  position: static;
+  text-align: left;
+  transform: translate(0) !important;
+}
+
+.order-engraving-popup .popup-form__submit {
+  background: #145BE6 !important;
+  margin-top: 16px;
+}
+
 /* n Classes */
 
 /* Header */
@@ -10536,6 +10559,732 @@ body._touch .header .menu__list > li._active .menu__arrow {
   width: 100%;
 }
 
+/* Page - Engraving */
+
+.engraving-page {
+  overflow: hidden;
+}
+
+.engraving-page .contact__itemsHead h2 {
+  font-size: 48px;
+  line-height: 59.42px;
+  margin: 0 auto 17px;
+  text-align: center;
+}
+
+.engraving-page__fsBlock {
+  background-color: #051128;
+  border-radius: 28px;
+  height: 555px;
+  overflow: hidden;
+}
+
+.engraving-page__fsItem .content {
+  color: #fff;
+  height: auto;
+  margin: auto;
+  transform: translateX(2%);
+  text-align: center;
+}
+
+.engraving-page__fsItem .content h1 {
+  font-size: 54px;
+  line-height: 66.85px;
+  max-width: 524px;
+  margin: 0 auto 19px;
+}
+
+.engraving-page__fsItem .content p {
+  font-size: 20px;
+  line-height: 28px;
+  max-width: 458px;
+  margin: 0 auto;
+}
+
+.engraving-page__fsItem .wrap-image {
+  min-height: 100%;
+  max-width: 645px;
+  position: relative;
+  transform: translateX(-4.8%);
+}
+
+.engraving-page__fsButton {
+  align-items: center;
+  background-color: #145BE6;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  margin: 45px auto 0;
+  padding-bottom: 1.5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  width: 261px;
+}
+
+.we-engrave-on {
+  margin-bottom: 85px;
+  margin-top: 85px;
+}
+
+.we-engrave-on h2 {
+  font-size: 48px;
+  line-height: 59.42px;
+  margin: 0;
+  text-align: center;
+}
+
+.we-engrave-on__items {
+  margin-top: 55px;
+  width: 100%;
+}
+
+.we-engrave-on__blockText p {
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.we-engrave-on__blockText p:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.we-engrave-on__tabs {
+  margin-top: 27px !important;
+}
+
+.we-engrave-on__tabs .tabs__wrap-tab-buttons {
+  justify-content: unset !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: visible !important;
+  overflow-y: hidden !important;
+  overflow-x: auto !important;
+}
+
+.we-engrave-on__tabs .tabs__wrap-tab {
+  background-color: #F2F4F4 !important;
+  border-radius: 12px;
+  display: block;
+  overflow: visible !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.we-engrave-on__tabs .tabs__wrap-tab .tab {
+  padding: 7px 19px 8px !important;
+}
+
+.we-engrave-on__slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.we-engrave-on__slide {
+  border-radius: 24px;
+}
+
+.we-engrave-on__blockImage {
+  border-radius: inherit;
+  position: relative;
+}
+
+.we-engrave-on__blockImage img {
+  border-radius: inherit;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.we-engrave-on__btn-prev,
+.we-engrave-on__btn-next {
+  border-radius: 50%;
+  height: 34px;
+  overflow: hidden;
+  padding: 1px;
+  transform: translateY(-50%);
+  top: 50%;
+  margin-top: 0;
+  width: 34px;
+}
+
+.we-engrave-on__btn-prev:after,
+.we-engrave-on__btn-next:after {
+  display: none !important;
+}
+
+.we-engrave-on__btn-prev.swiper-button-disabled,
+.we-engrave-on__btn-next.swiper-button-disabled {
+  opacity: 1;
+}
+
+.we-engrave-on__btn-prev {
+  left: 47px;
+}
+
+.we-engrave-on__btn-prev img {
+  transform: scale(-1, 1);
+}
+
+.we-engrave-on__btn-next {
+  right: 47px;
+}
+
+.worth-engraving {
+  margin-bottom: 65px;
+  margin-top: 65px;
+}
+
+.worth-engraving h2 {
+  font-size: 48px;
+  line-height: 59.42px;
+  margin: 0;
+  text-align: center;
+}
+
+.worth-engraving__item:nth-child(1) p {
+  max-width: 74%;
+}
+
+.worth-engraving__item:nth-child(2) p {
+  max-width: 68%;
+}
+
+.worth-engraving__item:nth-child(3) p {
+  max-width: 80%;
+}
+
+.worth-engraving__item-content {
+  background-color: #F3F7FE;
+  border-radius: 16px;
+  min-height: 100%;
+  overflow: hidden;
+  padding: 19px 24px 21px;
+  position: relative;
+}
+
+.worth-engraving__item-content h3 {
+  color: #145BE6;
+  font-size: 24px;
+  line-height: 29.71px;
+  margin: 0 0 7px;
+}
+
+.worth-engraving__item-content p {
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 80%;
+  margin: 0;
+}
+
+.worth-engraving__item-content img {
+  bottom: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+
+.how-is-engraving-done {
+  margin-bottom: 91px;
+}
+
+.how-is-engraving-done h2 {
+  font-size: 48px;
+  line-height: 59.42px;
+  margin: 0;
+  text-align: center;
+}
+
+.how-is-engraving-done__items {
+  margin-top: 31px;
+}
+
+.how-is-engraving-done__wrap-video {
+  min-height: 100%;
+  padding-bottom: 54.1%;
+  position: relative;
+  width: 100%;
+}
+
+.how-is-engraving-done__wrap-video.show-video .how-is-engraving-done__overlay-block-video {
+  display: none;
+  z-index: -1;
+}
+
+.how-is-engraving-done iframe {
+  border: none;
+}
+
+.how-is-engraving-done iframe,
+.how-is-engraving-done__overlay-block-video {
+  border-radius: 24px;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.how-is-engraving-done__overlay-block-video .wrap-image {
+  border-radius: inherit;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.how-is-engraving-done__overlay-block-video .wrap-image img {
+  border-radius: inherit;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.how-is-engraving-done__overlay-block-video button {
+  border-radius: 13px;
+  height: 56.38px;
+  left: 50%;
+  display: block;
+  overflow: hidden;
+  padding: 1px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80.53px;
+  z-index: 2;
+  max-height: 19%;
+  max-width: 14.8%;
+}
+
+.videos-slider {
+  overflow: hidden;
+}
+
+.videos-slider__slide {
+  border-radius: 16px;
+}
+
+.videos-slider__blockImage {
+  border-radius: inherit;
+  position: relative;
+}
+
+.videos-slider__blockImage img {
+  border-radius: inherit;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.videos-slider .block-loaded button {
+  opacity: 1;
+  z-index: 2;
+}
+
+.videos-slider button {
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease 0s;
+  top: 50%;
+  z-index: -1;
+}
+
+.videos-slider button img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.prices-for-engraving {
+  margin-bottom: 73px;
+  margin-top: 50px;
+}
+
+.prices-for-engraving h2 {
+  font-size: 48px;
+  line-height: 59.42px;
+  margin: 0;
+  text-align: center;
+}
+
+.prices-for-engraving__blocks,
+.prices-for-engraving__bottom {
+  max-width: 832px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prices-for-engraving__blocks {
+  margin-top: 28px;
+}
+
+.prices-for-engraving__block {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid #E5E9E9;
+  display: flex;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  padding: 16px 20px 14px 21px;
+  position: relative;
+}
+
+.prices-for-engraving__block:first-child {
+  border-top: 1px solid transparent;
+}
+
+.prices-for-engraving__block-selected-bg {
+  font-size: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.prices-for-engraving__block .wrap-icon-and-name,
+.prices-for-engraving__block .wrap-button {
+  position: relative;
+  z-index: 1;
+}
+
+.prices-for-engraving__block .wrap-icon-and-name {
+  align-items: center;
+  display: flex;
+  width: calc(100% - 220px);
+}
+
+.prices-for-engraving__block .wrap-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  flex: 0 0 48px;
+  width: 48px;
+}
+
+.prices-for-engraving__block .wrap-icon img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.prices-for-engraving__block .wrap-name {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.prices-for-engraving__block .wrap-name h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0;
+}
+
+.prices-for-engraving__block .wrap-name p {
+  color: #12e69a;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: -1px 0 0;
+}
+
+.prices-for-engraving__block .wrap-button {
+  width: 220px;
+}
+
+.prices-for-engraving__block .wrap-button p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0 12px 0 0;
+  text-align: left;
+}
+
+.prices-for-engraving__button {
+  align-items: center;
+  background-color: #145BE6;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  height: 48px;
+  padding: 0 12px;
+  text-align: center;
+  width: 125px;
+}
+
+.prices-for-engraving__bottom {
+  padding-top: 16px;
+}
+
+.prices-for-engraving__bottom p {
+  margin: 0;
+}
+
+.prices-for-engraving__bottom p:nth-child(1) {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.prices-for-engraving__bottom p:nth-child(2) {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.faq {
+  margin-bottom: 52px;
+  margin-top: 52px;
+}
+
+.faq h2 {
+  font-size: 48px;
+  line-height: 59.42px;
+  margin: 0;
+  text-align: center;
+}
+
+.faq__item:nth-child(odd) h3,
+.faq__item:nth-child(odd) p {
+  max-width: 576px;
+}
+
+.faq__item h3 {
+  font-size: 28px;
+  line-height: 34.66px;
+  margin: 0 0 12px;
+}
+
+.faq__item p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.faq__item p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.leave-data {
+  margin-bottom: 33px;
+  margin-top: 37px;
+}
+
+.leave-data__wrap-content {
+  background-color: #051128;
+  border-radius: 24px;
+  padding: 47px 25px 76px;
+}
+
+.leave-data h2 {
+  color: #fff;
+  font-size: 48px;
+  line-height: 59.42px;
+  margin: 0;
+  text-align: center;
+}
+
+.leave-data__form {
+  max-width: 782px;
+  margin: 28px auto 0;
+}
+
+.leave-data__wrap-field {
+  width: 100%;
+}
+
+.leave-data__wrap-field label {
+  color: #CCD2D3;
+  display: table;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 1px;
+  text-align: left;
+}
+
+.leave-data__wrap-field input {
+  background-color: #051128;
+  border: 1px solid rgb(65, 77, 100);
+  border-radius: 12px;
+  color: #4A5363;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 54.57px;
+  height: 54.57px;
+  padding: 0 17px;
+  width: 100%;
+}
+
+.leave-data__wrap-field input::-moz-placeholder {
+  color: inherit;
+}
+
+.leave-data__wrap-field input::placeholder {
+  color: inherit;
+}
+
+.leave-data button {
+  background-color: #145BE6;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  flex: 0 0 145px;
+  height: 54px;
+  margin-left: 18px;
+  padding: 0 12px;
+  text-align: center;
+  width: 145px;
+}
+
+/* Page - Blog */
+
+.blog-page {
+  padding-bottom: 99px;
+  overflow: hidden;
+}
+
+.blog-page h1 {
+  font-size: 48px;
+  line-height: 59.42px;
+  margin: -8px 0 0;
+}
+
+.blog-page #tabs {
+  margin-top: 18px !important;
+}
+
+.blog-page #tabs .tabs__wrap-tab-buttons {
+  margin-left: -35px;
+  margin-right: -35px;
+  padding-left: 35px;
+  padding-right: 32px !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
+.blog-page #tabs .tabs__wrap-tab {
+  margin-left: 0;
+}
+
+.blog-page #tabs .tab {
+  border-radius: 50px !important;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 6px 15px !important;
+}
+
+.blog-page #tabs .tab:nth-child(1) {
+  margin-left: 0 !important;
+}
+
+.blog-page .we-engrave-on__tabs .tabs__wrap-tab {
+  background: none !important;
+}
+
+.blog__items {
+  margin-bottom: 30px;
+  margin-top: 28px;
+}
+
+.blog__itemBottom {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 14px;
+}
+
+.blog__itemBottom a {
+  border: 1px solid #0ED5FF;
+  border-radius: 50px;
+  color: #002024;
+  display: table;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 12px;
+  padding: 1px 6px;
+}
+
+.blog__itemBottom p {
+  color: #66797C;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 3px 0;
+}
+
+.blog__blockImage {
+  border-radius: 16px;
+  display: block;
+  padding-bottom: 62.3%;
+  position: relative;
+}
+
+.blog__blockImage img {
+  border-radius: inherit;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.blog__blockContent {
+  padding: 14px 10px 0;
+}
+
+.blog__blockContent h2 {
+  display: table;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.blog__blockContent a {
+  color: #002024;
+}
+
 /* Footer */
 
 .footer {
@@ -11021,6 +11770,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
     display: flex;
   }
 
+  .blog__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .blog__item {
+    margin: 0 8px 15px;
+    width: calc(50% - 16px);
+  }
+
   .footer__items {
     display: flex;
     flex-wrap: wrap;
@@ -11365,6 +12126,71 @@ body._touch .header .menu__list > li._active .menu__arrow {
     display: none;
   }
 
+  .worth-engraving__item-content img.mobile {
+    display: none;
+  }
+
+  .prices-for-engraving__block:last-child {
+    border-bottom: 1px solid #E5E9E9;
+  }
+
+  .prices-for-engraving__block-selected-bg {
+    background-color: #F3F7FE;
+    border-radius: 12px;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .prices-for-engraving__block:last-child.selected {
+    border-bottom-color: transparent;
+    margin-bottom: -2px;
+  }
+
+  .prices-for-engraving__block.selected {
+    border-top-color: transparent;
+    margin-bottom: -3px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .prices-for-engraving__block.selected::before,
+  .prices-for-engraving__block.selected::after {
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 50px;
+    z-index: -1;
+  }
+
+  .prices-for-engraving__block.selected:before {
+    left: 0;
+  }
+
+  .prices-for-engraving__block.selected:after {
+    right: 0;
+  }
+
+  .prices-for-engraving__block.selected .prices-for-engraving__block-selected-bg {
+    opacity: 1;
+  }
+
+  .prices-for-engraving__block .wrap-button {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .prices-for-engraving__block .wrap-button p:nth-child(1) {
+    display: none;
+  }
+
+  .prices-for-engraving__block .wrap-button .currency .letters {
+    display: none;
+  }
+
   .floating-product-price .wrap-price p:not(.discountLabel) .price {
     order: 1;
   }
@@ -11477,6 +12303,75 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .profile__my-orders .block__subItem ul li .currency .letters {
     display: none !important;
+  }
+
+  .blog__item {
+    margin: 0 8px 35px;
+    width: calc(33.3333% - 16px);
+  }
+}
+
+@media screen and (min-width: 661px) {
+  .faq__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px -20px 0;
+  }
+
+  .faq__item {
+    margin: 0 20px 28px;
+    width: calc(50% - 40px);
+  }
+
+  .leave-data__form {
+    align-items: flex-end;
+    display: flex;
+  }
+
+  .leave-data__wrap-field {
+    margin-left: 6px;
+    margin-right: 6px;
+    width: calc(50% - 91px);
+  }
+}
+
+@media screen and (min-width: 684px) {
+  .how-is-engraving-done__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .how-is-engraving-done__item {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .how-is-engraving-done__item:nth-child(1) {
+    padding-right: 0;
+    position: relative;
+    width: calc(81% - 17px);
+  }
+
+  .how-is-engraving-done__item:nth-child(2) {
+    width: calc(19% - 15px);
+  }
+
+  .videos-slider {
+    height: 100%;
+  }
+
+  .videos-slider .swiper-wrapper {
+    height: 100% !important;
+  }
+
+  .videos-slider__slide {
+    height: calc(34.6666% - 16px) !important;
+  }
+
+  .videos-slider__blockImage {
+    height: 100%;
   }
 }
 
@@ -11974,6 +12869,46 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .profile__form {
     max-width: 434px;
   }
+
+  .worth-engraving__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 38px -10px 0;
+  }
+
+  .worth-engraving__item {
+    margin: 0 10px 20px;
+    width: calc(33.3333% - 20px);
+  }
+
+  .faq__items {
+    margin: 44px -33px 0;
+  }
+
+  .faq__item {
+    margin: 0 33px 28px;
+    width: calc(50% - 66px);
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .we-engrave-on #tabs.tabs .tabContent.content-active {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+
+  .we-engrave-on__item:nth-child(1) {
+    width: 55.5%;
+  }
+
+  .we-engrave-on__item:nth-child(2) {
+    padding-left: 35px;
+    width: 44.5%;
+  }
+
+  .we-engrave-on__blockImage {
+    min-height: 477px;
+  }
 }
 
 @media screen and (min-width: 961px) {
@@ -12009,6 +12944,35 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding: 13px 23px 19px;
     position: sticky;
     top: 31px;
+  }
+
+  .engraving-page__fsItems {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    height: inherit;
+  }
+
+  .engraving-page__fsItem {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .engraving-page__fsItem:nth-child(1) {
+    display: flex;
+    height: inherit;
+    width: calc(48% - 30px);
+  }
+
+  .engraving-page__fsItem:nth-child(2) {
+    width: calc(52% - 30px);
+  }
+
+  .engraving-page__fsItem .wrap-image img {
+    position: absolute;
+    top: 11%;
+    width: 100%;
   }
 }
 
@@ -12303,6 +13267,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .cooperation__itemTwo:nth-child(2) {
     width: calc(100% - 316px);
   }
+
+  .videos-slider__slide {
+    height: calc(25.65% - 16px) !important;
+  }
+
+  .leave-data__wrap-field {
+    width: calc(50% - 96px);
+  }
+
+  .blog__item {
+    width: calc(25% - 16px);
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -12390,6 +13366,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .product-comparison__item h1 {
     margin-bottom: 15px;
+  }
+
+  .we-engrave-on__item:nth-child(2) {
+    padding-left: 57px;
   }
 }
 
@@ -12603,6 +13583,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .cooperation__blockText p {
     max-width: 100%;
   }
+
+  .engraving-page__fsBlock {
+    height: 520px;
+  }
+
+  .engraving-page__fsItem .content h1 {
+    font-size: 44px;
+    line-height: 56.85px;
+    max-width: 480px;
+  }
 }
 
 @media screen and (max-width: 1200.98px) {
@@ -12763,6 +13753,15 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-right: 0;
     text-align: right;
   }
+
+  .we-engrave-on__blockText p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .we-engrave-on__blockText p:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 1160.98px) {
@@ -12888,6 +13887,35 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .repair-process__item {
     margin-bottom: 25px;
     width: calc(50% - 30px);
+  }
+
+  .engraving-page__fsBlock {
+    height: 450px;
+  }
+
+  .engraving-page__fsItem .content h1 {
+    font-size: 34px;
+    line-height: 46.85px;
+    max-width: 360px;
+  }
+
+  .engraving-page__fsItem .content p {
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 420px;
+  }
+
+  .engraving-page__fsButton {
+    font-size: 18px;
+    line-height: 50px;
+    height: 50px;
+    margin-top: 35px;
+    width: 240px;
+  }
+
+  .blog__blockContent h2 {
+    font-size: 18px;
+    line-height: 26px;
   }
 
   .floating-product-price__item:nth-child(1) {
@@ -13397,6 +14425,122 @@ body._touch .header .menu__list > li._active .menu__arrow {
     font-size: 32px;
     line-height: 38px;
   }
+
+  .engraving-page .contact__itemsHead h2 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .we-engrave-on h2 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .we-engrave-on__blockText p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .worth-engraving h2 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .how-is-engraving-done h2 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .prices-for-engraving h2 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .prices-for-engraving__block {
+    padding: 12px;
+  }
+
+  .prices-for-engraving__block .wrap-icon-and-name {
+    width: calc(100% - 180px);
+  }
+
+  .prices-for-engraving__block .wrap-icon {
+    height: 32px;
+    flex: 0 0 32px;
+    width: 32px;
+  }
+
+  .prices-for-engraving__block .wrap-name h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .prices-for-engraving__block .wrap-button {
+    width: 180px;
+  }
+
+  .prices-for-engraving__block .wrap-button p:nth-child(2) {
+    font-size: 18px;
+    line-height: 26px;
+    margin-right: 8px;
+  }
+
+  .prices-for-engraving__button {
+    font-size: 18px;
+    line-height: 45px;
+    height: 45px;
+    width: 110px;
+  }
+
+  .prices-for-engraving__bottom p:nth-child(1) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .faq h2 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .faq__item h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .faq__item p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .leave-data__wrap-content {
+    padding: 35px 25px 40px;
+  }
+
+  .leave-data h2 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .leave-data__form {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .leave-data button {
+    margin-left: 6px;
+  }
+
+  .blog-page {
+    padding-bottom: 50px;
+  }
+
+  .blog-page h1 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .blog-page #tabs .tabs__wrap-tab-buttons {
+    padding-right: 30px !important;
+  }
 }
 
 @media screen and (max-width: 991.98px) {
@@ -13454,6 +14598,36 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .profile__wish-list .slider-for-phones__slide {
     width: calc(50% - 16px);
+  }
+
+  .engraving-page__fsBlock {
+    height: auto;
+    padding-top: 70px;
+  }
+
+  .engraving-page__fsItem .content {
+    margin-bottom: 50px;
+    transform: translateX(0);
+  }
+
+  .engraving-page__fsItem .wrap-image {
+    margin: 0 auto -50px;
+    max-width: 520px;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 900.98px) {
+  .we-engrave-on__items {
+    margin-top: 35px;
+  }
+
+  .we-engrave-on__blockText {
+    padding-top: 20px;
+  }
+
+  .we-engrave-on__blockImage {
+    padding-bottom: 64.1%;
   }
 }
 
@@ -13639,6 +14813,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .cooperation__blockImage {
     margin-bottom: 30px;
+  }
+
+  .worth-engraving__items {
+    margin-top: 18px;
+  }
+
+  .worth-engraving__item {
+    margin-bottom: 12px;
+  }
+
+  .videos-slider button {
+    max-width: 19%;
   }
 }
 
@@ -14017,6 +15203,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .repair-of-apple-equipment__item h4 {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .leave-data h2 {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer.block-with-a-price-is-displayed {
@@ -14845,6 +16037,23 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (max-width: 683.98px) {
+  .how-is-engraving-done__item:nth-child(2) {
+    margin-top: 8px;
+  }
+
+  .videos-slider {
+    margin-left: -25px;
+    margin-right: -25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .videos-slider__blockImage {
+    padding-bottom: 56%;
+  }
+}
+
 @media screen and (max-width: 660.98px) {
   .header .menu .menu-topmenu-container {
     position: relative;
@@ -14856,6 +16065,23 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .profile__my-orders .block__subItemProduct .wrap-quantity-price {
     width: calc(100% - 200px);
+  }
+
+  .faq__items {
+    margin-top: 50px;
+  }
+
+  .faq__item {
+    margin-bottom: 30px;
+  }
+
+  .leave-data__wrap-field {
+    margin-top: 14px;
+  }
+
+  .leave-data button {
+    margin: 20px 0 0;
+    width: 100%;
   }
 }
 
@@ -15425,6 +16651,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .profile__my-orders .block__subItem .wrap-buttons a:not(:last-child) {
     margin-bottom: 8px;
+  }
+
+  .blog__itemBottom {
+    padding-top: 8px;
   }
 
   .footer__item:nth-child(2) {
@@ -16004,6 +17234,23 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .section-select-a-bank__button {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .order-engraving-popup h3.larger {
+    line-height: 28px;
+    margin: -1px 0 15px;
+  }
+
+  .order-engraving-popup .popup-form__label {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 11px 0 3px;
+  }
+
+  .order-engraving-popup .popup-form__submit {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 12px;
   }
 
   .header__allResultSearch ul .list-with-prices-and-photos__wrap-price p:not(.list-with-prices-and-photos__discountLabel) span:not(.list-with-prices-and-photos__discountLabel, .wrap-discount, .price)::before {
@@ -18842,6 +20089,391 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: calc(50% - 10px);
   }
 
+  .engraving-page .contact__items {
+    padding-bottom: 10px;
+  }
+
+  .engraving-page .contact__itemsHead h2 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+
+  .engraving-page .contact .block__item:not(:first-child) {
+    margin-top: -2px;
+  }
+
+  .engraving-page__fs {
+    margin-top: 21px;
+  }
+
+  .engraving-page__fsBlock {
+    border-radius: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 26px 15px 0;
+  }
+
+  .engraving-page__fsItem .content {
+    margin-bottom: 32px;
+  }
+
+  .engraving-page__fsItem .content h1 {
+    font-size: 28px;
+    line-height: 34.66px;
+    margin-bottom: 15px;
+    max-width: 292px;
+  }
+
+  .engraving-page__fsItem .content p {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 282px;
+  }
+
+  .engraving-page__fsItem .wrap-image {
+    margin: 0 auto -31px;
+    max-width: 292px;
+  }
+
+  .engraving-page__fsButton {
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 18px;
+    width: 204px;
+  }
+
+  .we-engrave-on {
+    margin-bottom: 36px;
+    margin-top: 26px;
+  }
+
+  .we-engrave-on h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .we-engrave-on__items {
+    margin-top: 18px;
+  }
+
+  .we-engrave-on__blockText {
+    padding-top: 13px;
+  }
+
+  .we-engrave-on__blockText p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .we-engrave-on__blockText p:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  .we-engrave-on__tabs {
+    margin-top: 20px !important;
+  }
+
+  .we-engrave-on__tabs .tabs__wrap-tab .tab {
+    border-radius: 10px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    margin: 4px !important;
+    padding: 4px 13px 4px !important;
+  }
+
+  .we-engrave-on__btn-prev,
+  .we-engrave-on__btn-next {
+    height: 27px;
+    width: 27px;
+  }
+
+  .we-engrave-on__btn-prev {
+    left: 15px;
+  }
+
+  .we-engrave-on__btn-next {
+    right: 15px;
+  }
+
+  .worth-engraving {
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .worth-engraving h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .worth-engraving__item:nth-child(2) p {
+    max-width: 75%;
+  }
+
+  .worth-engraving__item-content {
+    padding: 13px 15px 17px;
+  }
+
+  .worth-engraving__item-content h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 5px;
+    max-width: 90%;
+  }
+
+  .worth-engraving__item-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .worth-engraving__item-content img.desktop {
+    display: none;
+  }
+
+  .how-is-engraving-done {
+    margin-bottom: 31px;
+  }
+
+  .how-is-engraving-done h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .how-is-engraving-done__items {
+    margin-top: 16px;
+  }
+
+  .how-is-engraving-done__wrap-video {
+    padding-bottom: 56%;
+  }
+
+  .how-is-engraving-done iframe,
+  .how-is-engraving-done__overlay-block-video {
+    border-radius: 16px;
+  }
+
+  .videos-slider {
+    margin-right: -15px;
+    padding-right: 15px;
+  }
+
+  .prices-for-engraving {
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+
+  .prices-for-engraving h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .prices-for-engraving__blocks {
+    margin-top: 1px;
+  }
+
+  .prices-for-engraving__block {
+    padding: 13px 0 14px;
+  }
+
+  .prices-for-engraving__block .wrap-icon-and-name {
+    align-items: flex-start;
+    width: calc(100% - 102px);
+  }
+
+  .prices-for-engraving__block .wrap-icon {
+    height: 27px;
+    flex: 0 0 24px;
+    width: 24px;
+  }
+
+  .prices-for-engraving__block .wrap-name {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .prices-for-engraving__block .wrap-name h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .prices-for-engraving__block .wrap-name p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 5px;
+  }
+
+  .prices-for-engraving__block .wrap-button {
+    width: 102px;
+  }
+
+  .prices-for-engraving__block .wrap-button p:nth-child(1) {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .prices-for-engraving__block .wrap-button p:nth-child(2) {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 5px 0 4px;
+    text-align: right;
+  }
+
+  .prices-for-engraving__block .wrap-button .currency {
+    font-size: 12px;
+  }
+
+  .prices-for-engraving__block .wrap-button .currency .icon {
+    display: none;
+  }
+
+  .prices-for-engraving__button {
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    margin-left: auto;
+    width: 102px;
+  }
+
+  .prices-for-engraving__bottom {
+    display: none;
+  }
+
+  .faq {
+    margin-bottom: 28px;
+    margin-top: 10px;
+  }
+
+  .faq h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .faq__items {
+    margin-top: 18px;
+  }
+
+  .faq__item {
+    margin-bottom: 17px;
+  }
+
+  .faq__item h3 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 3px;
+  }
+
+  .faq__item p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .faq__item p:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  .leave-data {
+    margin-bottom: -3px;
+    margin-top: 9px;
+  }
+
+  .leave-data__wrap-content {
+    padding: 14px 18px 34px;
+  }
+
+  .leave-data h2 {
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .leave-data__form {
+    margin-top: 11px;
+  }
+
+  .leave-data__wrap-field {
+    margin-top: 11px;
+  }
+
+  .leave-data__wrap-field label {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 3px;
+  }
+
+  .leave-data__wrap-field input {
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .leave-data button {
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 12px;
+  }
+
+  .blog-page {
+    padding-bottom: 25px;
+  }
+
+  .blog-page h1 {
+    font-size: 28px;
+    line-height: 34.66px;
+    margin-top: 1px;
+  }
+
+  .blog-page #tabs {
+    margin-top: 1px !important;
+  }
+
+  .blog-page #tabs .tabs__wrap-tab-buttons {
+    padding-right: 30px !important;
+  }
+
+  .blog-page #tabs .tab {
+    padding: 5px 12.5px 4px !important;
+  }
+
+  .blog__items {
+    margin-bottom: 22px;
+    margin-top: 15px;
+  }
+
+  .blog__item {
+    margin-bottom: 15px;
+  }
+
+  .blog__itemBottom a {
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 13px;
+  }
+
+  .blog__itemBottom p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .blog__blockImage {
+    padding-bottom: 62%;
+  }
+
+  .blog__blockContent {
+    padding: 7px 0 0;
+  }
+
+  .blog__blockContent h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .footer__item.hidden-mobile {
     display: none;
   }
@@ -19671,6 +21303,22 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .profile__my-orders .block__subItem .wrap-buttons a:hover {
     background: #0ED5FF;
     color: #002024;
+  }
+
+  .blog__itemBottom a {
+    transition: 0.3s ease 0s;
+  }
+
+  .blog__itemBottom a:hover {
+    color: #0ed5ff;
+  }
+
+  .blog__blockContent a {
+    transition: 0.3s ease 0s;
+  }
+
+  .blog__blockContent a:hover {
+    color: #0ed5ff;
   }
 
   .footer__itemBlock ul a:hover,
