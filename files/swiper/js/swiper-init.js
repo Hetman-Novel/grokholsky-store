@@ -35,40 +35,40 @@ if (bannerSlider) {
 
 let firstSlider = document.getElementById('first-slider')
 if (firstSlider) {
-    new Swiper(firstSlider, {
-        navigation: {
-            prevEl: '#first-slider-btn-prev',
-            nextEl: '#first-slider-btn-next',
-        },
-        slidesPerView: 5,
-        slidesPerGroup: 1,
-        watchOverflow: true,
-        spaceBetween: 16,
-        loop: false,
-        speed: 800,
-        effect: 'slide',
-        breakpoints: {
-            0: {
-               slidesPerView: 2.38,
-               spaceBetween: 10,
-            },
-            480: {
-               slidesPerView: 3.3,
-               spaceBetween: 10,
-            },
-            576: {
-               slidesPerView: 3,
-               spaceBetween: 10,
-            },
-            840: {
-               slidesPerView: 4,
-            },
-            1025: {
-               slidesPerView: 5,
-               spaceBetween: 16,
-            }
+   new Swiper(firstSlider, {
+      navigation: {
+         prevEl: '#first-slider-btn-prev',
+         nextEl: '#first-slider-btn-next',
+      },
+      slidesPerView: 5,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      spaceBetween: 16,
+      loop: false,
+      speed: 800,
+      effect: 'slide',
+      breakpoints: {
+         0: {
+            slidesPerView: 2.38,
+            spaceBetween: 10,
          },
-    });
+         480: {
+            slidesPerView: 3.3,
+            spaceBetween: 10,
+         },
+         576: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+         },
+         840: {
+            slidesPerView: 4,
+         },
+         1025: {
+            slidesPerView: 5,
+            spaceBetween: 16,
+         }
+      },
+   });
 }
 
 let secondSlider = document.getElementById('second-slider')
@@ -473,5 +473,152 @@ if (reviewsSlider) {
             slidesPerView: 3,
          }
       },
+   });
+}
+
+let videosSlider = document.querySelector('.videos-slider')
+if (videosSlider) {
+   new Swiper(videosSlider, {
+
+      simulateTouch: true, // true / false
+      // Чувствительность свайпа
+      touchRation: 1, // По умолчанию 1 / 0 отключает перетаскивание на всех устройствах
+      // Угол срабатывания свайпа/перетаскивания
+      touchAngle: 45,
+      // Курсор перетаскивания
+      grabCursor: false, // true / false
+
+      // Переключение при клике на слайд
+      slideToClickedSlide: false,
+      slidesPerView: 4,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      spaceBetween: 16,
+      speed: 500,
+            mousewheel: {
+               sensitivity: 1,
+               eventsTarget: ".videos-slider",
+            },
+      effect: 'slide',
+      breakpoints: {
+         0: {
+            slidesPerView: 2.45,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+         },
+         481: {
+            slidesPerView: 3.5,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+         },
+         684: {
+            slidesPerView: 3,
+            direction: 'vertical',
+            slidesPerGroup: 1,
+            autoHeight: true,
+         },
+         1025: {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+            direction: 'vertical',
+         }
+      },
+   });
+}
+
+let airPodsSlider = document.getElementById('air-pods-slider')
+if (airPodsSlider) {
+   new Swiper(airPodsSlider, {
+      navigation: {
+         prevEl: '#air-pods-we-engrave-on-btn-prev',
+         nextEl: '#air-pods-we-engrave-on-btn-next',
+      },
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      loop: false,
+      speed: 800,
+      spaceBetween: 20,
+      effect: 'slide',
+   });
+}
+let macBookSlider = document.getElementById('mac-book-slider')
+if (macBookSlider) {
+   new Swiper(macBookSlider, {
+      navigation: {
+         prevEl: '#mac-book-we-engrave-on-btn-prev',
+         nextEl: '#mac-book-we-engrave-on-btn-next',
+      },
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      loop: false,
+      speed: 800,
+      spaceBetween: 20,
+      effect: 'slide',
+   });
+}
+let iphoneSlider = document.getElementById('iphone-slider')
+if (iphoneSlider) {
+   new Swiper(iphoneSlider, {
+      navigation: {
+         prevEl: '#iphone-we-engrave-on-btn-prev',
+         nextEl: '#iphone-we-engrave-on-btn-next',
+      },
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      loop: false,
+      speed: 800,
+      spaceBetween: 20,
+      effect: 'slide',
+   });
+}
+let ipadSlider = document.getElementById('ipad-slider')
+if (ipadSlider) {
+   new Swiper(ipadSlider, {
+      navigation: {
+         prevEl: '#ipad-we-engrave-on-btn-prev',
+         nextEl: '#ipad-we-engrave-on-btn-next',
+      },
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      loop: false,
+      speed: 800,
+      spaceBetween: 20,
+      effect: 'slide',
+   });
+}
+let airTagSlider = document.getElementById('air-tag-slider')
+if (airTagSlider) {
+   new Swiper(airTagSlider, {
+      navigation: {
+         prevEl: '#air-tag-we-engrave-on-btn-prev',
+         nextEl: '#air-tag-we-engrave-on-btn-next',
+      },
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      loop: false,
+      speed: 800,
+      spaceBetween: 20,
+      effect: 'slide',
+   });
+}
+let dronesSlider = document.getElementById('drones-slider')
+if (dronesSlider) {
+   new Swiper(dronesSlider, {
+      navigation: {
+         prevEl: '#drones-we-engrave-on-btn-prev',
+         nextEl: '#drones-we-engrave-on-btn-next',
+      },
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      loop: false,
+      speed: 800,
+      spaceBetween: 20,
+      effect: 'slide',
    });
 }
