@@ -111,40 +111,40 @@ if (secondSlider) {
 
 let thirdSlider = document.getElementById('third-slider')
 if (thirdSlider) {
-    new Swiper(thirdSlider, {
-        navigation: {
-            prevEl: '#third-slider-btn-prev',
-            nextEl: '#third-slider-btn-next',
-        },
-        slidesPerView: 5,
-        slidesPerGroup: 1,
-        watchOverflow: true,
-        spaceBetween: 16,
-        loop: false,
-        speed: 800,
-        effect: 'slide',
-        breakpoints: {
-            0: {
-               slidesPerView: 2.38,
-               spaceBetween: 10,
-            },
-            480: {
-               slidesPerView: 3.3,
-               spaceBetween: 10,
-            },
-            576: {
-               slidesPerView: 3,
-               spaceBetween: 10,
-            },
-            840: {
-               slidesPerView: 4,
-            },
-            1025: {
-               slidesPerView: 5,
-               spaceBetween: 16,
-            }
+   new Swiper(thirdSlider, {
+      navigation: {
+         prevEl: '#third-slider-btn-prev',
+         nextEl: '#third-slider-btn-next',
+      },
+      slidesPerView: 5,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      spaceBetween: 16,
+      loop: false,
+      speed: 800,
+      effect: 'slide',
+      breakpoints: {
+         0: {
+            slidesPerView: 2.38,
+            spaceBetween: 10,
          },
-    });
+         480: {
+            slidesPerView: 3.3,
+            spaceBetween: 10,
+         },
+         576: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+         },
+         840: {
+            slidesPerView: 4,
+         },
+         1025: {
+            slidesPerView: 5,
+            spaceBetween: 16,
+         }
+      },
+   });
 }
 
 let fourthSlider = document.getElementById('fourth-slider')
@@ -620,5 +620,79 @@ if (dronesSlider) {
       speed: 800,
       spaceBetween: 20,
       effect: 'slide',
+   });
+}
+
+
+let relatedProducts = document.getElementById('related-products')
+if (relatedProducts) {
+   new Swiper(relatedProducts, {
+      navigation: {
+         prevEl: '#related-products-slider-btn-prev',
+         nextEl: '#related-products-slider-btn-next',
+      },
+      slidesPerView: 5,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      spaceBetween: 16,
+      loop: false,
+      speed: 800,
+      effect: 'slide',
+      breakpoints: {
+         0: {
+            slidesPerView: 2.255,
+            spaceBetween: 10,
+         },
+         480: {
+            slidesPerView: 2.3,
+            spaceBetween: 10,
+         },
+         681: {
+            slidesPerView: 3.3,
+            spaceBetween: 10,
+         },
+         900: {
+            slidesPerView: 4.3,
+         },
+         1025: {
+            slidesPerView: 5,
+            spaceBetween: 16,
+         }
+      },
+   });
+}
+
+let fromThisCategorySlider = document.getElementById('from-this-category-slider')
+if (fromThisCategorySlider) {
+   new Swiper(fromThisCategorySlider, {
+      slidesPerView: 4,
+      navigation: {
+         prevEl: '#from-this-category-btn-prev',
+         nextEl: '#from-this-category-btn-next',
+      },
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      loop: false,
+      speed: 800,
+      spaceBetween: 16,
+      effect: 'slide',
+      breakpoints: {
+         0: {
+            slidesPerView: 1.21,
+            spaceBetween: 12,
+         },
+         481: {
+            slidesPerView: 2.3,
+            spaceBetween: 16,
+         },
+         721: {
+            slidesPerView: 3.3,
+            spaceBetween: 16,
+         },
+         1025: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+         }
+      },
    });
 }
