@@ -9,28 +9,47 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let bannerSlider = document.querySelector('.bannerSlider__slider')
 if (bannerSlider) {
-    new Swiper(bannerSlider, {
-        pagination: {
-            el: '.bannerSlider__pagination',
-            clickable: true,
-        },
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        watchOverflow: true,
-        spaceBetween: 50,
-        loop: true,
-        autoplay: {
-            deley: 500,
-            stopOnLastSlide: false,
-            disableOnInteraction: false
-        },
-        speed: 2000,
-        effect: 'fade',
-        fadeEffect: {
-            crossFade: true
-        },
-        slideShadows: false
-    });
+   new Swiper(bannerSlider, {
+      pagination: {
+         el: '.bannerSlider__pagination',
+         clickable: true,
+      },
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      spaceBetween: 50,
+      loop: true,
+      autoplay: {
+         deley: 500,
+         stopOnLastSlide: false,
+         disableOnInteraction: true,
+         pauseOnMouseEnter: true,
+      },
+      speed: 2000,
+      effect: 'fade',
+      fadeEffect: {
+         crossFade: true
+      },
+      slideShadows: false,
+      /*breakpoints: {
+         0: {
+            autoplay: {
+               deley: 500,
+               stopOnLastSlide: false,
+               disableOnInteraction: true,
+               pauseOnMouseEnter: true,
+            },
+         },
+         576: {
+            autoplay: {
+               deley: 500,
+               stopOnLastSlide: false,
+               disableOnInteraction: false,
+               pauseOnMouseEnter: true,
+            },
+         },
+      },*/
+   });
 }
 
 let firstSlider = document.getElementById('first-slider')

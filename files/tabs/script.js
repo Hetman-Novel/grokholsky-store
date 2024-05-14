@@ -1,3 +1,18 @@
+let parentBlock = document.querySelector('.same-width-tab');
+if (parentBlock) {
+    let tabs = parentBlock.querySelectorAll('.tab');
+    let maxWidth = 0;
+    tabs.forEach(function(tab) {
+        let tabWidth = tab.offsetWidth;
+        if (tabWidth > maxWidth) {
+            maxWidth = tabWidth;
+        }
+    });
+    tabs.forEach(function(tab) {
+        tab.style.width = maxWidth + 'px';
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
 	var parentTabs = document.querySelectorAll('.tabs__wrap-tab .tab');
 
