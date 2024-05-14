@@ -4,9 +4,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240514141035">
-   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20240514141035">
-   <link rel="stylesheet" href="css/style.min.css?_v=20240514141035">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240515025218">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20240515025218">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240515025218">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>Особистий кабінет</title>
 </head>
@@ -17,7 +17,7 @@
    <div class="header__wrapper lock-padding">
       <div id="header-container" class="n_container header-container">
          <div class="header__menu menu">
-            <div data-da="mobile-block-contacts, 0, 800" class="header__info element-display-delay display-delay">
+            <div data-da="mobile-block-contacts__wrap-content, 0, 800" class="header__info element-display-delay display-delay">
                <div class="header__languagesSelect">
                   <a href="#">ru</a>
                   <a href="#" class="current-lang">ua</a>
@@ -234,13 +234,13 @@
                      </svg>
                   </a>
                </div>
+               <a href="profile.html?source=wish-list" id="link-to-wish-list">
+                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M21 6.98343C20.9659 4.66511 19.637 2.38197 17.597 1.44116C16.5006 0.934154 15.2497 0.861274 14.1007 1.23746C13.0563 1.56572 12.0089 2.23835 11 3.2964C9.99111 2.23835 8.9437 1.56718 7.89926 1.23746C6.75028 0.861274 5.49935 0.934154 4.40296 1.44116C2.36296 2.38197 1.03407 4.66511 1 6.98343V6.99516C1 10.3759 3.03259 13.3713 5.18667 15.4742C6.16471 16.4353 7.24964 17.2839 8.42074 18.0035C8.92148 18.3039 9.39407 18.5457 9.81333 18.7157C10.2148 18.8769 10.6326 19 11 19C11.3674 19 11.7852 18.8769 12.1852 18.7157C12.6059 18.5472 13.0785 18.3054 13.5778 18.0035C14.7494 17.2839 15.8348 16.4354 16.8133 15.4742C18.9674 13.3713 21 10.3759 21 6.99662V6.98343Z" stroke="#002024" stroke-width="2"/>
+                  </svg>
+               </a>
                <a href="profile.html" class="logged-in">
                   <img src="images/svg/logged-in.svg" alt="">
-               </a>
-               <a href="#show-form-entrance-popup" class="popup-link">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M6.66818 16.4659H17.8568M15.15 9.375C15.15 11.1147 13.7397 12.525 12 12.525C10.2603 12.525 8.85 11.1147 8.85 9.375C8.85 7.6353 10.2603 6.225 12 6.225C13.7397 6.225 15.15 7.6353 15.15 9.375ZM22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12C1.5 6.20101 6.20101 1.5 12 1.5C17.799 1.5 22.5 6.20101 22.5 12Z" stroke="#002024" stroke-width="2"/>
-                  </svg>
                </a>
                <div class="header__wrapBasket">
                   <p>2</p>
@@ -258,7 +258,7 @@
 <div id="mobile-menu-bottom" class="mobile-menu">
    <ul class="mobile-menu__list">
       <li>
-         <a data-mobile-menu href="#catalog-menu-block" id="show-catalog-mobile-block" class="no-link">
+         <a data-mobile-menu href="#catalog-menu-block" id="show-catalog-mobile-block" class="active no-link">
             <div class="mobile-menu__blockIcon">
                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_3204_1552)">
@@ -494,7 +494,10 @@
                      <h4>Apple</h4>
                   </div>
                   <nav>
-                     <h3>iPhone</h3>
+                     <h3>
+                        <a href="catalog.html">iPhone</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">iPhone 15 Pro Max</a>
@@ -553,7 +556,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>iPad</h3>
+                     <h3>
+                        <a href="catalog.html">iPad</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">iPad Pro 12,9″ 2022</a>
@@ -588,7 +594,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Mac</h3>
+                     <h3>
+                        <a href="catalog.html">Mac</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">MacBook Pro</a>
@@ -620,7 +629,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Apple Watch</h3>
+                     <h3>
+                        <a href="catalog.html">Apple Watch</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Apple Watch Ultra 2</a>
@@ -652,7 +664,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Apple Airpods</h3>
+                     <h3>
+                        <a href="catalog.html">Apple Airpods</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">AirPods Pro 2</a>
@@ -675,7 +690,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Apple гаджети</h3>
+                     <h3>
+                        <a href="catalog.html">Apple гаджети</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Apple Pencil</a>
@@ -701,7 +719,10 @@
                      <h4>б/у Apple</h4>
                   </div>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -718,67 +739,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
-                     <ul>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <nav>
-                     <h3>Title</h3>
-                     <ul>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <nav>
-                     <h3>Title</h3>
-                     <ul>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -801,7 +765,79 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -827,7 +863,10 @@
                      <h4>Аксесуари</h4>
                   </div>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -856,7 +895,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -873,7 +915,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -890,7 +935,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -910,7 +958,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -927,7 +978,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -956,7 +1010,10 @@
                      <h4>Фени, плойки, стайлери</h4>
                   </div>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -973,7 +1030,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -990,7 +1050,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1016,7 +1079,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1033,7 +1099,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1050,7 +1119,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1076,7 +1148,10 @@
                      <h4>Пилососи</h4>
                   </div>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1099,7 +1174,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1116,7 +1194,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1133,7 +1214,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1150,7 +1234,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1176,7 +1263,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1202,7 +1292,10 @@
                      <h4>Акустичні системи</h4>
                   </div>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1219,68 +1312,14 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
                         </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <nav>
-                     <h3>Title</h3>
-                     <ul>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <nav>
-                     <h3>Title</h3>
-                     <ul>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <nav>
-                     <h3>Title</h3>
-                     <ul>
                         <li>
                            <a href="#">Link to catalog</a>
                         </li>
@@ -1302,7 +1341,76 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1328,7 +1436,10 @@
                      <h4>Зарядні станції</h4>
                   </div>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1345,7 +1456,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1356,46 +1470,6 @@
                         <li>
                            <a href="#">Link to catalog</a>
                         </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <nav>
-                     <h3>Title</h3>
-                     <ul>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <nav>
-                     <h3>Title</h3>
-                     <ul>
                         <li>
                            <a href="#">Link to catalog</a>
                         </li>
@@ -1417,7 +1491,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1434,7 +1511,56 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1460,7 +1586,10 @@
                      <h4>Квадрокоптери (дрони)</h4>
                   </div>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1489,7 +1618,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1506,47 +1638,10 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
-                     <ul>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <nav>
-                     <h3>Title</h3>
-                     <ul>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                        <li>
-                           <a href="#">Link to catalog</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1569,7 +1664,56 @@
                      </ul>
                   </nav>
                   <nav>
-                     <h3>Title</h3>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
+                     <ul>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                        <li>
+                           <a href="#">Link to catalog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3>
+                        <a href="catalog.html">Title</a>
+                        <button><img src="images/svg/cataalog-submenu-arrow.svg" alt=""></button>
+                     </h3>
                      <ul>
                         <li>
                            <a href="#">Link to catalog</a>
@@ -1620,47 +1764,49 @@
    </div>
 </div>
 <div id="mobile-service-contacts" class="mobile-block-contacts">
-   <div class="mobile-block-contacts__ourStores">
-      <h5>Наші магазини</h5>
-      <ul class="mobile-block-contacts__ourStoresList">
-         <li>
-            <img src="images/svg/our-stores-location-icon.svg" alt="">
-            4517 Washington Ave. Manchester, Kentucky 39495
-         </li>
-         <li>
-            <img src="images/svg/our-stores-location-icon.svg" alt="">
-            2118 Thornridge Cir. Syracuse, Connecticut 35624
-         </li>
-         <li>
-            <img src="images/svg/our-stores-location-icon.svg" alt="">
-            3891 Ranchview Dr. Richardson, California 62639
-         </li>
-      </ul>
-   </div>
-   <div class="mobile-block-contacts__ourStores">
-      <h5>Наші магазини</h5>
-      <ul class="social-networks">
-         <li>
-            <a href="https://web.telegram.org/k/" target="_blank">
-               <img src="images/svg/our-stores-telegram.svg" alt="">
-            </a>
-         </li>
-         <li>
-            <a href="https://www.instagram.com/" target="_blank">
-               <img src="images/svg/our-stores-instagram.svg" alt="">
-            </a>
-         </li>
-         <li>
-            <a href="https://www.facebook.com/" target="_blank">
-               <img src="images/svg/our-stores-facebook.svg" alt="">
-            </a>
-         </li>
-         <li>
-            <a href="https://www.youtube.com/" target="_blank">
-               <img src="images/svg/our-stores-youtube.svg" alt="">
-            </a>
-         </li>
-      </ul>
+   <div class="mobile-block-contacts__wrap-content">
+      <div class="mobile-block-contacts__ourStores">
+         <h5>Наші магазини</h5>
+         <ul class="mobile-block-contacts__ourStoresList">
+            <li>
+               <img src="images/svg/our-stores-location-icon.svg" alt="">
+               4517 Washington Ave. Manchester, Kentucky 39495
+            </li>
+            <li>
+               <img src="images/svg/our-stores-location-icon.svg" alt="">
+               2118 Thornridge Cir. Syracuse, Connecticut 35624
+            </li>
+            <li>
+               <img src="images/svg/our-stores-location-icon.svg" alt="">
+               3891 Ranchview Dr. Richardson, California 62639
+            </li>
+         </ul>
+      </div>
+      <div class="mobile-block-contacts__ourStores">
+         <h5>Наші магазини</h5>
+         <ul class="social-networks">
+            <li>
+               <a href="https://web.telegram.org/k/" target="_blank">
+                  <img src="images/svg/our-stores-telegram.svg" alt="">
+               </a>
+            </li>
+            <li>
+               <a href="https://www.instagram.com/" target="_blank">
+                  <img src="images/svg/our-stores-instagram.svg" alt="">
+               </a>
+            </li>
+            <li>
+               <a href="https://www.facebook.com/" target="_blank">
+                  <img src="images/svg/our-stores-facebook.svg" alt="">
+               </a>
+            </li>
+            <li>
+               <a href="https://www.youtube.com/" target="_blank">
+                  <img src="images/svg/our-stores-youtube.svg" alt="">
+               </a>
+            </li>
+         </ul>
+      </div>
    </div>
 </div>
       <main class="main profile">
@@ -1827,7 +1973,7 @@
                                  <input type="text" id="profile-repeat-new-password">
                               </div>
                            </div>
-                           <button type="submit">Змінити</button>
+                           <button type="submit" class="data-changed">Зберегти</button> <!-- data-changed -->
                         </form>
                      </div>
                      <div id="my-orders" class="profile__itemBlock">
@@ -1848,10 +1994,10 @@
                                           <p>№ 69473<span class="done">Виконано</span></p>
                                        </div>
                                        <div class="column">
-                                          <p><span>Дата <span>замовлення</span></span>від 9 грудня 2023</p>
+                                          <p><span>Дата <span>замовлення</span></span>від <span class="desktop">9 грудня 2023</span><span class="mobile">09.04.2023</span></p>
                                        </div>
                                        <div class="column">
-                                          <p><span>Сумма</span>140 399 ₴</p>
+                                          <p><span>Сумма</span>140 399 <span class="currency"><span class="icon">₴</span><span class="letters">грн.</span></span></p>
                                        </div>
                                     </div>
                                     <div class="block__titlePhotos">
@@ -1961,10 +2107,10 @@
                                           <p>№ 69473<span class="done">Виконано</span></p>
                                        </div>
                                        <div class="column">
-                                          <p><span>Дата <span>замовлення</span></span>від 9 грудня 2023</p>
+                                          <p><span>Дата <span>замовлення</span></span>від <span class="desktop">9 грудня 2023</span><span class="mobile">09.04.2023</span></p>
                                        </div>
                                        <div class="column">
-                                          <p><span>Сумма</span>140 399 ₴</p>
+                                          <p><span>Сумма</span>140 399 <span class="currency"><span class="icon">₴</span><span class="letters">грн.</span></span></p>
                                        </div>
                                     </div>
                                     <div class="block__titlePhotos">
@@ -1994,7 +2140,7 @@
                                                       </h3>
                                                    </div>
                                                    <div class="wrap-quantity-price">
-                                                      <p>14 199 ₴ х 1 од.</p>
+                                                      <p>14 199 <span class="currency"><span class="icon">₴</span><span class="letters">грн.</span></span> х 1 од.</p>
                                                       <p>14 199
                                                          <span class="currency">
                                                             <span class="icon">₴</span>
@@ -2013,7 +2159,7 @@
                                                       </h3>
                                                    </div>
                                                    <div class="wrap-quantity-price">
-                                                      <p>14 199 ₴ х 1 од.</p>
+                                                      <p>14 199 <span class="currency"><span class="icon">₴</span><span class="letters">грн.</span></span> х 1 од.</p>
                                                       <p>14 199
                                                          <span class="currency">
                                                             <span class="icon">₴</span>
@@ -2083,14 +2229,14 @@
                                     <img class="slider-for-phones__image" src="images/slide-product-2.png" alt="">
                                  </div>
                                  <div class="slider-for-phones__blockImageIcons">
-                                    <div class="wrap-icon link-icon">
+                                    <div class="wrap-icon link-icon active">
                                        <a href="#" class="in-favorites">
                                           <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3334 6.48619C18.305 4.55426 17.1976 2.65164 15.4976 1.86763C14.584 1.44513 13.5415 1.3844 12.584 1.69788C11.7137 1.97143 10.8408 2.53196 10.0001 3.41366C9.15934 2.53196 8.2865 1.97265 7.41613 1.69788C6.45865 1.3844 5.4162 1.44513 4.50255 1.86763C2.80255 2.65164 1.69514 4.55426 1.66675 6.48619V6.49596C1.66675 9.31326 3.36057 11.8094 5.15564 13.5618C5.97067 14.3628 6.87478 15.0699 7.8507 15.6696C8.26798 15.9199 8.66181 16.1214 9.01119 16.2631C9.34576 16.3974 9.69391 16.5 10.0001 16.5C10.3063 16.5 10.6544 16.3974 10.9877 16.2631C11.3384 16.1227 11.7322 15.9212 12.1482 15.6696C13.1246 15.0699 14.0291 14.3628 14.8445 13.5618C16.6396 11.8094 18.3334 9.31326 18.3334 6.49718V6.48619Z" stroke="white" stroke-width="2"/>
                                           </svg>
                                        </a>
                                     </div>
-                                    <div class="wrap-icon link-icon">
+                                    <div class="wrap-icon link-icon active">
                                        <a href="#">
                                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                              <path d="M15.6769 5.27586L11.8 13.092M15.6769 5.27586L19 13.092M15.6769 5.27586H10.2769M11.8 13.092H19M11.8 13.092C11.8 15.2503 13.2878 17 15.1231 17H15.6769C17.5122 17 19 15.2503 19 13.092M4.87692 5.27586L1 13.092M4.87692 5.27586L8.2 13.092M4.87692 5.27586H10.2769M1 13.092H8.2M1 13.092C1 15.2503 2.48779 17 4.32308 17H4.87692C6.71221 17 8.2 15.2503 8.2 13.092M10.2769 5.27586V2" stroke="white" stroke-width="2"/>
@@ -2123,7 +2269,9 @@
                                     </p>
                                  </div>
                                  <h3><a href="product.html">AirPods 3rd generation with Lightning Charging Case</a></h3>
-                                 <p class="slider-for-phones__obviousness in-stock">В наявності</p>
+                                 <div class="slider-for-phones__obviousness in-stock">
+                                    <p>В наявності</p>
+                                 </div>
                               </div>
                            </div>
                            <div class="slider-for-phones__slide">
@@ -2132,14 +2280,14 @@
                                     <img class="slider-for-phones__image" src="images/slide-product-3.png" alt="">
                                  </div>
                                  <div class="slider-for-phones__blockImageIcons">
-                                    <div class="wrap-icon link-icon">
+                                    <div class="wrap-icon link-icon active">
                                        <a href="#" class="in-favorites">
                                           <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3334 6.48619C18.305 4.55426 17.1976 2.65164 15.4976 1.86763C14.584 1.44513 13.5415 1.3844 12.584 1.69788C11.7137 1.97143 10.8408 2.53196 10.0001 3.41366C9.15934 2.53196 8.2865 1.97265 7.41613 1.69788C6.45865 1.3844 5.4162 1.44513 4.50255 1.86763C2.80255 2.65164 1.69514 4.55426 1.66675 6.48619V6.49596C1.66675 9.31326 3.36057 11.8094 5.15564 13.5618C5.97067 14.3628 6.87478 15.0699 7.8507 15.6696C8.26798 15.9199 8.66181 16.1214 9.01119 16.2631C9.34576 16.3974 9.69391 16.5 10.0001 16.5C10.3063 16.5 10.6544 16.3974 10.9877 16.2631C11.3384 16.1227 11.7322 15.9212 12.1482 15.6696C13.1246 15.0699 14.0291 14.3628 14.8445 13.5618C16.6396 11.8094 18.3334 9.31326 18.3334 6.49718V6.48619Z" stroke="white" stroke-width="2"/>
                                           </svg>
                                        </a>
                                     </div>
-                                    <div class="wrap-icon link-icon">
+                                    <div class="wrap-icon link-icon active">
                                        <a href="#">
                                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                              <path d="M15.6769 5.27586L11.8 13.092M15.6769 5.27586L19 13.092M15.6769 5.27586H10.2769M11.8 13.092H19M11.8 13.092C11.8 15.2503 13.2878 17 15.1231 17H15.6769C17.5122 17 19 15.2503 19 13.092M4.87692 5.27586L1 13.092M4.87692 5.27586L8.2 13.092M4.87692 5.27586H10.2769M1 13.092H8.2M1 13.092C1 15.2503 2.48779 17 4.32308 17H4.87692C6.71221 17 8.2 15.2503 8.2 13.092M10.2769 5.27586V2" stroke="white" stroke-width="2"/>
@@ -2173,14 +2321,16 @@
                                        </span>
                                        <span class="wrap-discount">
                                           <span>
-                                             25 399 <span class="no-mobile">₴</span>
+                                             25 399 <span class="icon">₴</span>
                                           </span>
                                           <span class="slider-for-phones__discountLabel">-30%</span>
                                        </span>
                                     </p>
                                  </div>
                                  <h3><a href="product.html">iPhone 13 128GB Midnight (MLPF3)</a></h3>
-                                 <p class="slider-for-phones__obviousness in-stock">В наявності</p>
+                                 <div class="slider-for-phones__obviousness in-stock">
+                                    <p>В наявності</p>
+                                 </div>
                               </div>
                            </div>
                            <div class="slider-for-phones__slide">
@@ -2190,14 +2340,14 @@
                                     <img class="slider-for-phones__image" src="images/slide-product-4.png" alt="">
                                  </div>
                                  <div class="slider-for-phones__blockImageIcons">
-                                    <div class="wrap-icon link-icon">
+                                    <div class="wrap-icon link-icon active">
                                        <a href="#" class="in-favorites">
                                           <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3334 6.48619C18.305 4.55426 17.1976 2.65164 15.4976 1.86763C14.584 1.44513 13.5415 1.3844 12.584 1.69788C11.7137 1.97143 10.8408 2.53196 10.0001 3.41366C9.15934 2.53196 8.2865 1.97265 7.41613 1.69788C6.45865 1.3844 5.4162 1.44513 4.50255 1.86763C2.80255 2.65164 1.69514 4.55426 1.66675 6.48619V6.49596C1.66675 9.31326 3.36057 11.8094 5.15564 13.5618C5.97067 14.3628 6.87478 15.0699 7.8507 15.6696C8.26798 15.9199 8.66181 16.1214 9.01119 16.2631C9.34576 16.3974 9.69391 16.5 10.0001 16.5C10.3063 16.5 10.6544 16.3974 10.9877 16.2631C11.3384 16.1227 11.7322 15.9212 12.1482 15.6696C13.1246 15.0699 14.0291 14.3628 14.8445 13.5618C16.6396 11.8094 18.3334 9.31326 18.3334 6.49718V6.48619Z" stroke="white" stroke-width="2"/>
                                           </svg>
                                        </a>
                                     </div>
-                                    <div class="wrap-icon link-icon">
+                                    <div class="wrap-icon link-icon active">
                                        <a href="#">
                                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                              <path d="M15.6769 5.27586L11.8 13.092M15.6769 5.27586L19 13.092M15.6769 5.27586H10.2769M11.8 13.092H19M11.8 13.092C11.8 15.2503 13.2878 17 15.1231 17H15.6769C17.5122 17 19 15.2503 19 13.092M4.87692 5.27586L1 13.092M4.87692 5.27586L8.2 13.092M4.87692 5.27586H10.2769M1 13.092H8.2M1 13.092C1 15.2503 2.48779 17 4.32308 17H4.87692C6.71221 17 8.2 15.2503 8.2 13.092M10.2769 5.27586V2" stroke="white" stroke-width="2"/>
@@ -2230,7 +2380,9 @@
                                     </p>
                                  </div>
                                  <h3><a href="product.html">iPhone 15 Pro Max 256GB Natural Titanium (MU793)</a></h3>
-                                 <p class="slider-for-phones__obviousness in-stock">В наявності</p>
+                                 <div class="slider-for-phones__obviousness in-stock">
+                                    <p>В наявності</p>
+                                 </div>
                               </div>
                            </div>
                            <div class="slider-for-phones__slide">
@@ -2239,14 +2391,14 @@
                                     <img class="slider-for-phones__image" src="images/slide-product-5.png" alt="">
                                  </div>
                                  <div class="slider-for-phones__blockImageIcons">
-                                    <div class="wrap-icon link-icon">
+                                    <div class="wrap-icon link-icon active">
                                        <a href="#" class="in-favorites">
                                           <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3334 6.48619C18.305 4.55426 17.1976 2.65164 15.4976 1.86763C14.584 1.44513 13.5415 1.3844 12.584 1.69788C11.7137 1.97143 10.8408 2.53196 10.0001 3.41366C9.15934 2.53196 8.2865 1.97265 7.41613 1.69788C6.45865 1.3844 5.4162 1.44513 4.50255 1.86763C2.80255 2.65164 1.69514 4.55426 1.66675 6.48619V6.49596C1.66675 9.31326 3.36057 11.8094 5.15564 13.5618C5.97067 14.3628 6.87478 15.0699 7.8507 15.6696C8.26798 15.9199 8.66181 16.1214 9.01119 16.2631C9.34576 16.3974 9.69391 16.5 10.0001 16.5C10.3063 16.5 10.6544 16.3974 10.9877 16.2631C11.3384 16.1227 11.7322 15.9212 12.1482 15.6696C13.1246 15.0699 14.0291 14.3628 14.8445 13.5618C16.6396 11.8094 18.3334 9.31326 18.3334 6.49718V6.48619Z" stroke="white" stroke-width="2"/>
                                           </svg>
                                        </a>
                                     </div>
-                                    <div class="wrap-icon link-icon">
+                                    <div class="wrap-icon link-icon active">
                                        <a href="#">
                                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                              <path d="M15.6769 5.27586L11.8 13.092M15.6769 5.27586L19 13.092M15.6769 5.27586H10.2769M11.8 13.092H19M11.8 13.092C11.8 15.2503 13.2878 17 15.1231 17H15.6769C17.5122 17 19 15.2503 19 13.092M4.87692 5.27586L1 13.092M4.87692 5.27586L8.2 13.092M4.87692 5.27586H10.2769M1 13.092H8.2M1 13.092C1 15.2503 2.48779 17 4.32308 17H4.87692C6.71221 17 8.2 15.2503 8.2 13.092M10.2769 5.27586V2" stroke="white" stroke-width="2"/>
@@ -2279,13 +2431,15 @@
                                           </span>
                                        </span>
                                        <span class="wrap-discount">
-                                          <span>25 399 <span class="no-mobile">₴</span></span>
+                                          <span>25 399 <span class="icon">₴</span></span>
                                           <span class="slider-for-phones__discountLabel">-30%</span>
                                        </span>
                                     </p>
                                  </div>
                                  <h3><a href="product.html">Watch SE GPS + Cellular 44mm Space Gray...</a></h3>
-                                 <p class="slider-for-phones__obviousness in-stock">В наявності</p>
+                                 <div class="slider-for-phones__obviousness in-stock">
+                                    <p>В наявності</p>
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -2427,7 +2581,7 @@
                   <p><span class="price">140 399 <span class="currency icon">₴</span><span class="currency letters">грн.</span></span> <span class="wrap-discount"><span>175 399 ₴</span><span class="discountLabel">-30%</span></span></p>
                </div>
                <div class="wrap-buttons">
-                  <a href="#" class="add-to-cart">Додати в кошик</a>
+                  <a href="#" class="add-to-cart blick-btn">Додати в кошик</a>
                   <a href="#show-form-buy-in-one-click-popup" class="buy-in-one-click popup-link">Купити в 1 клік</a>
                </div>
             </div>
@@ -2447,7 +2601,7 @@
                <path d="M14 2L2 14M2 2L14 14" stroke="#002024" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
             </svg>
          </a>
-         <h3 class="larger">Тест на працездатність</h3>
+         <h3 class="larger">Кошик <span>2 товара</span></h3>
          <div class="basket-popup__blockProduct">
             <div class="basket-popup__blockProductInfo">
                <div class="basket-popup__blockImage">
@@ -2459,7 +2613,7 @@
                </div>
                <div class="basket-popup__price-and-quantity">
                   <div class="wrap-price">
-                     <p><span class="price">50 199 <span class="currency icon">₴</span><span class="currency letters">грн.</span></span> <span class="wrap-discount"><span>25 399 ₴</span><span class="discountLabel">-30%</span></span></p>
+                     <p><span class="price">50 199 <span class="currency icon">₴</span><span class="currency letters">грн.</span></span> <span class="wrap-discount"><span>25 399 <span class="icon">₴</span></span><span class="discountLabel">-30%</span></span></p>
                   </div>
                   <div class="basket-popup__number">
                      <span class="basket-popup__numberMinus">
@@ -2515,7 +2669,7 @@
                </div>
                <div class="basket-popup__price-and-quantity">
                   <div class="wrap-price">
-                     <p><span class="price">50 199 <span class="currency icon">₴</span><span class="currency letters">грн.</span></span> <span class="wrap-discount"><span>25 399 ₴</span><span class="discountLabel">-30%</span></span></p>
+                     <p><span class="price">50 199 <span class="currency icon">₴</span><span class="currency letters">грн.</span></span> <span class="wrap-discount"><span>25 399 <span class="icon">₴</span></span><span class="discountLabel">-30%</span></span></p>
                   </div>
                   <div class="basket-popup__number">
                      <span class="basket-popup__numberMinus">
@@ -2577,11 +2731,11 @@
                         </li>
                         <li class="discount">
                            <span>Знижка</span>
-                           <span>-569 ₴</span>
+                           <span>-569 <span class="currency"><span class="icon">₴</span><span class="letters">грн.</span></span></span>
                         </li>
                         <li class="shipping-and-price">
                            <span>Всього</span>
-                           <span>100 238 ₴</span>
+                           <span>100 238 <span class="currency"><span class="icon">₴</span><span class="letters">грн.</span></span></span>
                         </li>
                      </ul>
                   </div>
@@ -2590,9 +2744,9 @@
             <div class="popup__wrap-submit">
                <button type="button" class="no-submit">
                   <span>Всього</span>
-                  <span class="price">350 199 грн.</span>
+                  <span class="price">350 199 <span>грн.</span></span>
                </button>
-               <a href="placing-an-order.html" class="popup-form__submit">Оформити покупку</a>
+               <a href="placing-an-order.html" class="popup-form__submit blick-btn">Оформити покупку</a>
             </div>
          </div>
          <section class="a-perfect-combination">
@@ -2607,7 +2761,7 @@
                            <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
                         </a>
                      </div>
-                     <p>6 619 ₴</p>
+                     <p>6 619 <span class="currency"><span class="icon">₴</span><span class="letters">грн.</span></span></p>
                      <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
                   </div>
                   <div class="a-perfect-combination__item swiper-slide">
@@ -2618,7 +2772,7 @@
                            <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
                         </a>
                      </div>
-                     <p>1 290 ₴</p>
+                     <p>1 290 <span class="currency"><span class="icon">₴</span><span class="letters">грн.</span></span></p>
                      <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
                   </div>
                   <div class="a-perfect-combination__item swiper-slide">
@@ -2629,7 +2783,7 @@
                            <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
                         </a>
                      </div>
-                     <p>6 619 ₴</p>
+                     <p>6 619 <span class="currency"><span class="icon">₴</span><span class="letters">грн.</span></span></p>
                      <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
                   </div>
                   <div class="a-perfect-combination__item swiper-slide">
@@ -2640,7 +2794,7 @@
                            <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
                         </a>
                      </div>
-                     <p>6 619 ₴</p>
+                     <p>6 619 <span class="currency"><span class="icon">₴</span><span class="letters">грн.</span></span></p>
                      <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
                   </div>
                   <div class="a-perfect-combination__item swiper-slide">
@@ -2651,7 +2805,7 @@
                            <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
                         </a>
                      </div>
-                     <p>6 619 ₴</p>
+                     <p>6 619 <span class="currency"><span class="icon">₴</span><span class="letters">грн.</span></span></p>
                      <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
                   </div>
                   <div class="a-perfect-combination__item swiper-slide">
@@ -2662,7 +2816,7 @@
                            <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
                         </a>
                      </div>
-                     <p>1 290 ₴</p>
+                     <p>1 290 <span class="currency"><span class="icon">₴</span><span class="letters">грн.</span></span></p>
                      <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
                   </div>
                   <div class="a-perfect-combination__item swiper-slide">
@@ -2673,7 +2827,7 @@
                            <img alt="" src="images/svg/a-perfect-combination-added-icon.svg">
                         </a>
                      </div>
-                     <p>6 619 ₴</p>
+                     <p>6 619 <span class="currency"><span class="icon">₴</span><span class="letters">грн.</span></span></p>
                      <a href="#">AirPods 3rd generation with Lightning Charging Case</a>
                   </div>
                </div>
@@ -2702,7 +2856,7 @@
             <label class="popup-form__label">Пароль</label>
             <input type="text" class="popup-form__field input">
             <a href="#show-form-forgot-your-password-popup" class="popup__forgot-your-password popup-link">Забули пароль</a>
-            <button type="submit" class="popup-form__submit entrance-button-demo">Увійти</button>
+            <button type="submit" class="popup-form__submit blick-btn entrance-button-demo">Увійти</button>
             <div class="popup__wrap-social-buttons">
                <p><span>або за допомогою</span></p>
                <div class="wrap-buttons">
@@ -2741,7 +2895,7 @@
             <input type="text" class="popup-form__field input">
             <label class="popup-form__label">Повторити пароль</label>
             <input type="text" class="popup-form__field input">
-            <button type="submit" class="popup-form__submit entrance-button-demo">Зареєструватись</button>
+            <button type="submit" class="popup-form__submit blick-btn entrance-button-demo">Зареєструватись</button>
             <div class="popup__wrap-social-buttons">
                <p><span>або за допомогою</span></p>
                <div class="wrap-buttons">
@@ -2776,7 +2930,7 @@
          <form action="#" class="popup-form">
             <label class="popup-form__label">Електронна пошта</label>
             <input type="text" class="popup-form__field input" placeholder="stepan.bandera@gmail.com">
-            <button type="submit" class="popup-form__submit entrance-button-demo">Нагадати пароль</button>
+            <button type="submit" class="popup-form__submit blick-btn entrance-button-demo">Нагадати пароль</button>
          </form>
       </div>
    </div>
@@ -2784,19 +2938,19 @@
 
 	</div>
 
-	<script src="files/swiper/js/swiper-bundle.min.js?_v=20240514141035"></script>
-	<script src="files/swiper/js/swiper-init.js?_v=20240514141035"></script>
+	<script src="files/swiper/js/swiper-bundle.min.js?_v=20240515025218"></script>
+	<script src="files/swiper/js/swiper-init.js?_v=20240515025218"></script>
 
-	<script src="js/script.min.js?_v=20240514141035"></script>
+	<script src="js/script.min.js?_v=20240515025218"></script>
 
-	<script src="files/js/demo-script.js?_v=20240514141035"></script>
+	<script src="files/js/demo-script.js?_v=20240515025218"></script>
 
-	<script src="files/js/jquery-3.7.1.min.js?_v=20240514141035"></script>
-	<script src="files/js/plus-minus.js?_v=20240514141035"></script>
+	<script src="files/js/jquery-3.7.1.min.js?_v=20240515025218"></script>
+	<script src="files/js/plus-minus.js?_v=20240515025218"></script>
 
-   <script src="files/select2/js/select2.full.min.js?_v=20240514141035"></script>
-   <script src="files/select2/js/select2.min.js?_v=20240514141035"></script>
-   <script src="files/select2/js/select2-init.js?_v=20240514141035"></script>
+   <script src="files/select2/js/select2.full.min.js?_v=20240515025218"></script>
+   <script src="files/select2/js/select2.min.js?_v=20240515025218"></script>
+   <script src="files/select2/js/select2-init.js?_v=20240515025218"></script>
 
 </body>
 </html>
