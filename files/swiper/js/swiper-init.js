@@ -14,6 +14,10 @@ if (bannerSlider) {
          el: '.bannerSlider__pagination',
          clickable: true,
       },
+      navigation: {
+         prevEl: '#banner-slider-btn-prev',
+         nextEl: '#banner-slider-btn-next',
+      },
       slidesPerView: 1,
       slidesPerGroup: 1,
       watchOverflow: true,
@@ -36,7 +40,7 @@ if (bannerSlider) {
             autoplay: {
                deley: 500,
                stopOnLastSlide: false,
-               disableOnInteraction: true,
+               //disableOnInteraction: true,
                pauseOnMouseEnter: true,
             },
          },
@@ -44,7 +48,7 @@ if (bannerSlider) {
             autoplay: {
                deley: 500,
                stopOnLastSlide: false,
-               disableOnInteraction: false,
+               //disableOnInteraction: false,
                pauseOnMouseEnter: true,
             },
          },
