@@ -3967,35 +3967,56 @@ body._touch .header .menu__list > li._active .menu__arrow {
   margin: 0 8px !important;
   position: relative;
   width: 100%;
-  /*&::before {
-      background: #fff;
-      border-radius: 16px;
-      content: '';
-      height: 100%;
-      left: 0;
-      opacity: 1 !important;
-      position: absolute;
-      transition: width 0s ease 0s;
-      width: 0%;
-  }*/
+}
+
+.bannerSlider__pagination .swiper-pagination-bullet::before {
+  background: #fff;
+  border-radius: 16px;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 1 !important;
+  position: absolute;
+  transition: width 0s ease 0s;
+  width: 0%;
 }
 
 .bannerSlider__pagination .swiper-pagination-bullet-active {
   background: rgba(255, 255, 255, 0.5) !important;
   position: relative;
-  /*&::before {
-      transition: width 5s ease-in-out 0s;
-      width: 100%;
-  }*/
 }
 
-.bannerSlider__slide:hover .swiper-pagination-bullet::before {
-  transition: none;
+.bannerSlider__pagination .swiper-pagination-bullet-active::before {
+  transition: width 5s ease-in-out 0s;
+  width: 100%;
 }
 
-/*
-.bannerSlider__slide:hover .swiper-pagination-bullet-active::before {
+/*.bannerSlider__slider .swiper-pagination-bullet {
+
+    &::before {
+        content: "";
+        display: block;
+        background-color: white;
+        height: 100%;
+        width: 0%;
+        opacity: 1 !important;
+        border-radius: 16px;
+        left: 0;
+        position: absolute;
+    }
+
+    &-active::before {
+        animation: expandWidth 5s linear forwards;
+    }
+}
+
+.bannerSlider__slider:hover .swiper-pagination-bullet::before {
     animation-play-state: paused;
+}
+
+@keyframes expandWidth {
+    0% { width: 0%; }
+    100% { width: 100%; }
 }*/
 
 .topCategories {
@@ -9111,7 +9132,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   align-items: center;
   background-color: #FFC200;
   border-radius: 12px;
-  bottom: 7px;
+  bottom: 6px;
   color: #002024;
   height: 40px;
   display: flex;
@@ -10693,6 +10714,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   margin: 2px 0 0 !important;
 }
 
+.profile__wish-list .slider-for-phones__obviousness.in-stock p {
+  color: #00E64E !important;
+}
+
 .profile__wish-list .slider-for-phones__blockImageLabel.boo {
   color: #000;
   font-size: 12px;
@@ -11908,15 +11933,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
   height: 40px;
   display: flex;
   justify-content: center;
+  position: relative;
   width: 40px;
 }
 
 .footer__bottom a:nth-child(1) {
   background-color: #12E69A;
+  left: -9px;
 }
 
 .footer__bottom a:nth-child(2) {
   background-color: #002024;
+  right: -9px;
 }
 
 .floating-product-price {
@@ -20070,8 +20098,9 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .repair-process__title {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 28px;
+    margin: -1px 0 18px;
     text-align: center;
   }
 
@@ -21481,6 +21510,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .repair-of-apple-equipment__item:nth-child(3) img {
     width: 77%;
+  }
+
+  .types-of-repair .repair-of-apple-equipment__wrap-form {
+    max-width: 100%;
+    width: 100%;
   }
 
   .payment-and-delivery .tabs__wrap-tab {
